@@ -57,11 +57,11 @@ jQuery(document).ready(function(){
         var $tz_meetup_countdown = jQuery('.tz_meetup_countdown');
         if ( $tz_meetup_countdown.length > 0 ) {
 
-            var $data_countdown     =   '2016/12/30 23:59:59';
-            var $data_text_ended    =   'The event is ended';
+            var $data_countdown     =   '2017/05/20 09:00:00';
+            var $data_text_ended    =   'La LechazoConf ya ha acabado, nos vemos en la próxima!';
 
-            var $data_text_day      =   'days';
-            var $data_text_hours    =   'hours';
+            var $data_text_day      =   'días';
+            var $data_text_hours    =   'horas';
             var $data_text_min      =   'mins';
             var $data_text_sec      =   'secs';
 
