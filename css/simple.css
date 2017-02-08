@@ -1,0 +1,216 @@
+.pgthumb.simple{
+    max-width: none;
+    margin:0;
+    overflow: hidden;
+}
+li.simple {
+    height: 300px;
+    padding: 0;
+}
+.simple img{
+    max-width: none;
+    width: 100%;
+    display:block;
+    position: relative;
+}
+.simple-overlay{
+    left: 0;
+    outline: 0 solid transparent;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background:rgba(29,25,25,0.5);
+    bottom:0;
+    right:0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.simple:hover .simple-overlay{
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: rgba(36, 39, 50, 0.95);
+}
+.simple .effect3{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+.simple .simple-info h3{
+    -moz-transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    opacity: 0;
+    padding-bottom:0;
+    margin-bottom:0;
+
+}
+.simple:hover .simple-info h3{
+    -moz-transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: all 0.3s linear 0.3s;
+    -moz-transition: all 0.3s linear 0.3s;
+    -ms-transition: all 0.3s linear 0.3s;
+    -o-transition: all 0.3s linear 0.3s;
+    transition: all 0.3s linear 0.3s;
+    opacity: 1;
+}
+.simple .simple-info a{
+    background: transparent;
+    box-shadow: none;
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    display:block;
+    padding: 0 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+.simple .simple-info{
+    display:table;
+    position: absolute;
+    top:0;
+    width:100%;
+    text-align: center;
+    z-index: 2;
+    height:100%;
+    bottom:0;
+}
+.simple .simple-info span{
+    display:block;
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+}
+.simple .simple-info a.info {
+    -moz-transform: translateX(-30px);
+    -webkit-transform: translateX(-30px);
+    -o-transform: translateX(-30px);
+    -ms-transform: translateX(-30px);
+    transform: translateX(-30px);
+    display: table-cell;
+    vertical-align: middle;
+}
+.tzwpgallery .simple .simple-info{
+    display:block;
+}
+.tzwpgallery .simple .simple-info a.info {
+    display: block;
+    padding-top: 40%;
+}
+
+.simple:hover .simple-info a.info,
+.simple:hover .simple-info a.image_url{
+    -moz-transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    opacity: 1;
+}
+.simple:hover .simple-info a{
+    opacity:1;
+}
+.simple .simple-info a:hover{
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.pgasimple a{
+    /*padding:0;*/
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border:none;
+}
+div .plusgallery .pgalbumlink{
+    padding:0;
+}
+.pgalbumthumb.pgasimple img{
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.pgalbumthumb.pgasimple:hover img{
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+div .pgalbumtitle{
+    bottom:0;
+    left:0;
+    width:100%;
+}
+.simple .info-title{
+    position: absolute;
+    padding:22px 15px;
+    color:#fff;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+}
+.simple .info-title h3{
+    color:#252525;
+    margin:0;
+}
+.simple:hover .info-title{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.simple img{
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.simple:hover img{
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
