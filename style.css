@@ -839,7 +839,7 @@ p.tz_description_event {
 .meetup_bl_slider_home {
     position: absolute;
     content: '';
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0);
     height: 100%;
     width: 100%;
     z-index: 50;
