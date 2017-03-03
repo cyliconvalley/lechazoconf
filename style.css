@@ -834,7 +834,6 @@ p.tz_description_event {
  */
 .tz_home_slider_meetup {
     position: relative;
-    overflow: hidden;
 }
 .meetup_bl_slider_home {
     position: absolute;
@@ -5772,77 +5771,82 @@ aside.widget h3.module-title:before {
 
 }
 
+/* LECHAZO LANDING */
 
-
-.lechazo-logo{
-	display: flex;
-	margin: auto;
-	max-width: 800px;
-}
-.lechazo-organizers{
-	margin-top: 50px;
-	margin-bottom: 10px;
-	vertical-align: middle;
-	display: block;
-}
-.lechazo-organizers a{
-	text-align: center;
-	display: inline-block;;
-	margin: auto;
-}
-.lechazo-logo-cylicon{
-	width: 150px;
-	margin-left: 20px;
-	margin-right: 20px;
-}
-.lechazo-logo-solidgear{
-	width: 150px;
-	margin-left: 20px;
-	margin-right: 20px;
-}
-.bx-wrapper .bx-pager.bx-default-pager a{
-	display: none;
-}
-.ds-table-cell{
-	vertical-align: top;
-}
-.tz_meetup_slider_home_text{
-	margin-bottom: 20px;
-	font-size: 20px;
-}
-.lechazo-big{
-	font-size: 25px;
-	font-weight: bold !important;
-	margin-bottom: 20px !important;
-}
-
-.meetup_bl_slider_home{
-	z-index: -1;
-	background-image: -webkit-linear-gradient(30deg, #fdfbfb 0%, #ebedee 100%);
-	background-image: -o-linear-gradient(30deg, #fdfbfb 0%, #ebedee 100%);
-	background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-}
-
-.tz_home_slider_meetup {
+body {
     background-image: -webkit-linear-gradient(30deg, #fdfbfb 0%, #ebedee 100%);
-    background-image: -o-linear-gradient(30deg, #fdfbfb 0%, #ebedee 100%);
-    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-    overflow-x: hidden;
-    overflow-y: auto;
+    background-image:      -o-linear-gradient(30deg, #fdfbfb 0%, #ebedee 100%);
+    background-image:         linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.lechazo-logo {
+    display: flex;
+
+    max-width: 800px;
+    margin: auto;
+}
+.lechazo-organizers {
+    display: block;
+
+    margin-top: 0px;
+    margin-bottom: 50px;
+
+    vertical-align: middle;
+}
+.lechazo-organizers a {
+    display: inline-block;
+
+    margin: auto;
+
+    text-align: center;;
+}
+.lechazo-logo-cylicon {
+    width: 150px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.lechazo-logo-solidgear {
+    width: 150px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+    display: none;
+}
+.ds-table-cell {
+    vertical-align: top;
+}
+.tz_meetup_slider_home_text {
+    font-size: 20px;
+
+    margin-bottom: 20px;
+}
+.lechazo-big {
+    font-size: 25px;
+    font-weight: bold !important;
+
+    margin-bottom: 20px !important;
+}
+
+.meetup_bl_slider_home {
+    z-index: -1;
+
+    overflow: auto;
 }
 
 /* MAILCHIMP */
-#mc_embed_signup{
-	padding: 15px;
+#mc_embed_signup {
+    padding: 15px;
 }
-#mc_embed_signup label{
-	color: #9D5763;
-	font-family: "Roboto";
-	font-weight: 400 !important;
+#mc_embed_signup label {
+    font-family: 'Roboto';
+    font-weight: 400 !important;
+
+    color: #9d5763;
 }
-#mc_embed_signup .button{
-	background-color: #AEB788 !important;
+#mc_embed_signup .button {
+    background-color: #aeb788 !important;
 }
-#mc_embed_signup input.email{
-	border-color: #AEB788 !important;
+#mc_embed_signup input.email {
+    border-color: #aeb788 !important;
 }
