@@ -858,7 +858,7 @@ p.tz_description_event {
     margin-bottom: 9px;
 }
 .tz_content_slider_meetup .tz_meetup_social .meetup_line_left {
-    background: #ffffff;
+    background: #9D5763;
     height: 1px;
     left: 100%;
     position: absolute;
@@ -866,7 +866,7 @@ p.tz_description_event {
     width: 25px;
 }
 .tz_content_slider_meetup .tz_meetup_social .meetup_line_right {
-    background: #ffffff;
+    background: #9D5763;
     height: 1px;
     right: 100%;
     position: absolute;
@@ -875,20 +875,20 @@ p.tz_description_event {
 }
 .tz_home_slider_meetup .tz_content_slider_meetup a {
     text-decoration: none;
-    color: #ffffff;
-    margin: 0 10px;
-    font-size: 18px;
+    color: #1da1f2;
+	padding-right: 10px;
+    font-size: 30px;
 }
 .tz_home_slider_meetup .tz_content_slider_meetup .tz_meetup_slider_home_text p {
     font-weight: 400;
-    color: #fff;
+    color: #9D5763;
     letter-spacing: 1px;
     margin-bottom: 0;
 }
 .tz_home_slider_meetup .tz_content_slider_meetup .tz_meetup_slider_home_text h4 {
     font-size: 60px;
     font-weight: 200;
-    color: #ffffff;
+    color: #9D5763;
     line-height: 1em;
     margin-bottom: 30px;
 }
@@ -909,14 +909,14 @@ p.tz_description_event {
     width: 1px;
     height: 25px;
     margin-top: -12.5px;
-    background: #e45914;
+    background: #9D5763;
 }
 .tz_meetup_countdown .tz_meetup_countdown_time:last-child:after {
     display: none;
 }
 .tz_meetup_countdown .tz_meetup_countdown_time span {
     font-size: 65px;
-    color: #ffffff;
+    color: #9D5763;
     display: block;
     line-height: 1.2em;
     font-weight: 100;
@@ -925,10 +925,10 @@ p.tz_description_event {
     display: block;
     font-size: 16px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #9D5763;
 }
 .tz_meetup_countdown span.tz_meetup_countdown_over {
-    color: #ffffff;
+    color: #9D5763;
     display: inline-block;
     font-size: 30px;
     line-height: 1.4em;
@@ -5155,7 +5155,7 @@ aside.widget h3.module-title:before {
 
 /* 10.0 - Responsive */
 
-@media (max-width: 1440px) {
+/*@media (max-width: 1440px) {
 
     .tz_home_slider_meetup .tz_content_slider_meetup .tz_meetup_social {
         padding: 0 12px;
@@ -5233,7 +5233,7 @@ aside.widget h3.module-title:before {
         right: 90px;
     }
 
-}
+}*/
 
 @media (max-width: 1199px) and (min-width: 992px) {
 
@@ -5496,7 +5496,7 @@ aside.widget h3.module-title:before {
         margin-bottom: 15px;
     }
     .tz_home_slider_meetup .tz_content_slider_meetup .tz_meetup_slider_home_text p {
-        font-size: 11px;
+        font-size: 20px;
         padding: 0 5px;
     }
     .tz_home_slider_meetup .tz_content_slider_meetup .tz_meetup_slider_home_text h4 {
@@ -5514,10 +5514,10 @@ aside.widget h3.module-title:before {
     .tz_meetup_countdown .tz_meetup_countdown_time b {
         font-size: 12px;
     }
-    .tz_home_slider_meetup .tz_content_slider_meetup a {
+    /*.tz_home_slider_meetup .tz_content_slider_meetup a {
         font-size: 14px;
         padding: 0 8px;
-    }
+    }*/
     .tz_image_title_meetup {
         margin-bottom: 15px;
     }
@@ -5770,4 +5770,54 @@ aside.widget h3.module-title:before {
         margin: 10px 0;
     }
 
+}
+
+
+
+.lechazo-logo{
+	display: flex;
+	margin: auto;
+	max-width: 800px;
+}
+.lechazo-organizers{
+	margin-top: 50px;
+	margin-bottom: 10px;
+	vertical-align: middle;
+	display: block;
+}
+.lechazo-organizers a{
+	text-align: center;
+	display: inline-block;;
+	margin: auto;
+}
+.lechazo-logo-cylicon{
+	width: 150px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.lechazo-logo-solidgear{
+	width: 150px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a{
+	display: none;
+}
+.ds-table-cell{
+	vertical-align: top;
+}
+.meetup_bl_slider_home{
+	z-index: -1;
+	background-image: -webkit-linear-gradient(30deg, #fdfbfb 0%, #ebedee 100%);
+	background-image: -o-linear-gradient(30deg, #fdfbfb 0%, #ebedee 100%);
+	background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+.tz_meetup_slider_home_text{
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+.lechazo-big{
+	font-size: 25px;
+	font-weight: bold !important;
+	margin-bottom: 20px !important;
 }
