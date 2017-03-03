@@ -5806,12 +5806,6 @@ aside.widget h3.module-title:before {
 .ds-table-cell{
 	vertical-align: top;
 }
-.meetup_bl_slider_home{
-	z-index: -1;
-	background-image: -webkit-linear-gradient(30deg, #fdfbfb 0%, #ebedee 100%);
-	background-image: -o-linear-gradient(30deg, #fdfbfb 0%, #ebedee 100%);
-	background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-}
 .tz_meetup_slider_home_text{
 	margin-bottom: 20px;
 	font-size: 20px;
@@ -5820,4 +5814,12 @@ aside.widget h3.module-title:before {
 	font-size: 25px;
 	font-weight: bold !important;
 	margin-bottom: 20px !important;
+}
+
+.tz_home_slider_meetup {
+    background-image: -webkit-linear-gradient(30deg, #fdfbfb 0%, #ebedee 100%);
+    background-image: -o-linear-gradient(30deg, #fdfbfb 0%, #ebedee 100%);
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    overflow-x: hidden;
+    overflow-y: auto;
 }
