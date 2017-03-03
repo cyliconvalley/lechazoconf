@@ -3,7 +3,7 @@
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1440 900" style="enable-background:new 0 0 1440 900;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#843A51;}
+	.st0{fill:#843A51;animation: nudge 5s linear infinite alternate;}
 	.st1{fill:#9D5763;}
 	.st2{clip-path:url(#SVGID_2_);}
 	.st3{fill:none;stroke:#000000;stroke-width:10;stroke-miterlimit:10;}
@@ -21,6 +21,19 @@
 	.st15{fill:none;stroke:#FFFFFF;stroke-width:10;stroke-miterlimit:10;}
 	.st16{fill:none;stroke:#FFFFFF;stroke-width:8;stroke-miterlimit:10;}
 	.st17{clip-path:url(#SVGID_8_);}
+	@keyframes nudge {
+  0%, 100% {
+    transform: translate(-50, 0);
+  }
+
+  50% {
+    transform: translate(100px, 0);
+  }
+
+  100% {
+    transform: translate(-50px, 0);
+  }
+}
 </style>
 <g>
 	<g>
@@ -138,9 +151,9 @@
 				C745.149,351.483,716.667,337.993,716.667,337.993z"/>
 			<path class="st9" d="M733.104,403.324l-101.992-99.318c0,0,26.545-18.772,40.889-23.153l72.497,74.634L733.104,403.324z"/>
 			<path class="st3" d="M733.104,403.324l-101.992-99.318c0,0,26.545-18.772,40.889-23.153l72.497,74.634L733.104,403.324z"/>
-			
+
 				<ellipse transform="matrix(0.2628 -0.9649 0.9649 0.2628 10.5647 1001.9338)" class="st10" cx="660.945" cy="494.053" rx="19.323" ry="14"/>
-			
+
 				<ellipse transform="matrix(0.2628 -0.9649 0.9649 0.2628 10.5647 1001.9338)" class="st11" cx="660.945" cy="494.053" rx="19.323" ry="14"/>
 			<path class="st12" d="M650.218,267.905c-12.333,0-59.365,22.317-61.94,56.805c-0.983,13.174,34.05,32.637,51,31.333
 				c21.667-1.667,43.65-28.327,43.527-39.667C682.576,295.421,662.552,267.905,650.218,267.905z"/>
