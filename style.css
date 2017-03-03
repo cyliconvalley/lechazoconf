@@ -5816,10 +5816,33 @@ aside.widget h3.module-title:before {
 	margin-bottom: 20px !important;
 }
 
+.meetup_bl_slider_home{
+	z-index: -1;
+	background-image: -webkit-linear-gradient(30deg, #fdfbfb 0%, #ebedee 100%);
+	background-image: -o-linear-gradient(30deg, #fdfbfb 0%, #ebedee 100%);
+	background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
 .tz_home_slider_meetup {
     background-image: -webkit-linear-gradient(30deg, #fdfbfb 0%, #ebedee 100%);
     background-image: -o-linear-gradient(30deg, #fdfbfb 0%, #ebedee 100%);
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+/* MAILCHIMP */
+#mc_embed_signup{
+	padding: 15px;
+}
+#mc_embed_signup label{
+	color: #9D5763;
+	font-family: "Roboto";
+	font-weight: 400 !important;
+}
+#mc_embed_signup .button{
+	background-color: #AEB788 !important;
+}
+#mc_embed_signup input.email{
+	border-color: #AEB788 !important;
 }
