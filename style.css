@@ -52,10 +52,11 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.85em;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato','Open Sans', Arial, sans-serif;
     font-weight: 300;
     overflow-x: hidden;
     position: relative;
+	font-size: 18px;
 }
 .tz_bd_overflow {
     overflow: hidden;
@@ -998,7 +999,7 @@ p.tz_description_event {
     font-weight: 700;
 }
 .tz_meetup_title_content p {
-    font-size: 16px;
+    font-size: 18px;
     margin: 0;
 }
 #about_meetup {
@@ -1214,7 +1215,7 @@ a.tz_btn_video_meetup.tz_meetup_custom {
     margin-left: -12px;
 }
 .tzCounter_type .tz-counter-number em.stat-count {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato','Open Sans', Arial, sans-serif;
     font-weight: 100;
     font-size: 64px;
     color: #242732;
@@ -1855,7 +1856,7 @@ span.tz_text_hover_speaker {
 h4.tz_modal_name {
     color: #843A51;
     font-size: 30px;
-    font-family: Roboto, sans-serif;
+    font-family: 'Lato','Open Sans', Arial, sans-serif;
     text-transform: uppercase;
     line-height: 1em;
     margin-bottom: 5px;
@@ -2532,7 +2533,7 @@ span.tz_modal_employment {
 .tz_register_meetup_pricing_item_price h3 {
     color: #ffffff;
     font-size: 40px;
-    font-family: "Roboto", serif;
+    font-family: 'Lato','Open Sans', Arial, sans-serif;
     font-weight: 500;
 }
 .tz_form_register {
@@ -3005,14 +3006,14 @@ span.tz_meetup_infomation small i.fa {
     margin-bottom: 37px;
 }
 .tzContact_2_content h3 {
-    font-family: Roboto, sans-serif;
+    font-family: 'Lato','Open Sans', Arial, sans-serif;
     font-weight: 300;
     color: #843A51;
     font-size: 24px;
     margin-bottom: 0;
 }
 .tzContact_2_content h4 {
-    font-family: Roboto, sans-serif;
+    font-family: 'Lato','Open Sans', Arial, sans-serif;
     font-weight: 700;
     color: #ffffff;
     font-size: 24px;
@@ -3020,14 +3021,14 @@ span.tz_meetup_infomation small i.fa {
     margin-bottom: 0;
 }
 .tzContact_2_content h5 {
-    font-family: Roboto, sans-serif;
+    font-family: 'Lato','Open Sans', Arial, sans-serif;
     font-weight: 700;
     color: #ffffff;
     font-size: 20px;
     margin: 0;
 }
 .tzContact_2_content p {
-    font-family: Roboto, sans-serif;
+    font-family: 'Lato','Open Sans', Arial, sans-serif;
     color: #aaaaaa;
     font-size: 16px;
     margin: 0;
@@ -3518,7 +3519,7 @@ span.tz_meetup_infomation small i.fa {
     padding: 0;
 }
 .tz-blogMasonry .tzBlogmasonry .blogMasonry-item .tz-blogInner .tz-blogInfo h4.title a {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Lato','Open Sans', Arial, sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 18px;
@@ -3552,7 +3553,7 @@ span.tz_meetup_infomation small i.fa {
 .tz-blogMasonry .tzBlogmasonry .blogMasonry-item .tz-blogInner .tz-blogInfo a.tzreadmore {
     color: #42484d;
     display: block;
-    font-family: "Roboto Slab", serif;
+    font-family: 'Lato','Open Sans', Arial, sans-serif;
     font-size: 11px;
     font-weight: 400;
     line-height: 24px;
@@ -5855,16 +5856,18 @@ body {
     padding: 15px;
 }
 #mc_embed_signup label {
-    font-family: 'Roboto';
+    font-family: 'Lato','Open Sans', Arial, sans-serif;
     font-weight: 400 !important;
 
     color: #9d5763;
 }
 #mc_embed_signup .button {
     background-color: #aeb788 !important;
+	padding: 10px;
 }
 #mc_embed_signup input.email {
     border-color: #aeb788 !important;
+	padding: 10px;
 }
 
 /* LOCATION */
