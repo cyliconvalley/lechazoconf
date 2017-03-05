@@ -70,6 +70,7 @@ body {
 a {
     color: #843A51;
     text-decoration: none;
+	transition: all 0.3s;
 }
 a:focus {
     outline: none;
@@ -4962,7 +4963,7 @@ span.tz_custom_color_text {
 /* 9.0 - Footer */
 .tz-footer.tz-footer-type1 {
     background-color: #242732;
-    padding: 65px 0 5px;
+    padding: 30px 0 5px;
     text-align: center;
     position: relative;
 }
@@ -5760,16 +5761,18 @@ aside.widget h3.module-title:before {
 body {
     background-image: url('img/back.png');
 }
-.bx-wrapper, .bx-wrapper .bx-viewport{
-	background: transparent;
+.bx-wrapper,
+.bx-wrapper .bx-viewport {
+    background: transparent;
 }
 /* HELPERS */
-.lechazo-center{
-	text-align: center;
-	margin: auto;
+.lechazo-center {
+    margin: auto;
+
+    text-align: center;
 }
-.lechazo-reverted{
-	color: #9d5763 !important;
+.lechazo-reverted {
+    color: #9d5763 !important;
 }
 
 .lechazo-logo {
@@ -5781,7 +5784,7 @@ body {
 .lechazo-organizers {
     display: block;
 
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 50px;
 
     vertical-align: middle;
@@ -5826,30 +5829,45 @@ body {
 
     overflow: auto;
 }
-
-#box_text_title_2.lechazo-box-reversed{
-	background-color: #9d5763;
+.fa-twitter {
+    color: #1da1f2;
 }
-#box_text_title_2.lechazo-sponsor-reversed{
-	background-color: #A0A873;
-}
-#box_text_title_2.lechazo-location-reversed{
-	background-color: #D3A36E;
+.fa-facebook {
+    color: #3b5998;
 }
 
 
+#box_text_title_2.lechazo-box-reversed {
+    background-color: #9d5763;
+}
+#box_text_title_2.lechazo-sponsor-reversed {
+    background-color: #a0a873;
+}
+#box_text_title_2.lechazo-location-reversed {
+    background-color: #d3a36e;
+}
 #box_text_title_2.lechazo-box-reversed .tzRow_ArrowType4 {
     border-top: 30px solid #9d5763;
 }
 #box_text_title_2.lechazo-sponsor-reversed .tzRow_ArrowType4 {
-    border-top: 30px solid #A0A873;
+    border-top: 30px solid #a0a873;
 }
 #box_text_title_2.lechazo-location-reversed .tzRow_ArrowType4 {
-    border-top: 30px solid #D3A36E;
+    border-top: 30px solid #d3a36e;
 }
 
+/* SPEAKERS */
+.speaker_box {
+    border-radius: 6px;
+    box-shadow: 0 20px 25px 0 rgba(18, 17, 30, .15);
+}
+.lechazo-speaker-bio p {
+    font-size: 14px;
 
+    padding: 15px;
 
+    text-align: left;
+}
 
 /* MAILCHIMP */
 #mc_embed_signup {
@@ -5862,43 +5880,97 @@ body {
     color: #9d5763;
 }
 #mc_embed_signup .button {
+    padding: 10px;
+
     background-color: #aeb788 !important;
-	padding: 10px;
 }
 #mc_embed_signup input.email {
+    padding: 10px;
+
     border-color: #aeb788 !important;
-	padding: 10px;
 }
 
 /* LOCATION */
-#location{
-	padding: 110px 0 70px;
+#location {
+    padding: 110px 0 70px;
+}
+.lechazo-map {
+    display: block;
+
+    max-width: 700px;
+    margin: 30px;
+    margin-right: auto;
+    margin-left: auto;
+
+    border-radius: 6px;
+    box-shadow: 0 20px 25px 0 rgba(18, 17, 30, .15);
 }
 
 /*SPONSORS*/
+.tz-partner {
+    padding: 20px;
+}
 
 /* REGISTRATION */
-.lechazo-register{
-	padding-top: 100px;
-	padding-bottom: 50px;
+.lechazo-register {
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
-.lechazo-cta{
-	margin: auto;
-	margin-top: 30px;
-	border-radius: 6px;
+.lechazo-cta {
+    margin: auto;
+    margin-top: 30px;
+
+    border-radius: 6px;
 }
-.lechazo-cta .lechazo-register-link{
-	box-shadow: 0 20px 25px 0 rgba(18, 17, 30, 0.15);
+.lechazo-cta .lechazo-register-link {
+    font-size: 22px;
+    font-weight: 400;
+
+    min-width: 300px;
+    padding: 20px;
+
+    color: #fff;
+    border-radius: 6px;
+    background-color: #7ac70c;
+    box-shadow: 0 20px 25px 0 rgba(18, 17, 30, .15);
 }
-.lechazo-register-link img{
-	border-radius: 6px;
+.lechazo-cta .lechazo-register-link:hover {
+    text-decoration: none;
+
+    background-color: #86b817;
 }
-.lechazo-ticketea{
-	width: 800px;
-	margin: auto;
-	text-align: left;
-	padding: 20px;
+.lechazo-register-link img {
+    border-radius: 6px;
 }
-.lechazo-ticketea p{
-	margin-bottom: 20px;
+.lechazo-ticketea {
+    width: 800px;
+    margin: auto;
+    padding: 20px;
+
+    text-align: left;
+}
+.lechazo-ticketea p {
+    margin-bottom: 20px;
+}
+.lechazo-ticket-type {
+    font-size: 16px;
+    font-weight: 300;
+
+    display: block;
+}
+.lechazo-price {
+    font-size: 30px;
+    font-weight: 800;
+    font-style: normal;
+
+    display: block;
+
+    margin-top: 5px;
+}
+.lechazo-cta-claim {
+    display: block;
+
+    padding: 3px;
+
+    border-bottom: 1px solid #fff;
 }

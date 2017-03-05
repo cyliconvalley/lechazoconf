@@ -95,7 +95,7 @@ jQuery(document).ready(function(){
             header_social.each(function () {
                 var offset = jQuery(this).offset().top;
                 var height = jQuery(this).outerHeight();
-                offset = offset + height / 1.3;
+                offset = offset + height / 2;
                 jQuery(this).css({ 'opacity': 1 - (st - offset + range) / range });
             });
         });
