@@ -33,7 +33,7 @@ jQuery(document).ready(function(){
 
     /*back to top */
     jQuery('.tz-backtotop').click(function(){
-        jQuery('html, body').animate({scrollTop: '0px'}, 800);
+        jQuery('html, body').animate({scrollTop: '0px'}, 100);
         return false;
     });
 
@@ -95,7 +95,7 @@ jQuery(document).ready(function(){
             header_social.each(function () {
                 var offset = jQuery(this).offset().top;
                 var height = jQuery(this).outerHeight();
-                offset = offset + height / 2;
+                offset = offset + height / 1.3;
                 jQuery(this).css({ 'opacity': 1 - (st - offset + range) / range });
             });
         });

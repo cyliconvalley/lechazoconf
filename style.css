@@ -540,7 +540,7 @@ html[xmlns] .slides {
 }
 .tz-headerHome ul li a {
     margin: 0;
-    padding: 40px 0;
+    padding: 30px 0;
     font-size: 12px;
     font-weight: 600;
     color: #843A51;
@@ -561,7 +561,7 @@ html[xmlns] .slides {
 }
 .tzHeaderContainer h3 {
     margin: 0;
-    padding: 35px 40px 35px 0;
+    padding: 20px 20px 20px 0;
     line-height: normal;
     font-size: inherit;
     transition: all 0.2s linear 0s;
@@ -1738,6 +1738,7 @@ span.tz_text_hover_speaker {
     -ms-transition: all 0.4s linear 0s;
     -o-transition: all 0.4s linear 0s;
     padding: 14px 0 15px;
+	background-color: #fff;
 }
 .tz_our_speakers_container h4 {
     font-weight: 700;
@@ -2264,15 +2265,15 @@ span.tz_modal_employment {
 
 /* 4.12 - Box text title_2 */
 #box_text_title_2 {
-    background-color: #843A51;
-    padding: 75px 0 80px;
+    background-color: #4A2F2E;
+    padding: 50px 0 50px;
     position: relative;
 }
 .tz_meetup_btn h4.tz_meetup_title_btn {
     color: #ffffff;
     font-size: 32px;
     text-transform: uppercase;
-    margin-bottom: 35px;
+    /*margin-bottom: 35px;*/
     font-weight: 600;
 }
 .tz_meetup_btn a.tz_meetup_btn_white {
@@ -2286,7 +2287,7 @@ span.tz_modal_employment {
 .tzRow_ArrowType4 {
     border-left: 60px solid rgba(0, 0, 0, 0);
     border-right: 60px solid rgba(0, 0, 0, 0);
-    border-top: 30px solid #843A51;
+    border-top: 30px solid #4A2F2E;
     left: 50%;
     margin-left: -62px;
     position: absolute;
@@ -2417,19 +2418,7 @@ span.tz_modal_employment {
 }
 
 /* 4.15 - Register */
-#register {
-    background-image: url("images/bk-paralax-8.jpg");
-    position: relative;
-}
-#register:after {
-    background-color: rgba(9, 9, 31, 0.5);
-    content: "";
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
+
 .tz_padding_register {
     padding: 95px 0;
 }
@@ -2472,7 +2461,7 @@ span.tz_modal_employment {
     content: '';
     border-bottom: 25px solid transparent;
     border-top: 25px solid transparent;
-    border-left: 25px solid #843A51;
+    border-left: 25px solid #a4c639;
     margin-top: -22px;
     z-index: -1;
 }
@@ -2490,7 +2479,7 @@ span.tz_modal_employment {
     content: '';
     border-bottom: 25px solid transparent;
     border-top: 25px solid transparent;
-    border-left: 25px solid #843A51;
+    border-left: 25px solid #a4c639;
     margin-top: -22px;
     z-index: -1;
 }
@@ -2533,11 +2522,7 @@ span.tz_modal_employment {
     top: 0;
     right: 0;
     height: 100%;
-    background-image: url("images/price-pay.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: #843A51;
+    background-color: #a4c639;
     border-radius: 0 5px 5px 0;
     -webkit-border-radius: 0 5px 5px 0;
     -moz-border-radius: 0 5px 5px 0;
@@ -2551,7 +2536,7 @@ span.tz_modal_employment {
     font-weight: 500;
 }
 .tz_form_register {
-    background-color: rgba(36, 39, 50, 0.9);
+    background-color: #4A2F2E;
     padding: 100px 0 95px 80px;
 }
 .tz_form_register_box {
@@ -2792,7 +2777,7 @@ p.tz_meetup_btn_paypal input.tz_paypal_submit {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3);
+    /*background: rgba(0, 0, 0, 0.3);*/
     left: 0;
     top: 0;
     z-index: 1;
@@ -2844,7 +2829,7 @@ p.tz_meetup_btn_paypal input.tz_paypal_submit {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3);
+    /*background: rgba(0, 0, 0, 0.3);*/
     left: 0;
     top: 0;
     transition: all 0.2s linear 0s;
@@ -5343,7 +5328,7 @@ aside.widget h3.module-title:before {
     .tz-homeType2.tz-homeTypeRelative nav ul.tz-nav > li:hover > a,
     .tz-homeType1.tz-homeTypeFixed nav ul.tz-nav > li:hover > a {
         color: #843A51;
-        background: #262939;
+        background: #fff;
         -webkit-transition: all 0.3s ease;
         -moz-transition: all 0.3s ease;
         -ms-transition: all 0.3s ease;
@@ -5772,11 +5757,11 @@ aside.widget h3.module-title:before {
 /* LECHAZO LANDING */
 
 body {
-    background-image: -webkit-linear-gradient(30deg, #fdfbfb 0%, #ebedee 100%);
-    background-image:      -o-linear-gradient(30deg, #fdfbfb 0%, #ebedee 100%);
-    background-image:         linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    background-image: url('img/back.png');
 }
-
+.bx-wrapper, .bx-wrapper .bx-viewport{
+	background: transparent;
+}
 /* HELPERS */
 .lechazo-center{
 	text-align: center;
@@ -5808,12 +5793,12 @@ body {
     text-align: center;;
 }
 .lechazo-logo-cylicon {
-    width: 150px;
+    width: 200px;
     margin-right: 20px;
     margin-left: 20px;
 }
 .lechazo-logo-solidgear {
-    width: 150px;
+    width: 200px;
     margin-right: 20px;
     margin-left: 20px;
 }
@@ -5821,7 +5806,7 @@ body {
     display: none;
 }
 .ds-table-cell {
-    vertical-align: top;
+    vertical-align: middle;
 }
 .tz_meetup_slider_home_text {
     font-size: 20px;
@@ -5839,6 +5824,27 @@ body {
     z-index: -1;
 
     overflow: auto;
+}
+
+#box_text_title_2.lechazo-box-reversed{
+	background-color: #9d5763;
+}
+#box_text_title_2.lechazo-sponsor-reversed{
+	background-color: #A0A873;
+}
+#box_text_title_2.lechazo-location-reversed{
+	background-color: #D3A36E;
+}
+
+
+#box_text_title_2.lechazo-box-reversed .tzRow_ArrowType4 {
+    border-top: 30px solid #9d5763;
+}
+#box_text_title_2.lechazo-sponsor-reversed .tzRow_ArrowType4 {
+    border-top: 30px solid #A0A873;
+}
+#box_text_title_2.lechazo-location-reversed .tzRow_ArrowType4 {
+    border-top: 30px solid #D3A36E;
 }
 
 
@@ -5861,12 +5867,35 @@ body {
     border-color: #aeb788 !important;
 }
 
+/* LOCATION */
+#location{
+	padding: 110px 0 70px;
+}
+
 /*SPONSORS*/
 
 /* REGISTRATION */
+.lechazo-register{
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
 .lechazo-cta{
 	margin: auto;
 	margin-top: 30px;
 	border-radius: 6px;
-	
+}
+.lechazo-cta .lechazo-register-link{
+	box-shadow: 0 20px 25px 0 rgba(18, 17, 30, 0.15);
+}
+.lechazo-register-link img{
+	border-radius: 6px;
+}
+.lechazo-ticketea{
+	width: 800px;
+	margin: auto;
+	text-align: left;
+	padding: 20px;
+}
+.lechazo-ticketea p{
+	margin-bottom: 20px;
 }
