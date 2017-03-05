@@ -67,7 +67,7 @@ body {
     background: transparent;
 }
 a {
-    color: #e45914;
+    color: #843A51;
     text-decoration: none;
 }
 a:focus {
@@ -370,7 +370,7 @@ html[xmlns] .slides {
     cursor: default;
 }
 .eg-adams-container {
-    background: #e45914 !important;
+    background: #843A51 !important;
 }
 .eg-henryharrison-container,
 .eg-johnson-container {
@@ -543,7 +543,7 @@ html[xmlns] .slides {
     padding: 40px 0;
     font-size: 12px;
     font-weight: 600;
-    color: #ffffff;
+    color: #843A51;
     line-height: 1.4em;
     font-family: 'Raleway', sans-serif;
     display: block;
@@ -574,7 +574,7 @@ html[xmlns] .slides {
     padding: 0;
 }
 .tz-headerHome {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 0px solid rgba(255, 255, 255, 0.1);
     position: fixed;
     width: auto;
     top: 0;
@@ -592,7 +592,7 @@ html[xmlns] .slides {
     bottom: 35%;
     left: 0;
     content: '';
-    background: #e45914;
+    background: #843A51;
     height: 3px;
     width: 0;
     transition: all 0.3s linear 0s;
@@ -656,7 +656,7 @@ html[xmlns] .slides {
     display: none;
 }
 .tz-headerHome .tz-form-search .fa.tz-form-close {
-    color: #e45914;
+    color: #843A51;
     cursor: pointer;
     font-size: 18px;
     margin-top: -11px;
@@ -693,7 +693,7 @@ html[xmlns] .slides {
         visibility: visible;
     }
     .tz-headerHome nav > ul > li > ul.non_mega_menu > li:first-child {
-        border-top: 1px solid #e45914;
+        border-top: 1px solid #843A51;
     }
     .tz-headerHome nav > ul > li > ul.non_mega_menu > li {
         list-style: outside none none;
@@ -713,7 +713,7 @@ html[xmlns] .slides {
         transition: all 0.3s ease-in-out 0s;
     }
     .tz-headerHome nav ul li ul.non_mega_menu li a:hover {
-        color: #e45914;
+        color: #843A51;
         text-decoration: none;
     }
     .tz-headerHome nav > ul > li > ul.non_mega_menu > li > a:before {
@@ -731,7 +731,7 @@ html[xmlns] .slides {
     padding-right: 0;
 }
 .tz_meetup_header_option {
-    background: #e45914;
+    background: #843A51;
     padding: 7px 0;
     transition: all 0.2s linear 0s;
     -moz-transition: all 0.2s linear 0s;
@@ -796,7 +796,7 @@ span.tz-search-header3 {
 }
 .tz-menuEffect,
 .tz-homeEff {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(255, 255, 255, 0.9);
 }
 .tz-homeType2.tz-menuEffect-1 .tz_meetup_header_option {
     height: 0;
@@ -817,7 +817,7 @@ a.tz_upcoming_event {
     -o-border-radius: 3px;
 }
 a.tz_upcoming_event:hover {
-    color: #e45914;
+    color: #843A51;
 }
 p.tz_description_event {
     display: inline-block;
@@ -946,11 +946,11 @@ p.tz_description_event {
     text-decoration: none;
     color: #ffffff;
     font-weight: 500;
-    background: #e45914;
+    background: #843A51;
     padding: 10px 35px;
     display: inline-block;
     font-size: 12px;
-    border: 2px solid #e45914;
+    border: 2px solid #843A51;
     margin: 0 10px;
     border-radius: 25px;
     -webkit-border-radius: 25px;
@@ -1053,7 +1053,7 @@ h3.tz_meetup_general_title em {
 span.tz_meetup_video_sub_title {
     display: inline-block;
     font-weight: 500;
-    color: #e45914;
+    color: #843A51;
     text-transform: uppercase;
     margin-top: 5px;
 }
@@ -1113,16 +1113,16 @@ a.tz_btn_video_meetup.tz_meetup_btn_dark:hover {
     background: #242732;
 }
 a.tz_btn_video_meetup.tz_meetup_bnt_orange {
-    color: #e45914;
-    border-color: #e45914;
+    color: #843A51;
+    border-color: #843A51;
 }
 a.tz_btn_video_meetup.tz_meetup_bnt_orange:hover {
     color: #fff;
-    background: #e45914;
+    background: #843A51;
 }
 a.tz_btn_video_meetup.tz_meetup_btn_dark.tz_btn_shop_meetup {
-    background: #e45914;
-    border: 2px solid #e45914;
+    background: #843A51;
+    border: 2px solid #843A51;
     color: #ffffff;
 }
 a.tz_btn_video_meetup.tz_meetup_btn_dark.tz_btn_shop_meetup:hover {
@@ -1172,7 +1172,7 @@ a.tz_btn_video_meetup.tz_meetup_custom {
 }
 .tz_btn_play_video a.tz_btn_easy i.fa {
     line-height: 90px;
-    color: #e45914;
+    color: #843A51;
     font-size: 30px;
     margin-left: 9px;
 }
@@ -1190,7 +1190,7 @@ a.tz_btn_video_meetup.tz_meetup_custom {
 }
 .tzCounter_type .tz-counter-font i.fa {
     margin-bottom: 10px;
-    color: #e45914;
+    color: #843A51;
     font-size: 36px;
 }
 .tzCounter_type .tz-counter-image {
@@ -1223,7 +1223,7 @@ a.tz_btn_video_meetup.tz_meetup_custom {
 .tzCounter_type p.tz-counter-title {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
-    color: #e45914;
+    color: #843A51;
 }
 
 /* 4.4 - Text Box Button */
@@ -1235,7 +1235,7 @@ a.tz_btn_video_meetup.tz_meetup_custom {
     margin-bottom: 0;
 }
 #tz_text_box_button h3 span{
-    color: #e45914;
+    color: #843A51;
 }
 #tz_text_box_button p {
     font-size: 16px;
@@ -1320,11 +1320,11 @@ a.tz_btn_video_meetup.tz_meetup_custom {
     margin-top: -50px;
 }
 .tz_slider_meetup .owl-theme .owl-dots .owl-dot.active span {
-    background: #e45914;
+    background: #843A51;
 }
 .tz_slider_meetup .owl-theme .owl-dots .owl-dot span {
     background: transparent none repeat scroll 0 0;
-    border: 2px solid #e45914;
+    border: 2px solid #843A51;
     height: 15px;
     width: 15px;
     opacity: 1;
@@ -1428,7 +1428,7 @@ span.tz_meetup_video_sub_title i.fa.tz_icon_position_left {
 }
 .tz_bk_box_text_meetup {
     padding: 75px 80px 75px 0;
-    background-image: url("images/bk-meetup-2.jpg");
+    background-color: #9D5763;
 }
 .tz_maniva_meetup_title h3 em {
     font-weight: 400;
@@ -1452,7 +1452,7 @@ span.tz_meetup_video_sub_title i.fa.tz_icon_position_left {
 .tz_maniva_meetup_title.tz_maniva_meetup_title_type3 h3 .tz_title_line_left {
     position: absolute;
     left: 100%;
-    background: #e45914;
+    background: #843A51;
     top: 50%;
     height: 1px;
     width: 100%;
@@ -1460,7 +1460,7 @@ span.tz_meetup_video_sub_title i.fa.tz_icon_position_left {
 .tz_maniva_meetup_title.tz_maniva_meetup_title_type3 h3 .tz_title_line_right {
     position: absolute;
     right: 100%;
-    background: #e45914;
+    background: #843A51;
     top: 50%;
     height: 1px;
     width: 100%;
@@ -1586,7 +1586,7 @@ span.tz_meetup_video_sub_title i.fa.tz_icon_position_left {
 }
 span.tz_text_hover_speaker {
     text-transform: uppercase;
-    color: #e45914;
+    color: #843A51;
     font-size: 12px;
     display: inline-block;
     background: #ffffff;
@@ -1611,7 +1611,7 @@ span.tz_text_hover_speaker {
     -o-transition: all 0.4s ease 0s;
 }
 .tz_member_meetup .tz_text_hover_speaker {
-    background: #e45914;
+    background: #843A51;
     color: #ffffff;
 }
 .tz_our_speakers:hover .tz_text_hover_speaker {
@@ -1702,7 +1702,7 @@ span.tz_text_hover_speaker {
 }
 span.tz_text_hover_speaker {
     text-transform: uppercase;
-    color: #e45914;
+    color: #843A51;
     font-size: 12px;
     display: inline-block;
     background: #ffffff;
@@ -1753,7 +1753,7 @@ span.tz_text_hover_speaker {
     cursor: pointer;
 }
 .tz_our_speakers:hover .tz_our_speakers_img:before {
-    background: rgba(228, 89, 20, 0.8);
+
     z-index: 1;
     transition: all 0.4s linear 0s;
     -moz-transition: all 0.4s linear 0s;
@@ -1762,7 +1762,7 @@ span.tz_text_hover_speaker {
     -o-transition: all 0.4s linear 0s;
 }
 .tz_our_speakers:hover .tz_our_speakers_container {
-    border-bottom-color: #e45914;
+    border-bottom-color: #843A51;
 }
 .tz_our_speakers:hover img {
     transition: all 0.4s linear 0s;
@@ -1816,7 +1816,7 @@ span.tz_text_hover_speaker {
 }
 .tz-md-close em {
     font-size: 14px;
-    color: #e45914;
+    color: #843A51;
     text-transform: uppercase;
     margin: 15px 0;
     cursor: pointer;
@@ -1834,10 +1834,10 @@ span.tz_text_hover_speaker {
     -o-transition: all 0.2s linear 0s;
 }
 .tz-md-modal-speakers span.md-close i.fa:hover {
-    color: #e45914;
+    color: #843A51;
 }
 .tz_modal_speakers_content_title {
-    color: #e45914;
+    color: #843A51;
 }
 .tz_modal_speakers_content {
     padding: 0 15px;
@@ -1852,7 +1852,7 @@ span.tz_text_hover_speaker {
     margin-bottom: 20px;
 }
 h4.tz_modal_name {
-    color: #e45914;
+    color: #843A51;
     font-size: 30px;
     font-family: Roboto, sans-serif;
     text-transform: uppercase;
@@ -1928,7 +1928,7 @@ span.tz_modal_employment {
     -o-transition: all 0.2s linear 0s;
 }
 .tz_modal_speakers_social a:hover {
-    color: #e45914;
+    color: #843A51;
     text-decoration: none;
 }
 .tz-plazart-list li span.tz_icon_maniva_list_custom i {
@@ -2018,8 +2018,8 @@ span.tz_modal_employment {
 .tz_tab_custom .nav-tabs > li.active > a:focus,
 .tz_tab_custom .nav-tabs > li.active > a:hover,
 .tz_tab_custom .nav-tabs > li > a:hover {
-    background: #e45914;
-    border-color: #e45914;
+    background: #843A51;
+    border-color: #843A51;
     color: #ffffff;
 }
 .tz_tab_content {
@@ -2028,7 +2028,7 @@ span.tz_modal_employment {
 .tz_box_event_meetup h3 {
     font-size: 20px;
     text-transform: uppercase;
-    color: #e45914;
+    color: #843A51;
     letter-spacing: 1px;
     margin: 0 0 5px;
 }
@@ -2106,7 +2106,7 @@ span.tz_modal_employment {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    background: #e45914;
+    background: #843A51;
     content: '';
     top: 45px;
     left: -136px;
@@ -2132,7 +2132,7 @@ span.tz_modal_employment {
     font-size: 11px;
 }
 .tz_event_meetup_content .tz_meetup_box_detail p i.fa {
-    color: #e45914;
+    color: #843A51;
 }
 .tz_event_meetup_content .tz_meetup_box_detail h4 {
     color: #595c6a;
@@ -2210,7 +2210,7 @@ span.tz_modal_employment {
     margin: 35px 0 40px 0;
 }
 .tzTwitter-item span.tweet_text a {
-    color: #e45914;
+    color: #843A51;
 }
 .tzTwitter-item span.tz_tweet_meetup_name {
     margin-bottom: 5px;
@@ -2228,7 +2228,7 @@ span.tz_modal_employment {
 .tzTwitter-slider.owl-theme .owl-dots .owl-dot span {
     width: 20px;
     height: 20px;
-    border: 2px solid #e45914;
+    border: 2px solid #843A51;
     background: transparent;
     opacity: 1;
     transition: all 0.2s linear 0s;
@@ -2239,10 +2239,10 @@ span.tz_modal_employment {
     margin: 0 5px;
 }
 .tzTwitter-slider.owl-theme .owl-dots .owl-dot span:hover {
-    background: #e45914;
+    background: #843A51;
 }
 .tzTwitter-slider.owl-theme .owl-dots .owl-dot.active span {
-    background: #e45914;
+    background: #843A51;
 }
 
 /* 4.11 - Gallery */
@@ -2264,7 +2264,7 @@ span.tz_modal_employment {
 
 /* 4.12 - Box text title_2 */
 #box_text_title_2 {
-    background-color: #e45914;
+    background-color: #843A51;
     padding: 75px 0 80px;
     position: relative;
 }
@@ -2286,7 +2286,7 @@ span.tz_modal_employment {
 .tzRow_ArrowType4 {
     border-left: 60px solid rgba(0, 0, 0, 0);
     border-right: 60px solid rgba(0, 0, 0, 0);
-    border-top: 30px solid #e45914;
+    border-top: 30px solid #843A51;
     left: 50%;
     margin-left: -62px;
     position: absolute;
@@ -2299,8 +2299,6 @@ span.tz_modal_employment {
     position: relative;
 }
 #speaker_client {
-    background-image: url("images/bk-101.png");
-    background-repeat: no-repeat;
     padding: 110px 0 120px;
 }
 .partner-slider {
@@ -2319,17 +2317,17 @@ span.tz_modal_employment {
     margin: 0 auto;
 }
 .tz_meetup_btn a.tz_meetup_bnt_orange {
-    color: #e45914;
-    border-color: #e45914;
+    color: #843A51;
+    border-color: #843A51;
 }
 .tz_meetup_btn a.tz_meetup_bnt_orange:hover {
-    background: #e45914;
+    background: #843A51;
     color: #ffffff;
 }
 .tz_meetup_btn a.tz_meetup_bnt_orange_bk {
-    background: #e45914;
+    background: #843A51;
     color: #ffffff;
-    border-color: #e45914;
+    border-color: #843A51;
 }
 .tz-partner .tz_partner_prevs_type2 {
     background: transparent;
@@ -2348,7 +2346,7 @@ span.tz_modal_employment {
     -o-transition: all 0.3s ease 0s;
 }
 .tz-partner .tz_partner_prevs_type2:hover {
-    color: #e45914;
+    color: #843A51;
 }
 .tz-partner .tz_partner_nexts_type2 {
     background: transparent;
@@ -2367,7 +2365,7 @@ span.tz_modal_employment {
     -o-transition: all 0.3s ease 0s;
 }
 .tz-partner .tz_partner_nexts_type2:hover {
-    color: #e45914;
+    color: #843A51;
 }
 
 /* 4.14 - FAQ */
@@ -2395,7 +2393,7 @@ span.tz_modal_employment {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    background: #e45914;
+    background: #843A51;
     text-align: center;
     float: left;
     margin-top: 4px;
@@ -2461,7 +2459,7 @@ span.tz_modal_employment {
     display: table;
 }
 .tz_register_meetup_pricing_item:hover .tz_register_meetup_pricing_item_container {
-    background: #e45914;
+    background: #843A51;
 }
 .tz_register_meetup_pricing_item:hover .tz_register_meetup_pricing_item_container h3,
 .tz_register_meetup_pricing_item:hover .tz_register_meetup_pricing_item_container p {
@@ -2474,12 +2472,12 @@ span.tz_modal_employment {
     content: '';
     border-bottom: 25px solid transparent;
     border-top: 25px solid transparent;
-    border-left: 25px solid #e45914;
+    border-left: 25px solid #843A51;
     margin-top: -22px;
     z-index: -1;
 }
 .tz_register_meetup_pricing_item.active .tz_register_meetup_pricing_item_container {
-    background: #e45914;
+    background: #843A51;
 }
 .tz_register_meetup_pricing_item.active .tz_register_meetup_pricing_item_container h3,
 .tz_register_meetup_pricing_item.active .tz_register_meetup_pricing_item_container p {
@@ -2492,7 +2490,7 @@ span.tz_modal_employment {
     content: '';
     border-bottom: 25px solid transparent;
     border-top: 25px solid transparent;
-    border-left: 25px solid #e45914;
+    border-left: 25px solid #843A51;
     margin-top: -22px;
     z-index: -1;
 }
@@ -2539,7 +2537,7 @@ span.tz_modal_employment {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: #e45914;
+    background-color: #843A51;
     border-radius: 0 5px 5px 0;
     -webkit-border-radius: 0 5px 5px 0;
     -moz-border-radius: 0 5px 5px 0;
@@ -2600,7 +2598,7 @@ span.tz_modal_employment {
     -o-transition: all 0.3s linear 0s;
 }
 .tz_meetup_form p span input:focus {
-    border: 2px solid #e45914;
+    border: 2px solid #843A51;
 }
 p.tz_meetup_btn_paypal {
     margin: 45px 0 0;
@@ -2751,9 +2749,9 @@ p.tz_meetup_btn_paypal input.tz_paypal_submit {
     -o-transition: all 0.2s linear 0s;
 }
 .tz_recent_blog_meetup button.tz_recent_blog_pev_meetup:hover {
-    background: #e45914;
+    background: #843A51;
     color: #ffffff;
-    border: 1px solid #e45914;
+    border: 1px solid #843A51;
 }
 .tz_recent_blog_meetup button.tz_recent_blog_next_meetup {
     right: -125px;
@@ -2766,9 +2764,9 @@ p.tz_meetup_btn_paypal input.tz_paypal_submit {
     -o-transition: all 0.2s linear 0s;
 }
 .tz_recent_blog_meetup button.tz_recent_blog_next_meetup:hover {
-    background: #e45914;
+    background: #843A51;
     color: #ffffff;
-    border: 1px solid #e45914;
+    border: 1px solid #843A51;
 }
 .tz_meetup_slider_img {
     position: relative;
@@ -2894,7 +2892,7 @@ span.tz_meetup_infomation small i.fa {
     position: absolute;
     top: 0;
     left: 0;
-    background: #e45914;
+    background: #843A51;
     z-index: 1;
     padding: 13px 15px;
     text-align: center;
@@ -3003,7 +3001,7 @@ span.tz_meetup_infomation small i.fa {
     margin: 0;
 }
 .TzContactInfo li a {
-    color: #e45914;
+    color: #843A51;
     text-decoration: none;
 }
 .TzContactInfo h4 {
@@ -3024,7 +3022,7 @@ span.tz_meetup_infomation small i.fa {
 .tzContact_2_content h3 {
     font-family: Roboto, sans-serif;
     font-weight: 300;
-    color: #e45914;
+    color: #843A51;
     font-size: 24px;
     margin-bottom: 0;
 }
@@ -3060,7 +3058,7 @@ span.tz_meetup_infomation small i.fa {
     width: 18px;
     height: 16px;
     text-align: center;
-    background: #e45914;
+    background: #843A51;
     line-height: 17px;
     font-size: 11px;
     border-radius: 3px;
@@ -3188,7 +3186,7 @@ span.tz_meetup_infomation small i.fa {
     margin-bottom: 40px;
 }
 .tz-blogDefault .tz-blogItem .tz-blogContent .tz-blogBox {
-    border-bottom: 2px solid #e45914;
+    border-bottom: 2px solid #843A51;
     padding: 30px 30px 35px;
     background: #f8f8f9;
 }
@@ -3312,7 +3310,7 @@ span.tz_meetup_infomation small i.fa {
 }
 .tz-blogDefault .tz-blogItem .tz-blogContent .tz-blogBox .tz-BlogImage a:hover span,
 .tz-blogDefault .tz-blogItem .tz-blogContent .tz-blogBox .tz-BlogImage a:hover {
-    background-color: #e45914;
+    background-color: #843A51;
     transition: none;
 }
 .tz-blogDefault .tz-blogItem .tz-blogContent .tz-blogBox p {
@@ -3321,7 +3319,7 @@ span.tz_meetup_infomation small i.fa {
     line-height: 1.7em;
 }
 .tz-blogDefault .tz-blogItem .tz-blogContent .tz-blogBox p span {
-    color: #e45914;
+    color: #843A51;
 }
 .tz-blogDefault .tz-blogItem .tz-blogContent .tz-blogBox a.tzreadmore {
     color: #242732;
@@ -3337,7 +3335,7 @@ span.tz_meetup_infomation small i.fa {
     margin-left: 10px;
 }
 .tz-blogDefault .tz-blogItem .tz-blogContent .tz-blogBox a.tzreadmore span:hover {
-    color: #e45914;
+    color: #843A51;
 }
 .tz-blogDefault .tz-blogItem .tz-blogContent .tz-blogBox.tz-blogBoxSlider {
     background: #242732;
@@ -3388,8 +3386,8 @@ span.tz_meetup_infomation small i.fa {
 .tz-blogDefault .wp-pagenavi span.current,
 .tz-blogDefault .wp-pagenavi a:hover,
 .tz-blogDefault .wp-pagenavi span:hover {
-    background-color: #e45914;
-    border: 1px solid #e45914;
+    background-color: #843A51;
+    border: 1px solid #843A51;
     text-decoration: none;
     color: #ffffff;
 }
@@ -3485,7 +3483,7 @@ span.tz_meetup_infomation small i.fa {
 .tz-blogMasonry .tzBlogmasonry .blogMasonry-item .tz-blogInner .tz-blogDate .tz-DateText {
     width: 50px;
     height: 50px;
-    background: #e45914;
+    background: #843A51;
     padding: 5px;
 }
 .tz-blogMasonry .tzBlogmasonry .blogMasonry-item .tz-blogInner .tz-blogDate .tz-DateText .tz-TextDay {
@@ -3528,7 +3526,7 @@ span.tz_meetup_infomation small i.fa {
 .tz-blogMasonry .tzBlogmasonry .blogMasonry-item .tz-blogInner .tz-blogInfo {
     border: 1px solid #dddddd;
     padding: 15px 18px 20px;
-    border-bottom: 2px solid #e45914;
+    border-bottom: 2px solid #843A51;
 }
 .tz-blogMasonry .tzBlogmasonry .blogMasonry-item .tz-blogInner .tz-blogInfo h4.title {
     margin: 0;
@@ -3546,7 +3544,7 @@ span.tz_meetup_infomation small i.fa {
 }
 .tz-blogMasonry .tzBlogmasonry .blogMasonry-item .tz-blogInner .tz-BlogImage a:hover span,
 .tz-blogMasonry .tzBlogmasonry .blogMasonry-item .tz-blogInner .tz-BlogImage a:hover {
-    background-color: #e45914;
+    background-color: #843A51;
 }
 .tz-blogMasonry .tzBlogmasonry .blogMasonry-item .tz-blogInner .tz-blogInfo .tzinfomation {
     display: block;
@@ -3583,7 +3581,7 @@ span.tz_meetup_infomation small i.fa {
 }
 .tz-blogMasonry .tzBlogmasonry .blogMasonry-item .tz-blogInner .tz-blogInfo a.tzreadmore:hover {
     text-decoration: none;
-    color: #e45914;
+    color: #843A51;
 }
 .tz-blogMasonry .tzBlogmasonry .blogMasonry-item .tz-blogInner .tz-blogInfo .tzinfomation small,
 .tz-blogMasonry .tzBlogmasonry .blogMasonry-item .tz-blogInner .tz-blogInfo .tzinfomation a {
@@ -3845,8 +3843,8 @@ span.tz_meetup_infomation small i.fa {
 }
 .tz-blogSingle .tz-blogSingleContent .tz-SingleContentBox span.tztag a:hover {
     color: #ffffff;
-    background-color: #e45914;
-    border-color: #e45914;
+    background-color: #843A51;
+    border-color: #843A51;
 }
 .tz-blogSingle .author {
     padding-bottom: 50px;
@@ -3931,7 +3929,7 @@ span.tz_meetup_infomation small i.fa {
     background: #f56048;
 }
 .tz-blogSingle .author .author-box .author-avata .tz-author-social a span.TzSocialLink-fa-linkedin {
-    background: #e45914;
+    background: #843A51;
 }
 .tz-blogSingle .author .author-box .author-avata .tz-author-social a span i.fa {
     font-size: 14px;
@@ -3971,7 +3969,7 @@ span.tz_meetup_infomation small i.fa {
 }
 .tz-blogSingle .author .author-box .author-info h3 span.tz_author_meetup {
     font-family: 'Lato', sans-serif;
-    color: #e45914;
+    color: #843A51;
     font-size: 11px;
     text-transform: uppercase;
 }
@@ -4062,7 +4060,7 @@ span.tz_meetup_infomation small i.fa {
     -o-transform: rotate(90deg);
 }
 .tz-blogSingle .tz_meetup_related_posts .tz_meetup_related_posts_content .tz-blog-item .tz-blog-thubnail-item .tz-blog-icon-item-img a:hover {
-    background: #e45914;
+    background: #843A51;
     color: #ffffff;
 }
 .tz-blogSingle .tz_meetup_related_posts .tz_meetup_related_posts_content .tz-blog-item .tz-blog-thubnail-item-img:after {
@@ -4187,10 +4185,10 @@ span.tz_meetup_infomation small i.fa {
     background: rgba(0, 0, 0, 0.5);
 }
 .tz-blogSingle .tz_meetup_related_posts .tz_meetup_related_posts_content .tz-blog-item:hover .tz-blog-thubnail-item-content {
-    background: #e45914;
+    background: #843A51;
 }
 .tz-blogSingle .tz_meetup_related_posts .tz_meetup_related_posts_content .tz-blog-item:hover .tz-blog-thubnail-item-content:after {
-    border-bottom-color: #e45914;
+    border-bottom-color: #843A51;
 }
 .tz-blogSingle .tz_meetup_related_posts .tz_meetup_related_posts_content .tz-blog-item:hover .tz-blog-thubnail-item-content h4 a {
     color: #ffffff;
@@ -4444,7 +4442,7 @@ span.tz_meetup_infomation small i.fa {
     text-indent: 100em;
 }
 .tz_SingleContentBox_general .tz-blogSlider ol.flex-control-nav li a.flex-active {
-    background: #e45914;
+    background: #843A51;
 }
 .tz-blogSingle .tz-blogSingleContent .tz-SingleContentBox .tz-blogVideo,
 .tz-blogSingle .tz-blogSingleContent .tz-SingleContentBox .tz-BlogAudio,
@@ -4492,7 +4490,7 @@ span.tz_meetup_infomation small i.fa {
 }
 .tz-sidebar aside.widget ul li:hover a {
     text-decoration: none;
-    color: #e45914;
+    color: #843A51;
 }
 .tz-sidebar aside.widget.widget_categories ul li {
     border-bottom: 1px solid #dddddd;
@@ -4538,7 +4536,7 @@ span.tz_meetup_infomation small i.fa {
     border: none;
 }
 .tz-sidebar aside.widget.widget_archive ul li:hover a {
-    color: #e45914;
+    color: #843A51;
 }
 .tz-sidebar aside.widget:hover .module-title:after {
     width: 100%;
@@ -4592,7 +4590,7 @@ aside.widget.tzsocial a.tzSocial-no {
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
-    background: #e45914;
+    background: #843A51;
     text-decoration: none;
     display: inline-block;
     margin-bottom: 5px;
@@ -4667,7 +4665,7 @@ aside.widget .tagcloud a {
     -o-transition: all 0.3s ease-in-out 0s;
 }
 aside.widget .tagcloud a:hover {
-    background: #e45914;
+    background: #843A51;
     color: #ffffff;
 }
 aside.widget ul.pretty_flickr:after {
@@ -4771,7 +4769,7 @@ aside.widget .tz-flickr a img {
     content: "\f099";
     font-family: 'FontAwesome';
     font-size: 20px;
-    background: #e45914;
+    background: #843A51;
     color: #ffffff;
     top: 3px;
     left: 0;
@@ -4791,7 +4789,7 @@ aside.widget .tz-flickr a img {
     margin-left: 40px;
 }
 .tz-sidebar aside.dw_twitter .dw-twitter-inner .tweet-item .tweet-content a {
-    color: #e45914;
+    color: #843A51;
 }
 .tz-sidebar aside.dw_twitter .dw-twitter-inner .tweet-item .tweet-content a:hover {
     text-decoration: none;
@@ -4871,7 +4869,7 @@ aside.widget .tz-flickr a img {
     background: #c22d81;
 }
 .tz_contact_detail_meet span.tz_contact_meet_icon.tz_contact_meet_icon_bk_2 {
-    background: #e45914;
+    background: #843A51;
 }
 .tz_contact_detail_meet span.tz_contact_meet_icon.tz_contact_meet_icon_bk_3 {
     background: #24aab3;
@@ -4907,7 +4905,7 @@ aside.widget .tz-flickr a img {
     -o-border-radius: 3px;
 }
 .wpcf7-form .tz_meetup_wpcf7-form p span input:focus {
-    border: 1px solid #e45914;
+    border: 1px solid #843A51;
     background: transparent;
 }
 .wpcf7-form .tz_meetup_wpcf7-form p span textarea.wpcf7-textarea {
@@ -4926,7 +4924,7 @@ aside.widget .tz-flickr a img {
     height: 185px;
 }
 .wpcf7-form .tz_meetup_wpcf7-form p span textarea.wpcf7-textarea:focus {
-    border: 1px solid #e45914;
+    border: 1px solid #843A51;
     outline: -webkit-focus-ring-color auto 0;
     background: transparent;
 }
@@ -5015,7 +5013,7 @@ aside.widget h3.module-title:before {
     position: absolute;
     left: 0;
     bottom: 0;
-    background: #e45914;
+    background: #843A51;
 }
 .tz-footer.tz-footer-type1 aside.widget h3.module-title:before {
     display: none;
@@ -5047,7 +5045,7 @@ aside.widget h3.module-title:before {
     width: 33.2%;
     top: 50%;
     left: 0;
-    background: #e45914;
+    background: #843A51;
 }
 .tz-footer.tz-footer-type1 aside.widget.MultiColorSubscribeWidget .multicolor-subscribe:after {
     position: absolute;
@@ -5056,7 +5054,7 @@ aside.widget h3.module-title:before {
     width: 33.2%;
     top: 50%;
     right: 0;
-    background: #e45914;
+    background: #843A51;
 }
 .tz-footer.tz-footer-type1 aside.widget.MultiColorSubscribeWidget .multicolor-subscribe .max-email-box {
     width: 30%;
@@ -5087,8 +5085,8 @@ aside.widget h3.module-title:before {
     width: auto;
     margin: 0;
     position: absolute;
-    background: #e45914 none repeat scroll 0 0;
-    border: 1px solid #e45914;
+    background: #843A51 none repeat scroll 0 0;
+    border: 1px solid #843A51;
     color: #ffffff;
 }
 .multicolor-subscribe-form .mcolor-subbox {
@@ -5115,10 +5113,10 @@ aside.widget h3.module-title:before {
     color: #495266;
 }
 .tz-footer.tz-footer-type1 aside.tzsocial a i:hover {
-    color: #e45914;
+    color: #843A51;
 }
 .tz-footer.tz-footer-type1 aside.tzsocial a.tzSocial-yes i {
-    color: #e45914;
+    color: #843A51;
 }
 .tz-footer.tz-footer-type1 aside.tzsocial .tzSocial_bg_meetup {
     display: inline-block;
@@ -5248,7 +5246,7 @@ aside.widget h3.module-title:before {
 @media (max-width: 991px) {
 
     .tz-headerHome {
-        background: none repeat scroll 0 0 rgba(0,0,0,.7);
+        background: none repeat scroll 0 0 rgba(255,255,255,1);
         position: relative;
         padding: 25px 0;
     }
@@ -5268,7 +5266,7 @@ aside.widget h3.module-title:before {
         margin: 0;
         padding: 2px 10px;
         font-size: 21px;
-        background: #e45914;
+        background: #843A51;
         display: block;
     }
     .navbar-collapse.collapse {
@@ -5324,7 +5322,7 @@ aside.widget h3.module-title:before {
         margin: -15px 0 0;
         right: 80px;
         width: auto;
-        background: #e45914;
+        background: #843A51;
         color: #fff;
         padding: 3px 12px;
     }
@@ -5344,7 +5342,7 @@ aside.widget h3.module-title:before {
     .tz-headerHome nav > ul > li:hover,
     .tz-homeType2.tz-homeTypeRelative nav ul.tz-nav > li:hover > a,
     .tz-homeType1.tz-homeTypeFixed nav ul.tz-nav > li:hover > a {
-        color: #e45914;
+        color: #843A51;
         background: #262939;
         -webkit-transition: all 0.3s ease;
         -moz-transition: all 0.3s ease;
@@ -5354,7 +5352,7 @@ aside.widget h3.module-title:before {
     }
     .tz-homeType2.tz-homeTypeRelative nav ul.tz-nav > li:hover > a,
     .tz-homeType1.tz-homeTypeFixed nav ul.tz-nav > li:hover > a {
-        border-color: #e45914;
+        border-color: #843A51;
     }
     .tz-headerHome nav.tz-menu li.menu-item-has-children:after {
         content: "\f105";
@@ -5366,7 +5364,7 @@ aside.widget h3.module-title:before {
         color: #454545;
     }
     .tz-headerHome nav.tz-menu li.menu-item-has-children:hover:after {
-        color: #e45914;
+        color: #843A51;
         content: "\f107";
     }
     .tz-headerHome nav > ul > li > ul.non_mega_menu > li:first-child {
@@ -5779,6 +5777,15 @@ body {
     background-image:         linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
+/* HELPERS */
+.lechazo-center{
+	text-align: center;
+	margin: auto;
+}
+.lechazo-reverted{
+	color: #9d5763 !important;
+}
+
 .lechazo-logo {
     display: flex;
 
@@ -5834,6 +5841,9 @@ body {
     overflow: auto;
 }
 
+
+
+
 /* MAILCHIMP */
 #mc_embed_signup {
     padding: 15px;
@@ -5849,4 +5859,14 @@ body {
 }
 #mc_embed_signup input.email {
     border-color: #aeb788 !important;
+}
+
+/*SPONSORS*/
+
+/* REGISTRATION */
+.lechazo-cta{
+	margin: auto;
+	margin-top: 30px;
+	border-radius: 6px;
+	
 }
