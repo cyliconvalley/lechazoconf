@@ -1752,7 +1752,7 @@ span.tz_text_hover_speaker {
 }
 .tz_our_speakers {
     margin-bottom: 43px;
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 .tz_our_speakers:hover .tz_our_speakers_img:before {
 
@@ -5957,6 +5957,7 @@ body {
     text-decoration: none;
 
     background-color: #6a8e1a;
+	border-bottom: 4px solid #4E6715;
 }
 .lechazo-cta .lechazo-register-link:active{
 	text-decoration: none;

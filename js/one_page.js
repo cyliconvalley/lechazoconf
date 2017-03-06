@@ -50,7 +50,7 @@ jQuery(document).ready(function() {
         currentClass: 'current',
         changeHash: false,
         scrollSpeed: 800,
-        scrollOffset: -200,
+        scrollOffset: 200,
         scrollThreshold: 0.5,
         filter: '',
         easing: '',
@@ -59,9 +59,11 @@ jQuery(document).ready(function() {
         },
         end: function () {
             /* I get fired when the animation is ending */
+			jQuery('.lechazo-cta-top').removeClass('current');
         },
         scrollChange: function ($currentListItem) {
             /* I get fired when you enter a section and I pass the list item of the section */
+			jQuery('.lechazo-cta-top').removeClass('current');
         }
     });
 
