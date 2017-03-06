@@ -876,7 +876,7 @@ p.tz_description_event {
 }
 .tz_home_slider_meetup .tz_content_slider_meetup a {
     text-decoration: none;
-	padding-right: 10px;
+	/*padding-right: 10px;*/
     font-size: 30px;
 }
 .tz_home_slider_meetup .tz_content_slider_meetup .tz_meetup_slider_home_text p {
@@ -5840,6 +5840,11 @@ body {
 
     overflow: auto;
 }
+.fa {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
 .fa-twitter {
     color: #1da1f2;
 }
