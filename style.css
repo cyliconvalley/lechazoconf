@@ -5778,9 +5778,10 @@ body {
 .lechazo-reverted {
     color: #9d5763 !important;
 }
-.lechazo-link{
-	font-weight: 700;
-	text-decoration: underline;
+.lechazo-link {
+    font-weight: 700;
+
+    text-decoration: underline;
 }
 .lechazo-logo {
     display: flex;
@@ -5904,6 +5905,7 @@ body {
 .lechazo-map {
     display: block;
 
+    width: 100%;
     max-width: 700px;
     margin: 30px;
     margin-right: auto;
@@ -5944,7 +5946,7 @@ body {
 .lechazo-cta .lechazo-register-link:hover {
     text-decoration: none;
 
-    background-color: #6A8E1A;
+    background-color: #6a8e1a;
 }
 .lechazo-register-link img {
     border-radius: 6px;
@@ -5981,11 +5983,11 @@ body {
 
     border-bottom: 1px solid #fff;
 }
-.lechazo-cta-top{
-	margin-top: 50px;
+.lechazo-cta-top {
+    margin-top: 50px;
 }
-.lechazo-cta-top .lechazo-cta-claim{
-	font-size: 24px;
+.lechazo-cta-top .lechazo-cta-claim {
+    font-size: 24px;
 }
 .lechazo-cta-box {
     display: block;
