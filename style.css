@@ -5467,6 +5467,11 @@ aside.widget h3.module-title:before {
     .tz-blogDefault .wp-pagenavi {
         margin: 35px 0;
     }
+	.lechazo-text {
+	    width: 90% !important;
+	    margin: auto;
+	    padding: 20px;
+	}
 
 }
 
