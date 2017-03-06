@@ -1743,11 +1743,11 @@ span.tz_text_hover_speaker {
 }
 .tz_our_speakers_container h4 {
     font-weight: 700;
-    font-size: 15px;
+    font-size: 28px;
     margin-bottom: 2px;
 }
 .tz_our_speakers_container span {
-    font-size: 12px;
+    font-size: 16px;
     color: #aaaaaa;
 }
 .tz_our_speakers {
@@ -5870,7 +5870,7 @@ body {
     box-shadow: 0 20px 25px 0 rgba(18, 17, 30, .15);
 }
 .lechazo-speaker-bio p {
-    font-size: 14px;
+    font-size: 16px;
 
     padding: 15px;
 
