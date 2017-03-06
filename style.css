@@ -876,7 +876,6 @@ p.tz_description_event {
 }
 .tz_home_slider_meetup .tz_content_slider_meetup a {
     text-decoration: none;
-    color: #1da1f2;
 	padding-right: 10px;
     font-size: 30px;
 }
@@ -5774,7 +5773,10 @@ body {
 .lechazo-reverted {
     color: #9d5763 !important;
 }
-
+.lechazo-link{
+	font-weight: 700;
+	text-decoration: underline;
+}
 .lechazo-logo {
     display: flex;
 
@@ -5882,12 +5884,12 @@ body {
 #mc_embed_signup .button {
     padding: 10px;
 
-    background-color: #aeb788 !important;
+    background-color: #d3a36e !important;
 }
 #mc_embed_signup input.email {
     padding: 10px;
 
-    border-color: #aeb788 !important;
+    border-color: #d3a36e !important;
 }
 
 /* LOCATION */
@@ -5931,13 +5933,13 @@ body {
 
     color: #fff;
     border-radius: 6px;
-    background-color: #7ac70c;
+    background-color: #86b817;
     box-shadow: 0 20px 25px 0 rgba(18, 17, 30, .15);
 }
 .lechazo-cta .lechazo-register-link:hover {
     text-decoration: none;
 
-    background-color: #86b817;
+    background-color: #6A8E1A;
 }
 .lechazo-register-link img {
     border-radius: 6px;
@@ -5973,4 +5975,25 @@ body {
     padding: 3px;
 
     border-bottom: 1px solid #fff;
+}
+.lechazo-cta-top{
+	margin-top: 50px;
+}
+.lechazo-cta-top .lechazo-cta-claim{
+	font-size: 24px;
+}
+.lechazo-cta-box {
+    display: block;
+
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    vertical-align: middle;
+}
+.lechazo-cta-box a {
+    display: inline-block;
+
+    margin: auto;
+
+    text-align: center;;
 }

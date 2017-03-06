@@ -1,30 +1,3 @@
-function TzTemplateResizeImage(obj){
-    "use strict";
-    var widthStage;
-    var heightStage ;
-    var widthImage;
-    var heightImage;
-    obj.each(function (i,el){
-
-        heightStage = jQuery(this).height();
-
-        widthStage = jQuery (this).width();
-
-        var img_url = jQuery(this).find('img').attr('src');
-
-        var image = new Image();
-        image.src = img_url;
-
-        widthImage = image.naturalWidth;
-        heightImage = image.naturalHeight;
-
-        var tzimg	=	new resizeImage(widthImage, heightImage, widthStage, heightStage);
-        jQuery(this).find('img').css ({ top: tzimg.top, left: tzimg.left, width: tzimg.width, height: tzimg.height });
-
-
-    });
-
-}
 
 
 jQuery(document).ready(function(){
@@ -33,9 +6,12 @@ jQuery(document).ready(function(){
 
     /*back to top */
     jQuery('.tz-backtotop').click(function(){
-        jQuery('html, body').animate({scrollTop: '0px'}, 100);
+        jQuery('html, body').animate({scrollTop: '0px'}, 800);
         return false;
     });
+
+
+
 
     /* slider home */
     var $tz_home_slider_meetup = jQuery('.tz_home_slider_meetup');
@@ -264,31 +240,7 @@ jQuery(document).ready(function(){
 
     }
 
-    /* prettyPhoto for image gallery modal popup custom portfolio */
-    var $latestPhoto = jQuery("a[data-rel^='latestPhoto']");
-    if( $latestPhoto.length > 0){
-        $latestPhoto.prettyPhoto({
-            social_tools: false,
-            hook: 'data-rel'
-        });
-    }
 
-    /* prettyPhoto for image gallery modal popup */
-    var $prettyPhoto = jQuery("a[data-rel^='prettyPhoto']");
-    if ( $prettyPhoto.length > 0 ) {
-        $prettyPhoto.prettyPhoto({
-            social_tools: false,
-            hook: 'data-rel'
-        });
-    }
-    /* prettyPhoto for image flick */
-    var $prettyPhoto_flickr = jQuery("a[data-rel^='prettyPhoto_flickr']");
-    if ( $prettyPhoto_flickr.length > 0 ) {
-        $prettyPhoto_flickr.prettyPhoto({
-            social_tools: false,
-            hook: 'data-rel'
-        });
-    }
 
 
 });
@@ -325,7 +277,7 @@ jQuery(window).on("load resize",function(){
             jQuery(".tz_home_slider_meetup ul.bxslider li").css("height", ($height_width-$height_width_header) +'px' );
 
         }
-        TzTemplateResizeImage(jQuery('.tz_home_slider_meetup_setting .bx-viewport ul li'));
+        //TzTemplateResizeImage(jQuery('.tz_home_slider_meetup_setting .bx-viewport ul li'));
     }
 
     /* width column */
@@ -363,32 +315,9 @@ jQuery(window).on("load resize",function(){
 
     });
 
-    /* Our Team meetup start */
-    var $tz_meetup_our_team_thumbnail = jQuery(".tz_meetup_our_team_thumbnail");
-    if ( $tz_meetup_our_team_thumbnail.length ) {
 
-        if ( $win_width >= 992 ) {
-            jQuery('.tz_column_inner_meetup').each(function () {
-                var $to = jQuery(this).find('.tz_meetup_our_team_thumbnail').length;
-                var $height_vc_column_inner = jQuery(this).height();
-                $tz_meetup_our_team_thumbnail.css("height", ($height_vc_column_inner / $to));
 
-                TzTemplateResizeImage(jQuery('.tz_meetup_our_team_thumbnail'));
 
-            });
-        }
-    }
-
-    /* height TZGmap */
-    var tz_equal_height_gmap = jQuery(".tz_equal_height_gmap");
-    if ( tz_equal_height_gmap.length > 0 ){
-
-        if ( $win_width >= 992 ) {
-            var $Tzmap_meetup = tz_equal_height_gmap.parent().height();
-            tz_equal_height_gmap.css("height", $Tzmap_meetup);
-        }
-
-    }
 
 });
 

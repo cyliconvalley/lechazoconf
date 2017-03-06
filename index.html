@@ -52,9 +52,9 @@
 							<li><a href="#home">Inicio</a></li>
 							<li><a href="#about">¿Qué es esto?</a></li>
 							<li><a href="#our_speakers">Ponentes</a></li>
+							<li><a href="#register">Entradas</a></li>
 							<li><a href="#location">Localización</a></li>
 							<!--<li><a href="#agenda">Agenda</a></li>-->
-							<li><a href="#register">Entradas</a></li>
 							<li><a href="#speaker_client">Patrocinadores</a></li>
 						</ul>
 					</nav>
@@ -76,17 +76,23 @@
 				<div class="ds-table">
 					<div class="ds-table-cell">
 						<img class="lechazo-logo" src="img/logo-lechazo-color.svg" title="LechazoConf 2017" />
-						<div class="tz_meetup_slider_home_text">
-							<p class="lechazo-big">27 de mayo de 2017</p><p>Palacio de Congresos Conde Ansúrez &bull; Valladolid</p>
-						</div>
-
 						<div class="tz_meetup_social">
 							<span class="meetup_line_left"></span>
 							<a href="https://twitter.com/lechazoconf" target="_blank"><i class="fa fa-twitter"></i></a>
 							<a href="https://www.facebook.com/lechazoconf/" target="_blank"><i class="fa fa-facebook"></i></a>
 							<span class="meetup_line_right"></span>
 						</div>
-
+						<div class="tz_meetup_slider_home_text">
+							<p class="lechazo-big">27 de mayo de 2017</p><p>Palacio de Congresos Conde Ansúrez &bull; Valladolid</p>
+						</div>
+						<div class="lechazo-cta-box">
+							<div class="lechazo-cta lechazo-cta-top">
+								<a href="#register" id="cta-top" title="Tickets para LechazoConf 2017" class="lechazo-register-link">
+									<span class="lechazo-cta-claim">COMPRAR ENTRADA</span>
+									<span class="lechazo-ticket-type">Early Bird</span>
+								</a>
+							</div>
+						</div>
 						<!-- Begin MailChimp Signup Form -->
 						<link href="http://cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
 						<style type="text/css">
@@ -99,7 +105,7 @@
 									<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email" required>
 									<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 									<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5b69efa2634a497bd72d2eae8_2d5db32c98" tabindex="-1" value=""></div>
-									<div class="clear"><input type="submit" value="Subscribir" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+									<div class="clear"><input type="submit" value="Añádeme a la lista" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
 								</div>
 							</form>
 						</div>
@@ -252,11 +258,11 @@
 				<div class="tz_maniva_meetup_title text-center">
 					<h3 class="tz_meetup_title_raleway tz_title_meetup_normal"> LOCALIZACIÓN </h3>
 					<div class="tz_meetup_title_content">
-						<p>En el <a href="https://goo.gl/maps/ZRR7fPfPvkp">Palacio de Congresos Conde Ansúrez</a>
-						<p>Un edificio del siglo XVII a 10 minutos andando desde la Plaza Mayor</p>
+						<p>En el <a class="lechazo-link" href="https://goo.gl/maps/ZRR7fPfPvkp" title="Localización - LechazoConf">Palacio de Congresos Conde Ansúrez</a>.
+						<p>Un edificio del siglo XVII a 10 minutos andando desde la Plaza Mayor de Valladolid.</p>
 					</div>
 				</div>
-				<a href="https://goo.gl/maps/ZRR7fPfPvkp"><img src="img/map.png" class="lechazo-map" width="800"/></a>
+				<a href="https://goo.gl/maps/ZRR7fPfPvkp" title="Localización - LechazoConf"><img src="img/map.png" class="lechazo-map" width="800"/></a>
 			</div>
 		</div>
 	</div>
@@ -342,7 +348,7 @@
 				<h3 class="tz_meetup_title_raleway tz_title_meetup_normal"> ¿QUÉ ES LA LECHAZOCONF? </h3>
 				<div class="tz_meetup_slider_home_text">
 					<p class="lechazo-big"><p>¿Quieres patrocinar la LechazoConf?</p>
-					<p>Envíanos un <a href="mailto:info@lechazoconf.com">email</a> y te decimos cómo puedes contribuir!</p>
+					<p>¡Envíanos un <a class="lechazo-link" href="mailto:info@lechazoconf.com" title="Mail LechazoConf">email</a> y te decimos cómo puedes contribuir!</p>
 				</div>
 			</div>
 		</div>
@@ -388,13 +394,7 @@ jQuery.noConflict();
 <script src="js/library/jquery.easy-opener.min.js"></script>
 <script src="js/library/owl.carousel.min.js"></script>
 <script src="js/library/classie.js"></script>
-<script src="js/library/modalEffects.js"></script>
-<script src="js/library/parallax.min.js"></script>
-<script src="js/library/masonry.min.js"></script>
 <script src="js/library/imagesloaded.pkgd.js"></script>
-<script src="js/library/plusgallery_simple.js"></script>
-<script src="js/library/jquery.prettyPhoto.js"></script>
-<script src="js/gallery.js"></script>
 
 <!-- Include custom js -->
 <script src="js/custom.js"></script>
