@@ -5598,6 +5598,13 @@ aside.widget h3.module-title:before {
     .tz-blogSingle .tz-blogSingleContent .tz-SingleContentBox h4.tzSingleBlog_title {
         font-size: 20px;
     }
+	.row{
+		margin-right: 0;
+		margin-left: 0;
+	}
+	#about{
+		margin-top: 200px;
+	}
 
 }
 
