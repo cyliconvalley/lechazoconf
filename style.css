@@ -5949,12 +5949,17 @@ body {
     color: #fff;
     border-radius: 6px;
     background-color: #86b817;
-    box-shadow: 0 20px 25px 0 rgba(18, 17, 30, .15);
+    box-shadow: 0 20px 25px 0 rgba(18, 17, 30, .17);
+	text-decoration: none;
 }
 .lechazo-cta .lechazo-register-link:hover {
     text-decoration: none;
 
     background-color: #6a8e1a;
+}
+.lechazo-cta .lechazo-register-link:active{
+	text-decoration: none;
+	box-shadow: 0 8px 10px 0 rgba(18, 17, 30, .17);
 }
 .lechazo-register-link img {
     border-radius: 6px;
