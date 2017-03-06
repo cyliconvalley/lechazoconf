@@ -5786,6 +5786,9 @@ body {
 
     text-decoration: underline;
 }
+.lechazo-link:hover{
+	color: #D3A36E;
+}
 .lechazo-logo {
     display: flex;
 
