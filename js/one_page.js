@@ -10,8 +10,8 @@ jQuery(document).ready(function() {
     $nav.onePageNav({
         currentClass: 'current',
         changeHash: false,
-        scrollSpeed: 2200,
-        scrollOffset: 100,
+        scrollSpeed: 800,
+        scrollOffset: 200,
         scrollThreshold: 0.5,
         filter: '',
         easing: '',
@@ -26,11 +26,11 @@ jQuery(document).ready(function() {
         }
     });
 
-    var $tz_slider_home_btn = jQuery('.tz_slider_home_btn_click');
+	var $tz_slider_home_btn = jQuery('.tz_slider_home_btn_click');
     $tz_slider_home_btn.onePageNav({
         currentClass: 'current',
         changeHash: false,
-        scrollSpeed: 2200,
+        scrollSpeed: 800,
         scrollOffset: 0,
         scrollThreshold: 0.5,
         filter: '',
@@ -43,6 +43,27 @@ jQuery(document).ready(function() {
         },
         scrollChange: function ($currentListItem) {
             /* I get fired when you enter a section and I pass the list item of the section */
+        }
+    });
+
+    jQuery('.lechazo-cta').onePageNav({
+        currentClass: 'current',
+        changeHash: false,
+        scrollSpeed: 800,
+        scrollOffset: 200,
+        scrollThreshold: 0.5,
+        filter: '',
+        easing: '',
+        begin: function () {
+            /* I get fired when the animation is starting */
+        },
+        end: function () {
+            /* I get fired when the animation is ending */
+			jQuery('.lechazo-cta-top').removeClass('current');
+        },
+        scrollChange: function ($currentListItem) {
+            /* I get fired when you enter a section and I pass the list item of the section */
+			jQuery('.lechazo-cta-top').removeClass('current');
         }
     });
 
