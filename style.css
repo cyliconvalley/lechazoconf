@@ -5420,6 +5420,21 @@ body {
     border: 1px solid #843a51;
 }
 
+.lechazo-attention {
+    margin-bottom: 0px !important;
+    padding: 15px;
+	padding-bottom: 0px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #843a51;
+    border: 1px solid #843a51;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 
 
 
