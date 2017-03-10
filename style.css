@@ -5409,6 +5409,16 @@ body {
 
     text-align: center;;
 }
+.lechazo-tickets-info {
+    margin-bottom: 0px !important;
+    padding: 15px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #843a51;
+    border: 1px solid #843a51;
+}
 
 
 
