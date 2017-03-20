@@ -6145,6 +6145,7 @@ body {
     max-width: 550px;
     margin: auto;
     padding: 20px;
+	margin-top: 100px;
 }
 .tz_logo img {
     margin-top: -6px;
@@ -6522,6 +6523,9 @@ body {
     }
 }
 @media (max-width: 991px) {
+	.lechazo-logo {
+		margin-top: 0px !important;
+	}
     .tz-headerHome {
         position: relative;
 
