@@ -6523,6 +6523,9 @@ body {
     }
 }
 @media (max-width: 991px) {
+	.vc_empty_space_custom {
+    	margin-top: 35px;
+	}
 	.lechazo-logo {
 		margin-top: 0px !important;
 	}
