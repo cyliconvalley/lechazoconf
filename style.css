@@ -6234,7 +6234,7 @@ body {
 .lechazo-flex {
     display: flex;
 
-    justify-content: space-around;
+    justify-content: center;
     flex-flow: row wrap;
 }
 .speaker_box {
