@@ -6372,7 +6372,7 @@ body {
 
     padding: 3px;
 
-    border-bottom: 1px solid #fff;
+    /*border-bottom: 1px solid #fff;*/
 }
 .lechazo-cta-top {
     margin-top: 50px;
@@ -6426,7 +6426,58 @@ body {
 }
 
 
+/* PORTADA */
+.main-table .tz_meetup_social {
+    position: relative;
 
+    display: inline-block;
+
+    margin-bottom: 9px;
+}
+.main-table .tz_meetup_social .meetup_line_left {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+
+    width: 25px;
+    height: 1px;
+
+    background: #9d5763;
+}
+.main-table .tz_meetup_social .meetup_line_right {
+    position: absolute;
+    top: 50%;
+    right: 100%;
+
+    width: 25px;
+    height: 1px;
+
+    background: #9d5763;
+}
+.main-table a {
+    /*padding-right: 10px;*/
+    font-size: 30px;
+
+    text-decoration: none;
+}
+.main-table .tz_meetup_slider_home_text p {
+    font-weight: 400;
+
+    margin-bottom: 0;
+
+    letter-spacing: 1px;
+
+    color: #9d5763;
+}
+.main-table .tz_meetup_slider_home_text h4 {
+    font-size: 60px;
+    font-weight: 200;
+    line-height: 1em;
+
+    margin-bottom: 30px;
+
+    color: #9d5763;
+}
 
 
 
