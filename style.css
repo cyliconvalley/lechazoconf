@@ -2593,40 +2593,6 @@ span.tz_modal_employment {
     position: relative;
 }
 
-.tz_tabs_meetup:before {
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 0;
-
-    width: 16%;
-    height: 1px;
-
-    content: '';
-
-    background: -moz-radial-gradient(center left, circle farthest-side, #fff 60%, #242732 100%);
-    background: -o-radial-gradient(center left, circle farthest-side, #fff 60%, #242732 100%);
-    background: -ms-radial-gradient(center left, circle farthest-side, #fff 60%, #242732 100%);
-    background: -webkit-radial-gradient(center left, circle farthest-side, #fff 60%, #242732 100%);
-}
-
-.tz_tabs_meetup:after {
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    right: 0;
-
-    width: 16%;
-    height: 1px;
-
-    content: '';
-
-    background: -moz-radial-gradient(center right, circle farthest-side, #fff 60%, #242732 100%);
-    background: -o-radial-gradient(center right, circle farthest-side, #fff 60%, #242732 100%);
-    background: -ms-radial-gradient(center right, circle farthest-side, #fff 60%, #242732 100%);
-    background: -webkit-radial-gradient(center right, circle farthest-side, #fff 60%, #242732 100%);
-}
-
 .tz_tab_custom .nav-tabs {
     position: relative;
 
@@ -7918,10 +7884,6 @@ body {
     .row {
         margin-right: 0;
         margin-left: 0;
-    }
-
-    #about {
-        margin-top: 200px;
     }
 
     .lechazo-logo {
