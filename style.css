@@ -7305,15 +7305,19 @@ body {
     color: #9d5763;
 }
 
-.new-design {
+.background-new {
     background-color: #FAF4E6;
 }
 
-.new-design .container {
+.background-new .container {
     background: url('img/background-city.svg') no-repeat;
     width: 90%;
     background-size: 100% auto;
     background-position: center bottom;
+}
+
+.background-white {
+    background-color: white;
 }
 
 /* 10.0 - Responsive */
