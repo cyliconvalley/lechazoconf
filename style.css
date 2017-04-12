@@ -2198,6 +2198,27 @@ span.tz_text_hover_speaker {
     opacity: 1;
 }
 
+.tz-speakers-title {
+    font-size: 30px;
+    color: #753C51;
+}
+
+.tz-title-line {
+    border-top: 2px solid #EFBF7C;
+    width: 50px;
+}
+
+.tz-position-box {
+    background: #A0D468;
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.tz-speaker-box {
+    padding: 0 50px
+}
+
 #our_speakers {
     padding: 110px 0 70px;
 }
@@ -2227,7 +2248,8 @@ span.tz_text_hover_speaker {
 }
 
 .tz_our_speakers_img img {
-    width: 100%;
+    /*width: 100%;*/
+    width: 80%;
 
     -webkit-transition: all .4s linear 0s;
     -moz-transition: all .4s linear 0s;
@@ -7284,6 +7306,10 @@ body {
 
 .background-white {
     background-color: white;
+}
+
+.background-gray {
+    background-color: #F9F9F9;
 }
 
 /* 10.0 - Responsive */
