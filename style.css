@@ -716,7 +716,6 @@ h3.tz_meetup_general_title em {
     color: #242732;
 }
 
-
 /* 4.7 - Box text title line */
 
 .tz_maniva_meetup_title h3 em {
@@ -1082,8 +1081,6 @@ h3.tz_meetup_general_title em {
 .tz_meetup_ask p {
     font-weight: 300;
 }
-
-/* 4.16 - Recent posts */
 
 .tz_meetup_btn_post a {
     font-size: 12px;
@@ -1522,6 +1519,9 @@ body {
 /* MAILCHIMP */
 #mc_embed_signup {
     padding: 15px;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+    width: 100%;
 }
 
 #mc_embed_signup label {
@@ -1792,88 +1792,6 @@ body {
     background-color: #F9F9F9;
 }
 
-/* 10.0 - Responsive */
-
-/*@media (max-width: 1440px) {
-
-    .tz_home_slider_meetup .tz_content_slider_meetup .tz_meetup_social {
-        padding: 0 12px;
-    }
-    .tz_home_slider_meetup .tz_content_slider_meetup .tz_meetup_slider_home_text p {
-        margin-bottom: 12px;
-        font-size: 13px;
-    }
-    .tz_home_slider_meetup .tz_content_slider_meetup .tz_meetup_slider_home_text h4 {
-        margin-bottom: 10px;
-        font-size: 50px;
-    }
-    .tz_meetup_countdown .tz_meetup_countdown_time span {
-        font-size: 40px;
-    }
-    .tz_home_slider_meetup .tz_slider_meetup_btn a.tz_slider_meetup_btn_1 {
-        padding: 8px 25px;
-    }
-    .tz_font_style_slider_revo_2, .tz_font_style_slider_revo_6 {
-        left: -22px;
-    }
-    .tz_btn_revolution {
-        left: -30px;
-    }
-    .tz_btn_revolution_2 {
-        right: -30px;
-    }
-    .tz_home_slider_meetup .tz_content_slider_meetup a {
-        font-size: 15px;
-        margin: 0 7px;
-    }
-    .tz_home_slider_meetup .tz_slider_meetup_btn a.tz_slider_meetup_btn_1 {
-        padding: 8px 25px;
-    }
-
-}
-
-@media (max-width: 1365px) {
-
-    .tz_meetup_slider_blog_single .tz_partner_blog_single_next,
-    .tz_meetup_slider_blog_single .tz_partner_blog_single_prev,
-    .tz_recent_blog_meetup button {
-        display: none;
-    }
-    .tz_home_slider_meetup .tz_content_slider_meetup .tz_meetup_social .meetup_line_left,
-    .tz_home_slider_meetup .tz_content_slider_meetup .tz_meetup_social .meetup_line_right {
-        width: 15px;
-    }
-}
-
-@media (max-width: 1200px) {
-
-    #tz_text_box_button h3 {
-        font-size: 18px;
-        line-height: 1.5em;
-    }
-    .tz_register_meetup {
-        width: 470px;
-    }
-    .tz_register_meetup_pricing {
-        margin-left: 15px;
-    }
-    .tz_text_box_slider_padding {
-        padding: 75px 0 50px 20px;
-    }
-    .tz_maniva_meetup_title.tz_maniva_meetup_title_type3 h3 .tz_title_line_left,
-    .tz_maniva_meetup_title.tz_maniva_meetup_title_type3 h3 .tz_title_line_right {
-        display: none;
-    }
-    .parallax {
-        background-attachment: inherit !important;
-        background-position: 50% 0 !important;
-    }
-    .tz-footer.tz-footer-type1 .tz-backtotop {
-        right: 90px;
-    }
-
-}*/
-
 @media (max-width: 1199px) and (min-width: 992px) {
     .tz-headerHome nav.tz-menu ul li a {
         font-size: 12px;
@@ -2067,47 +1985,11 @@ body {
 }
 
 @media (max-width: 768px) {
-    .tz_home_slider_meetup .tz_content_slider_meetup .tz_meetup_social a {
-        padding: 0;
-    }
 
-    .tz_home_slider_meetup .tz_content_slider_meetup .tz_meetup_slider_home_text {
-        margin-bottom: 15px;
-    }
-
-    .tz_home_slider_meetup .tz_content_slider_meetup .tz_meetup_slider_home_text p {
-        font-size: 20px;
-
-        padding: 0 5px;
-    }
-
-    .tz_home_slider_meetup .tz_content_slider_meetup .tz_meetup_slider_home_text h4 {
-        font-size: 25px;
-    }
-
-    .tz_meetup_countdown .tz_meetup_countdown_time span {
-        font-size: 15px;
-    }
-
-    .tz_meetup_countdown .tz_meetup_countdown_time b {
-        font-size: 12px;
-    }
-
-    /*.tz_home_slider_meetup .tz_content_slider_meetup a {
-        font-size: 14px;
-        padding: 0 8px;
-    }*/
     .tz_maniva_meetup_title.tz_maniva_meetup_title_type3 h3 {
         font-size: 15px;
 
         padding: 0 20px;
-    }
-
-    .tz_meetup_our_team_thumbnail img {
-        position: static !important;
-
-        width: 100% !important;
-        height: auto !important;
     }
 
     .vc_empty_space_4 {
@@ -2116,18 +1998,6 @@ body {
 
     .vc_empty_space_5 {
         height: 150px;
-    }
-
-    .tz_register_meetup_pricing_item_container h3 {
-        font-size: 15px;
-    }
-
-    .tz_register_meetup_pricing_item_container p {
-        font-size: 12px;
-    }
-
-    .tz_register_meetup_pricing_item_price h3 {
-        font-size: 25px;
     }
 
     .tz-footer.tz-footer-type1 aside.widget.MultiColorSubscribeWidget h3 span {
@@ -2175,49 +2045,12 @@ body {
         line-height: 1.4em !important;
     }
 
-    .tz_event_meetup_content .tz_meetup_box_detail h4 {
-        font-size: 13px;
-    }
-
-    .tz_event_meetup_content .tz_meetup_box_detail p {
-        margin-bottom: 5px;
-    }
-
-    .tz_event_meetup_content .tz_meetup_box_detail .tz_event_meetup_item_content p {
-        font-size: 11px;
-        line-height: 1.5em;
-    }
-
-    .tz_event_meetup_content .tz_meetup_box_detail .tz_event_meetup_item_content p :first-child {
-        margin-bottom: 10px;
-    }
-
     .tz_meetup_btn h4.tz_meetup_title_btn {
         font-size: 18px;
     }
 
     .tz_meetup_question h4 {
         font-size: 16px;
-    }
-
-    .tz-blogDefault .tz-blogItem .tz-blogContent .tz-blogBox h4.title {
-        font-size: 22px;
-    }
-
-    .tz-blogDefault .wp-pagenavi a,
-    .tz-blogDefault .wp-pagenavi span {
-        font-size: 13px;
-
-        padding: 7px 11px;
-    }
-
-    .tz-blogSingle .tz_meetup_related_posts h4 {
-        font-size: 20px;
-    }
-
-    .tzComments .comments-area .tz-Comment ol.commentlist li article .comment-author img {
-        width: 100%;
-        height: auto;
     }
 
 }
