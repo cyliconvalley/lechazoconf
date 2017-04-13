@@ -128,13 +128,12 @@
                                     $.prettyPhoto.close();
                                 e.preventDefault();
                                 break;
-                        };
+                        }
                         // return false;
-                    };
-                };
+                    }
+                }
             });
-        };
-
+        }
         /**
          * Initialize prettyPhoto.
          */
@@ -168,7 +167,7 @@
             $.prettyPhoto.open();
 
             return false;
-        }
+        };
 
 
         /**
@@ -359,14 +358,13 @@
                         $(myClone).remove();
                         toInject = settings.inline_markup.replace(/{content}/g,$(pp_images[set_position]).html());
                         break;
-                };
-
+                }
                 if(!imgPreloader && !skipInjection){
                     $pp_pic_holder.find('#pp_full_res')[0].innerHTML = toInject;
 
                     // Show content
                     _showContent();
-                };
+                }
             });
 
             return false;
@@ -388,8 +386,7 @@
                 if(set_position > $(pp_images).size()-1) set_position = 0;
             }else{
                 set_position=direction;
-            };
-
+            }
             rel_index = set_position;
 
             if(!doresize) doresize = true; // Allow the resizing of the images
@@ -416,8 +413,7 @@
                 if(currentGalleryPage < 0) currentGalleryPage = totalPage;
             }else{
                 currentGalleryPage = direction;
-            };
-
+            }
             slide_speed = (direction == 'next' || direction == 'previous') ? settings.animation_speed : 0;
 
             slide_to = currentGalleryPage * (itemsPerPage * itemWidth);
@@ -438,8 +434,8 @@
                 pp_slideshow = setInterval($.prettyPhoto.startSlideshow,settings.slideshow);
             }else{
                 $.prettyPhoto.changePage('next');
-            };
-        }
+            }
+        };
 
 
         /**
@@ -452,7 +448,7 @@
             });
             clearInterval(pp_slideshow);
             pp_slideshow=undefined;
-        }
+        };
 
 
         /**
@@ -536,8 +532,7 @@
 
             _insert_gallery();
             pp_settings.ajaxcallback();
-        };
-
+        }
         /**
          * Hide the content...DUH!
          */
@@ -549,16 +544,14 @@
 
                 callback();
             });
-        };
-
+        }
         /**
          * Check the item position in the gallery array, hide or show the navigation links
          * @param setCount {integer} The total number of items in the set
          */
         function _checkPosition(setCount){
             (setCount > 1) ? $('.pp_nav').show() : $('.pp_nav').hide(); // Hide the bottom nav if it's not a set.
-        };
-
+        }
         /**
          * Resize the item dimensions if it's bigger than the viewport
          * @param width {integer} Width of the item to be opened
@@ -585,20 +578,14 @@
                         imageWidth = (width/height) * imageHeight;
                     }else{
                         fitting = true;
-                    };
-
+                    }
                     pp_containerHeight = imageHeight, pp_containerWidth = imageWidth;
-                };
-
-
-
+                }
                 if((pp_containerWidth > windowWidth) || (pp_containerHeight > windowHeight)){
                     _fitToViewport(pp_containerWidth,pp_containerHeight)
-                };
-
+                }
                 _getDimensions(imageWidth,imageHeight);
-            };
-
+            }
             return {
                 width:Math.floor(imageWidth),
                 height:Math.floor(imageHeight),
@@ -608,8 +595,7 @@
                 contentWidth:Math.floor(pp_contentWidth),
                 resized:resized
             };
-        };
-
+        }
         /**
          * Get the containers dimensions according to the item size
          * @param width {integer} Width of the item to be opened
@@ -669,9 +655,8 @@
                 return 'inline';
             }else{
                 return 'image';
-            };
-        };
-
+            }
+        }
         function _center_overlay(){
             if(doresize && typeof $pp_pic_holder != 'undefined') {
                 scroll_pos = _get_scroll();
@@ -687,9 +672,8 @@
                     'top': projectedTop,
                     'left': (windowWidth/2) + scroll_pos['scrollLeft'] - (contentwidth/2)
                 });
-            };
-        };
-
+            }
+        }
         function _get_scroll(){
             if (self.pageYOffset) {
                 return {scrollTop:self.pageYOffset,scrollLeft:self.pageXOffset};
@@ -697,15 +681,13 @@
                 return {scrollTop:document.documentElement.scrollTop,scrollLeft:document.documentElement.scrollLeft};
             } else if (document.body) {// all other Explorers
                 return {scrollTop:document.body.scrollTop,scrollLeft:document.body.scrollLeft};
-            };
-        };
-
+            }
+        }
         function _resize_overlay() {
             windowHeight = $(window).height(), windowWidth = $(window).width();
 
             if(typeof $pp_overlay != "undefined") $pp_overlay.height($(document).height()).width(windowWidth);
-        };
-
+        }
         function _insert_gallery(){
             if(isSet && settings.overlay_gallery && _getFileType(pp_images[set_position])=="image") {
                 itemWidth = 52+5; // 52 beign the thumb width, 5 being the right margin.
@@ -721,8 +703,7 @@
                     $pp_gallery.find('.pp_arrow_next,.pp_arrow_previous').hide();
                 }else{
                     $pp_gallery.find('.pp_arrow_next,.pp_arrow_previous').show();
-                };
-
+                }
                 galleryWidth = itemsPerPage * itemWidth;
                 fullGalleryWidth = pp_images.length * itemWidth;
 
@@ -768,8 +749,7 @@
                         img_src = pp_images[i];
                     }
                     toInject += "<li class='"+classname+"'><a href='#'><img src='" + img_src + "' width='50' alt='' /></a></li>";
-                };
-
+                }
                 toInject = settings.gallery_markup.replace(/{gallery}/g,toInject);
 
                 $pp_pic_holder.find('#pp_full_res').after(toInject);
@@ -806,12 +786,10 @@
                             return false;
                         });
                 });
-            };
-
-
+            }
             // Inject the play/pause if it's a slideshow
             if(settings.slideshow){
-                $pp_pic_holder.find('.pp_nav').prepend('<a href="#" class="pp_play">Play</a>')
+                $pp_pic_holder.find('.pp_nav').prepend('<a href="#" class="pp_play">Play</a>');
                 $pp_pic_holder.find('.pp_nav .pp_play').click(function(){
                     $.prettyPhoto.startSlideshow();
                     return false;
@@ -842,8 +820,7 @@
                     }else{
                         $(this).removeClass('pp_contract').addClass('pp_expand');
                         doresize = true;
-                    };
-
+                    }
                     _hideContent(function(){ $.prettyPhoto.open(); });
 
                     return false;
@@ -863,8 +840,7 @@
             });
 
             _center_overlay(); // Center it
-        };
-
+        }
         if(!pp_alreadyInitialized && getHashtag()){
             pp_alreadyInitialized = true;
 
@@ -887,13 +863,11 @@
         hashtag = (url.indexOf('#prettyPhoto') !== -1) ? decodeURI(url.substring(url.indexOf('#prettyPhoto')+1,url.length)) : false;
         if(hashtag){  hashtag = hashtag.replace(/<|>/g,''); }
         return hashtag;
-    };
-
+    }
     function setHashtag(){
         if(typeof theRel == 'undefined') return; // theRel is set on normal calls, it's impossible to deeplink using the API
         location.hash = theRel + '/'+rel_index+'/';
-    };
-
+    }
     function clearHashtag(){
         if ( location.href.indexOf('#prettyPhoto') !== -1 ) location.hash = "prettyPhoto";
     }

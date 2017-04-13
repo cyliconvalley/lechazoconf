@@ -85,10 +85,10 @@ SLIDEFADE
         var item_width2 = item_width*2;
         jQuery('.pgthumb').css({
             width:item_width+'px'
-        })
+        });
         jQuery('.item_width2').css({
             width:item_width2+'px'
-        })
+        });
         var $container = jQuery('.tzmasonry');
         //alert($container.html());
         var container = document.querySelector('.tzmasonry');

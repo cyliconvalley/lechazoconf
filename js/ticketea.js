@@ -58,7 +58,7 @@
                     iframe_resizer_script.src = '//dzwfh45x6m2sl.cloudfront.net/static/js/vendors/iframe-resizer/js/iframeResizer.min.js';
                     iframe_resizer_script.onload = function () {
                         resizeIframe();
-                    }
+                    };
                     iframe_resizer_script.onreadystatechange = function () {
                         var state = this.readyState;
                         if (!state || /loaded|complete/.test(state)) {
@@ -114,7 +114,7 @@
         iframe_resizer_script.src = 'js/iframeResizer.min.js';
         iframe_resizer_script.onload = function () {
             resizeIframe();
-        }
+        };
         iframe_resizer_script.onreadystatechange = function () {
             var state = this.readyState;
             if (!state || /loaded|complete/.test(state)) {
