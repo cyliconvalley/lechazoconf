@@ -1,22 +1,17 @@
-
-
-jQuery(document).ready(function(){
+jQuery(document).ready(function () {
 
     "use strict";
 
     /*back to top */
-    jQuery('.tz-backtotop').click(function(){
+    jQuery('.tz-backtotop').click(function () {
         jQuery('html, body').animate({scrollTop: '0px'}, 800);
         return false;
     });
 
-
-
-
     /* slider home */
     var $tz_home_slider_meetup = jQuery('.tz_home_slider_meetup');
 
-    if ( $tz_home_slider_meetup.length ) {
+    if ($tz_home_slider_meetup.length) {
 
         /* bxSlider */
         jQuery('.bxslider').bxSlider({
@@ -31,28 +26,28 @@ jQuery(document).ready(function(){
 
         /* countdown slider home */
         var $tz_meetup_countdown = jQuery('.tz_meetup_countdown');
-        if ( $tz_meetup_countdown.length > 0 ) {
+        if ($tz_meetup_countdown.length > 0) {
 
-            var $data_countdown     =   '2017/05/27 09:00:00';
-            var $data_text_ended    =   'La LechazoConf ya ha acabado, nos vemos en la próxima!';
+            var $data_countdown = '2017/05/27 09:00:00';
+            var $data_text_ended = 'La LechazoConf ya ha acabado, nos vemos en la próxima!';
 
-            var $data_text_day      =   'días';
-            var $data_text_hours    =   'horas';
-            var $data_text_min      =   'mins';
-            var $data_text_sec      =   'secs';
+            var $data_text_day = 'días';
+            var $data_text_hours = 'horas';
+            var $data_text_min = 'mins';
+            var $data_text_sec = 'secs';
 
 
             jQuery('#clock').countdown($data_countdown)
-                .on('update.countdown', function(event) {
+                .on('update.countdown', function (event) {
                     var $this = jQuery(this).html(event.strftime(''
-                        + '<div class="tz_meetup_countdown_time"><span>%D</span><b>'+ $data_text_day +'</b></div> '
-                        + '<div class="tz_meetup_countdown_time"><span>%H</span><b>'+ $data_text_hours +'</b></div> '
-                        + '<div class="tz_meetup_countdown_time"><span >%M</span><b>'+ $data_text_min +'</b></div> '
-                        + '<div class="tz_meetup_countdown_time"><span>%S</span><b>'+ $data_text_sec +'</b></div> '
+                        + '<div class="tz_meetup_countdown_time"><span>%D</span><b>' + $data_text_day + '</b></div> '
+                        + '<div class="tz_meetup_countdown_time"><span>%H</span><b>' + $data_text_hours + '</b></div> '
+                        + '<div class="tz_meetup_countdown_time"><span >%M</span><b>' + $data_text_min + '</b></div> '
+                        + '<div class="tz_meetup_countdown_time"><span>%S</span><b>' + $data_text_sec + '</b></div> '
                     ));
                 })
-                .on('finish.countdown', function(event) {
-                    jQuery(this).html('<span class="tz_meetup_countdown_over">'+ $data_text_ended +'</span>')
+                .on('finish.countdown', function (event) {
+                    jQuery(this).html('<span class="tz_meetup_countdown_over">' + $data_text_ended + '</span>')
                         .parent().addClass('disabled');
 
                 });
@@ -62,7 +57,7 @@ jQuery(document).ready(function(){
 
     /* opacity scroll */
 
-    if ( $tz_home_slider_meetup.length ) {
+    if ($tz_home_slider_meetup.length) {
 
         // var header_social = jQuery('.tz_content_slider_meetup');
         // var range = 380;
@@ -81,43 +76,46 @@ jQuery(document).ready(function(){
 
     /* Method for Search */
 
-    var $tz_search          =   jQuery('.tz-search');
-    var $tz_search_header_3 =   jQuery('.tz-search-header3');
+    var $tz_search = jQuery('.tz-search');
+    var $tz_search_header_3 = jQuery('.tz-search-header3');
 
-    if ( $tz_search.length > 0 ) {
-        $tz_search.click(function(){
-            jQuery('.tz-form-search').css('display','block');
+    if ($tz_search.length > 0) {
+        $tz_search.click(function () {
+            jQuery('.tz-form-search').css('display', 'block');
             jQuery('.tz-form-search .tz-search-input').focus();
-        }) ;
-        jQuery('.tz-form-close').click(function(){
-            jQuery('.tz-form-search').css('display','none');
+        });
+        jQuery('.tz-form-close').click(function () {
+            jQuery('.tz-form-search').css('display', 'none');
         });
     }
 
-    if ( $tz_search_header_3.length > 0 ) {
-        $tz_search_header_3.click(function(){
-            jQuery('.tz-form-search').css('display','block');
+    if ($tz_search_header_3.length > 0) {
+        $tz_search_header_3.click(function () {
+            jQuery('.tz-form-search').css('display', 'block');
             jQuery('.tz-form-search .tz-search-input').focus();
-        }) ;
-        jQuery('.tz-form-close').click(function(){
-            jQuery('.tz-form-search').css('display','none');
+        });
+        jQuery('.tz-form-close').click(function () {
+            jQuery('.tz-form-search').css('display', 'none');
         });
     }
 
     /* Counter */
-    function count($this){
+    function count($this) {
         var current = parseInt($this.html(), 10);
-        current = current + 1; /* Where 50 is increment */
+        current = current + 1;
+        /* Where 50 is increment */
 
         $this.html(++current);
-        if(current > $this.data('count')){
+        if (current > $this.data('count')) {
             $this.html($this.data('count'));
         } else {
-            setTimeout(function(){count($this)}, 50);
+            setTimeout(function () {
+                count($this)
+            }, 50);
         }
     }
 
-    jQuery(".stat-count").each(function() {
+    jQuery(".stat-count").each(function () {
         jQuery(this).data('count', parseInt(jQuery(this).html(), 10));
         jQuery(this).html('0');
         count(jQuery(this));
@@ -126,16 +124,16 @@ jQuery(document).ready(function(){
     /* slider meetup */
     var $tz_meetup_slider = jQuery(".tz_meetup_slider");
 
-    if ( $tz_meetup_slider.length ) {
+    if ($tz_meetup_slider.length) {
 
-        $tz_meetup_slider.each(function(){
+        $tz_meetup_slider.each(function () {
             jQuery(this).owlCarousel({
-                items : 1,
-                slideSpeed:500,
-                paginationSpeed:800,
-                dotData:true,
+                items: 1,
+                slideSpeed: 500,
+                paginationSpeed: 800,
+                dotData: true,
                 autoPlay: false,
-                autoHeight:true
+                autoHeight: true
             });
         });
 
@@ -143,8 +141,8 @@ jQuery(document).ready(function(){
 
     /* Method for parallax */
     var $tz_parallax = jQuery('.parallax');
-    if ( $tz_parallax.length ) {
-        $tz_parallax.each(function(){
+    if ($tz_parallax.length) {
+        $tz_parallax.each(function () {
             jQuery(this).parallax("30%", 0.1);
         });
     }
@@ -152,14 +150,14 @@ jQuery(document).ready(function(){
     /* Twitter */
     var $tzTwitter_slider_box = jQuery(".tzTwitter-slider-box");
 
-    if ( $tzTwitter_slider_box.length ) {
+    if ($tzTwitter_slider_box.length) {
 
-        jQuery(".tzTwitter-slider").each(function(){
+        jQuery(".tzTwitter-slider").each(function () {
             jQuery(this).owlCarousel({
-                items : 1,
-                smartSpeed:800,
-                paginationSpeed:800,
-                dotData:true,
+                items: 1,
+                smartSpeed: 800,
+                paginationSpeed: 800,
+                dotData: true,
                 autoplay: false
             });
         });
@@ -168,38 +166,38 @@ jQuery(document).ready(function(){
 
     /* Partner slider */
     var $tz_partner = jQuery(".tz-partner");
-    if ( $tz_partner.length ) {
+    if ($tz_partner.length) {
         var $partner_slider = jQuery(".partner-slider");
 
-        $partner_slider.each(function(){
+        $partner_slider.each(function () {
             jQuery(this).owlCarousel({
-                responsive : {
-                    0 : {
-                        items:1
+                responsive: {
+                    0: {
+                        items: 1
                     },
 
-                    556 : {
-                        items:2
+                    556: {
+                        items: 2
                     },
 
-                    768 : {
-                        items:3
+                    768: {
+                        items: 3
                     },
                     991: {
-                        items:5
+                        items: 5
                     }
                 },
-                smartSpeed:800,
-                paginationSpeed:800,
-                dots:false,
+                smartSpeed: 800,
+                paginationSpeed: 800,
+                dots: false,
                 autoplay: false,
                 loop: true
             });
 
-            jQuery('.tz_partner_prevs_type2').click(function(){
+            jQuery('.tz_partner_prevs_type2').click(function () {
                 $partner_slider.trigger('prev.owl.carousel');
             });
-            jQuery('.tz_partner_nexts_type2').click(function(){
+            jQuery('.tz_partner_nexts_type2').click(function () {
                 $partner_slider.trigger('next.owl.carousel');
             });
 
@@ -208,44 +206,42 @@ jQuery(document).ready(function(){
 
     /* Recent posts */
     var $tz_recent_blog_meetup = jQuery(".tz_recent_blog_meetup");
-    if ( $tz_recent_blog_meetup.length ) {
+    if ($tz_recent_blog_meetup.length) {
         var tz_meetup_slider_partner = jQuery('.tz_meetup_slider_blog');
 
         tz_meetup_slider_partner.owlCarousel({
-            responsive : {
-                0 : {
-                    items:1
+            responsive: {
+                0: {
+                    items: 1
                 },
 
-                556 : {
-                    items:2
+                556: {
+                    items: 2
                 },
                 991: {
-                    items:3
+                    items: 3
                 }
             },
-            smartSpeed:800,
-            paginationSpeed:800,
-            dots:false,
+            smartSpeed: 800,
+            paginationSpeed: 800,
+            dots: false,
             autoplay: false,
             loop: true
         });
 
-        jQuery('.tz_recent_blog_pev_meetup').click(function(){
+        jQuery('.tz_recent_blog_pev_meetup').click(function () {
             tz_meetup_slider_partner.trigger('prev.owl.carousel');
         });
-        jQuery('.tz_recent_blog_next_meetup').click(function(){
+        jQuery('.tz_recent_blog_next_meetup').click(function () {
             tz_meetup_slider_partner.trigger('next.owl.carousel');
         });
 
     }
 
 
-
-
 });
 
-jQuery(window).on("load resize",function(){
+jQuery(window).on("load resize", function () {
 
     "use strict";
 
@@ -254,27 +250,27 @@ jQuery(window).on("load resize",function(){
 
     /* height slider home */
 
-    if ( jQuery('.tz_home_slider_meetup').length > 0 ) {
+    if (jQuery('.tz_home_slider_meetup').length > 0) {
         var $height_width = jQuery(window).height();
         var $height_width_header = jQuery('.tz-headerHome').innerHeight();
 
-        if ( jQuery('.tz-headerHome.tz-homeTypeFixed').length > 0 ) {
+        if (jQuery('.tz-headerHome.tz-homeTypeFixed').length > 0) {
 
-            if ( $win_width <= 768 ) {
+            if ($win_width <= 768) {
 
-                jQuery(".tz_home_slider_meetup .bx-wrapper").css("height", ($height_width-$height_width_header) +'px' );
-                jQuery(".tz_home_slider_meetup ul.bxslider li").css("height", ($height_width-$height_width_header) +'px' );
+                jQuery(".tz_home_slider_meetup .bx-wrapper").css("height", ($height_width - $height_width_header) + 'px');
+                jQuery(".tz_home_slider_meetup ul.bxslider li").css("height", ($height_width - $height_width_header) + 'px');
 
             }
-            if ( $win_width > 768 ) {
-                jQuery(".tz_home_slider_meetup .bx-wrapper").css("height", $height_width +'px' );
-                jQuery(".tz_home_slider_meetup ul.bxslider li").css("height", $height_width +'px' );
+            if ($win_width > 768) {
+                jQuery(".tz_home_slider_meetup .bx-wrapper").css("height", $height_width + 'px');
+                jQuery(".tz_home_slider_meetup ul.bxslider li").css("height", $height_width + 'px');
             }
 
-        }else {
+        } else {
 
-            jQuery(".tz_home_slider_meetup .bx-wrapper").css("height", ($height_width-$height_width_header) +'px' );
-            jQuery(".tz_home_slider_meetup ul.bxslider li").css("height", ($height_width-$height_width_header) +'px' );
+            jQuery(".tz_home_slider_meetup .bx-wrapper").css("height", ($height_width - $height_width_header) + 'px');
+            jQuery(".tz_home_slider_meetup ul.bxslider li").css("height", ($height_width - $height_width_header) + 'px');
 
         }
         //TzTemplateResizeImage(jQuery('.tz_home_slider_meetup_setting .bx-viewport ul li'));
@@ -283,8 +279,8 @@ jQuery(window).on("load resize",function(){
     /* width column */
 
     var $tz_width_column = jQuery('.tz_width_column');
-    if ( $tz_width_column.length > 0 ) {
-        if ( $win_width >= 992 ) {
+    if ($tz_width_column.length > 0) {
+        if ($win_width >= 992) {
             var $contain_width = jQuery('.container').width();
             $tz_width_column.each(function () {
                 var $tz_check_width = jQuery(this).width();
@@ -295,12 +291,12 @@ jQuery(window).on("load resize",function(){
     }
 
     /* height video meetup */
-    if ( jQuery(".tz_video_equal_height_meetup").length ){
+    if (jQuery(".tz_video_equal_height_meetup").length) {
 
-        if ( $win_width >= 992 ) {
+        if ($win_width >= 992) {
 
             var $tz_video_meetup = jQuery('.tz_video_meetup');
-            var $tz_video_meetup_height    =   $tz_video_meetup.parents().find('.tz_height_text_video').height();
+            var $tz_video_meetup_height = $tz_video_meetup.parents().find('.tz_height_text_video').height();
             $tz_video_meetup.css("height", $tz_video_meetup_height);
             TzTemplateResizeImage($tz_video_meetup);
 
@@ -308,49 +304,45 @@ jQuery(window).on("load resize",function(){
     }
 
     /* tz_slider_meetup_full  */
-    jQuery('.tz-full-slider-meetup').each(function(){
+    jQuery('.tz-full-slider-meetup').each(function () {
 
         var $tz_top_owl_controls = jQuery(this).parents('#slider_meetup').height();
-        jQuery(".tz_slider_meetup .owl-theme .owl-dots").css({ top: $tz_top_owl_controls });
+        jQuery(".tz_slider_meetup .owl-theme .owl-dots").css({top: $tz_top_owl_controls});
 
     });
-
-
-
 
 
 });
 
 
-
 /**
  * method for menu
  */
-jQuery(window).scroll(function(){
+jQuery(window).scroll(function () {
 
     "use strict";
     var $_scrollTop = jQuery(window).scrollTop();
-    var $home_slider_meetup =  jQuery('.tz_home_slider_meetup');
+    var $home_slider_meetup = jQuery('.tz_home_slider_meetup');
     var $_height = $home_slider_meetup.height();
 
     var $_height_menu = 97;
     var $type_position = jQuery('.tz-headerHome.tz-homeTypeFixed').length;
     var headerType = jQuery('.tz-headerHome').attr('data-option');
 
-    if ( headerType == '2' || headerType == '3' && $type_position > 0 ) {
+    if (headerType == '2' || headerType == '3' && $type_position > 0) {
         console.log(headerType);
 
-        if ( $_scrollTop > 0 ) {
+        if ($_scrollTop > 0) {
             jQuery('.tz-homeType2').addClass('tz-menuEffect-1');
-        }else {
+        } else {
             jQuery('.tz-homeType2').removeClass('tz-menuEffect-1');
         }
 
-        if ( $home_slider_meetup.length ) {
+        if ($home_slider_meetup.length) {
 
-            if ( $_scrollTop >= ($_height - $_height_menu) ) {
+            if ($_scrollTop >= ($_height - $_height_menu)) {
                 jQuery('.tz-homeType2').addClass('tz-menuEffect');
-            }else{
+            } else {
                 jQuery('.tz-homeType2').removeClass('tz-menuEffect');
             }
 
