@@ -900,7 +900,7 @@ body {
 }
 
 .lechazo-register-link {
-    font-size: 24px !important;
+    font-size: 22px !important;
     font-weight: 400;
     min-width: 300px;
     padding: 10px;
@@ -922,6 +922,7 @@ body {
 .lechazo-register-link:hover {
     text-decoration: none;
     background-color: #6a8e1a;
+    color: white;
 }
 
 .lechazo-text {
