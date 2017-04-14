@@ -513,6 +513,15 @@ h3.tz_meetup_general_title em {
     padding: 10px;
 }
 
+.social-links {
+    color: #64B7DD;
+    padding: 10px;
+}
+
+.tz-speaker-box a {
+    text-decoration: none;
+}
+
 /* 4.12 - Box text title_2 */
 #box_text_title_2 {
     position: relative;
