@@ -489,8 +489,15 @@ h3.tz_meetup_general_title em {
 }
 
 .tz-title-line {
-    border-top: 2px solid #EFBF7C;
+    border-top: 3px solid #EFBF7C;
     width: 80px;
+}
+
+.lechazo-text-content {
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 700px;
 }
 
 .tz-position-box {
