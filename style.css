@@ -490,7 +490,7 @@ h3.tz_meetup_general_title em {
 
 .tz-title-line {
     border-top: 2px solid #EFBF7C;
-    width: 50px;
+    width: 80px;
 }
 
 .tz-position-box {
@@ -511,6 +511,15 @@ h3.tz_meetup_general_title em {
 .tz_our_speakers_img img {
     width: 80%;
     padding: 10px;
+}
+
+.social-links {
+    color: #64B7DD;
+    padding: 10px;
+}
+
+.tz-speaker-box a {
+    text-decoration: none;
 }
 
 /* 4.12 - Box text title_2 */
