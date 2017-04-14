@@ -348,7 +348,6 @@ video {
     content: normal;
 }
 
-.tz-menuEffect,
 .tz-homeEff {
     background: rgba(255, 255, 255, .9);
 }
@@ -804,10 +803,6 @@ body {
     color: #3b5998;
 }
 
-#box_text_title_2.lechazo-box-reversed {
-    background-color: #9d5763;
-}
-
 #box_text_title_2.lechazo-sponsor-reversed {
     background-color: #a0a873;
 }
@@ -929,18 +924,6 @@ body {
     background-color: #6a8e1a;
 }
 
-.lechazo-ticketea {
-    width: 800px;
-    margin: auto;
-    padding: 20px;
-
-    text-align: left;
-}
-
-.lechazo-ticketea p {
-    margin-bottom: 20px;
-}
-
 .lechazo-text {
     max-width: 700px;
     margin: auto;
@@ -958,25 +941,6 @@ body {
 .lechazo-ticket-claim {
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-.row.lechazo-infos {
-    padding: 15px;
-}
-
-.lechazo-attention {
-    max-width: 700px;
-    margin-right: auto;
-    margin-bottom: 0 !important;
-    margin-left: auto;
-    padding: 10px;
-    padding-top: 20px;
-    padding-bottom: 0;
-
-    text-align: center;
-
-    color: #843a51;
-    border: 1px solid #843a51;
 }
 
 /* PORTADA */
@@ -1217,10 +1181,6 @@ body {
 
     .lechazo-location .tz-partner {
         padding: 20px;
-    }
-
-    .row.lechazo-infos {
-        margin-top: 100px;
     }
 }
 
