@@ -71,7 +71,7 @@ a {
     transition: all .3s;
     text-decoration: none;
 
-    color: #843a51;
+    color: #64B7DD;
 }
 
 a:focus {
@@ -521,7 +521,6 @@ h3.tz_meetup_general_title em {
 }
 
 .social-links {
-    color: #64B7DD;
     padding: 10px;
 }
 
@@ -788,6 +787,10 @@ body {
     margin-bottom: 20px !important;
 }
 
+.lechazo-bold {
+    font-weight: bold;
+}
+
 .fa {
     padding-right: 10px;
     padding-left: 10px;
@@ -896,49 +899,34 @@ body {
 
 /* REGISTRATION */
 
-.lechazo-register {
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
-
 .lechazo-cta {
-    margin: auto;
     margin-top: 30px;
-
-    border-radius: 6px;
+    margin-bottom: 30px;
 }
 
-.lechazo-cta .lechazo-register-link {
-    font-size: 22px;
+.lechazo-register-link {
+    font-size: 24px !important;
     font-weight: 400;
-
     min-width: 300px;
     padding: 10px;
-
     text-decoration: none;
-
     color: #fff;
-    /*border-bottom: 4px solid #6a8e1a;*/
     border-radius: 6px;
     background-color: #86b817;
-    /*box-shadow: 0 20px 25px 0 rgba(18, 17, 30, .17);*/
+    display: inline-block;
+    margin: auto;
+    text-align: center;
 }
 
-.lechazo-cta .lechazo-register-link:hover {
-    text-decoration: none;
+.lechazo-register-link-small {
+    font-size: 20px !important;
+    min-width: 200px;
+    padding: 5px;
+}
 
-    /*border-bottom: 4px solid #4e6715;*/
+.lechazo-register-link:hover {
+    text-decoration: none;
     background-color: #6a8e1a;
-}
-
-.lechazo-cta .lechazo-register-link:active {
-    text-decoration: none;
-
-    box-shadow: 0 8px 10px 0 rgba(18, 17, 30, .17);
-}
-
-.lechazo-register-link img {
-    border-radius: 6px;
 }
 
 .lechazo-ticketea {
@@ -963,48 +951,13 @@ body {
     margin-bottom: 20px;
 }
 
-.lechazo-cta-claim {
-    display: block;
-
-    padding: 3px;
-
-    /*border-bottom: 1px solid #fff;*/
-}
-
-.lechazo-cta-top {
-    margin-top: 50px;
-}
-
-.lechazo-cta-top .lechazo-cta-claim {
-    font-size: 24px;
-}
-
-.lechazo-cta-box {
-    display: block;
-
-    margin-top: 0;
-    margin-bottom: 20px;
-
-    vertical-align: middle;
-}
-
-.lechazo-cta-box a {
+.lechazo-tickets-info span {
     display: inline-block;
-
-    margin: auto;
-
-    text-align: center;;
 }
 
-.lechazo-tickets-info {
-    margin-bottom: 0 !important;
-    padding: 15px;
-
-    text-align: center;
-    text-transform: uppercase;
-
-    color: #843a51;
-    border: 1px solid #843a51;
+.lechazo-ticket-claim {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .row.lechazo-infos {
