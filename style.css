@@ -935,10 +935,6 @@ body {
     margin-bottom: 20px;
 }
 
-.lechazo-tickets-info span {
-    display: inline-block;
-}
-
 .lechazo-ticket-claim {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -1020,6 +1016,10 @@ body {
 
 .background-gray {
     background-color: #F9F9F9;
+}
+
+.lechazo-coc {
+    max-width: 800px;
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {
