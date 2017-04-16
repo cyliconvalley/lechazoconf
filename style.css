@@ -371,10 +371,6 @@ video {
     text-transform: uppercase;
 }
 
-.tz_maniva_meetup_title h3.tz_maniva_meetup_title_custom {
-    font-weight: 700;
-}
-
 .tz_meetup_title_content p {
     font-size: 18px;
 
@@ -709,10 +705,6 @@ body {
     text-align: center;
 }
 
-.lechazo-reverted {
-    color: #9d5763 !important;
-}
-
 .lechazo-link {
     font-weight: 700;
 
@@ -725,11 +717,9 @@ body {
 
 .lechazo-logo {
     display: flex;
-
     max-width: 550px;
-    margin: auto;
     padding: 20px;
-    margin-top: 100px;
+    margin: 100px auto auto;
 }
 
 .tz_logo img {
@@ -850,10 +840,6 @@ body {
     padding: 20px 0;
 }
 
-#box_text_title_2.lechazo-sponsor-reversed {
-    background-color: #a0a873;
-}
-
 #box_text_title_2.lechazo-location-reversed {
     background-color: #d3a36e;
 }
@@ -881,8 +867,7 @@ body {
 .lechazo-speaker-bio p {
     font-size: 16px;
 
-    padding: 15px;
-    padding-bottom: 0;
+    padding: 15px 15px 0;
 
     text-align: left;
 }
@@ -925,9 +910,7 @@ body {
 
     width: 100%;
     max-width: 700px;
-    margin: 30px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 30px auto;
 
     border-radius: 6px;
     box-shadow: 0 20px 25px 0 rgba(18, 17, 30, .15);
@@ -1035,10 +1018,9 @@ body {
 }
 
 .background-new .container {
-    background: url('img/background-city.svg') no-repeat;
     width: 90%;
     background-size: 100% auto;
-    background-position: center bottom;
+    background: url('img/background-city.svg') no-repeat center bottom;
 }
 
 .background-white {
