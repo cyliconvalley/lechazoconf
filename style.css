@@ -775,6 +775,8 @@ body {
 
 .tz_meetup_slider_home_text {
     font-size: 20px;
+    display: flex;
+    justify-content: center
 }
 
 .lechazo-big {
@@ -787,6 +789,10 @@ body {
 
 .lechazo-bold {
     font-weight: bold;
+}
+
+.lechazo-subtitle {
+    color: #5A6779
 }
 
 .fa {
