@@ -189,7 +189,7 @@ video {
 .tz-headerHome ul li {
     position: relative;
 
-    padding: 0 14px;
+    padding: 0 10px;
 }
 
 .tz-headerHome ul li a {
@@ -307,7 +307,7 @@ video {
 .tz-headerHome nav > ul > li {
     position: relative;
 
-    padding: 0 14px;
+    padding: 0 10px;
 }
 
 .tz-headerHome nav > ul > li > ul.non_mega_menu > li:first-child {
