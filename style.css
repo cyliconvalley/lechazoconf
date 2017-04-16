@@ -201,7 +201,7 @@ video {
     display: block;
 
     margin: 0;
-    padding: 30px 0;
+    padding: 20px 0;
 
     -webkit-transition: all .2s linear 0s;
     -moz-transition: all .2s linear 0s;
@@ -775,8 +775,6 @@ body {
 
 .tz_meetup_slider_home_text {
     font-size: 20px;
-
-    margin-bottom: 20px;
 }
 
 .lechazo-big {
@@ -784,6 +782,7 @@ body {
     font-weight: bold !important;
 
     margin-bottom: 20px !important;
+    margin-top: 20px !important;
 }
 
 .lechazo-bold {
@@ -1021,16 +1020,6 @@ body {
     margin-bottom: 0;
 
     letter-spacing: 1px;
-
-    color: #9d5763;
-}
-
-.main-table .tz_meetup_slider_home_text h4 {
-    font-size: 60px;
-    font-weight: 200;
-    line-height: 1em;
-
-    margin-bottom: 30px;
 
     color: #9d5763;
 }
