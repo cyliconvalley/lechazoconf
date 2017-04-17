@@ -912,7 +912,7 @@ aside.widget h3.module-title span {
     background: #fff;
     background: white;
     border-radius: 4px;
-    box-shadow: 0px 1px 2px rgba(0,0,0,0.15);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
     display: block;
     left: 20px;
     position: absolute;
@@ -928,14 +928,14 @@ aside.widget h3.module-title span {
     padding: 0;
 }
 
-#features-map > li{
+#features-map > li {
     list-style: none;
 }
 
 #feature-marker {
     background: url('img/feature-marker.svg') no-repeat center center;
     width: 14px;
-    height: 20px;   
+    height: 20px;
 }
 
 #feature-bus {
@@ -952,7 +952,7 @@ aside.widget h3.module-title span {
 
 .feature-icon {
     display: inline-block;
-    margin-right: 12px; 
+    margin-right: 12px;
     position: relative;
     top: 3px;
 }
