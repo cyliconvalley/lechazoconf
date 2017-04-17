@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="14px" height="20px" viewBox="0 0 14 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Website" transform="translate(-40.000000, -7949.000000)" fill-rule="nonzero" fill="#CCCCCC">
+            <g id="Localizacion" transform="translate(0.000000, 7566.000000)">
+                <g id="Datos-Localizacion" transform="translate(20.000000, 322.000000)">
+                    <path d="M31.9497404,63.0475197 L31.9497404,63.0475197 C29.216273,60.3174934 24.7841121,60.3174934 22.0502596,63.0475197 L22.0502596,63.0475197 C19.587135,65.5075433 19.3098602,70.139511 21.4002042,72.9229993 L27,81 L32.5997958,72.9229993 C34.6901398,70.139511 34.412865,65.5075433 31.9497404,63.0475197 Z M27.0681634,70.2306657 C25.7919291,70.2306657 24.75754,69.1975788 24.75754,67.9229512 C24.75754,66.6483235 25.7919291,65.6152367 27.0681634,65.6152367 C28.3443977,65.6152367 29.3787868,66.6483235 29.3787868,67.9229512 C29.3787868,69.1975788 28.3440126,70.2306657 27.0681634,70.2306657 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -460,41 +460,54 @@
 	</section>
 	<!-- Register end -->
 
-	<!-- Box text title 2  start -->
-	<section id="box_text_title_2" class="lechazo-location-reversed">
-		<div class="container">
-			<div class="tz_meetup_btn text-center ">
-				<h4 class="tz_meetup_title_btn"> ¿Dónde se celebra la LechazoConf? </h4>
-			</div>
-		</div>
-		<div class="tzRow_ArrowType4"></div>
-	</section>
-	<!-- Box text title 2 end -->
-	<section id="location" class="lechazo-location">
-		<div class="row vc_row-flex">
-			<div class="container">
-				<div class="row">
-					<div class="tz_maniva_meetup_title text-center">
-						<h3 class="tz_title_meetup_normal"> LOCALIZACIÓN </h3>
-						<div class="tz_meetup_title_content lechazo-text">
-							<p>En el <a class="lechazo-link" href="https://goo.gl/maps/ZRR7fPfPvkp" title="Localización - LechazoConf">Palacio de Congresos
-								Conde Ansúrez</a>.
-							<p>Un edificio del siglo XVII a 10 minutos andando desde la Plaza Mayor de Valladolid.</p>
-						</div>
-					</div>
-					<div class="tz-partner col-lg-6 col-md-6 col-sm-12 col-xs-12">
-						<a href="https://goo.gl/maps/ZRR7fPfPvkp" title="Localización - LechazoConf" target="_blank"><img src="img/map.jpg" class="lechazo-map"
-						                                                                                                  width="800"/></a>
-					</div>
-					<div class="tz-partner col-lg-6 col-md-6 col-sm-12 col-xs-12">
-						<img src="img/pal-congresos.jpg" class="lechazo-map" width="800"/>
-					</div>
+	<hr/>
 
+	<!-- Location  start -->
+
+	<section id="location" class="background-white lechazo-center">
+		<div class="vc_empty_space vc_empty_space_custom"></div>
+
+		<div class="container">
+			<div class="row lechazo-flex">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<span class="tz-speakers-title">Localización</span>
+					<div class="tz-title-line lechazo-center"></div>
+					<div class="vc_empty_space"></div>
+					<div class="lechazo-text-content lechazo-center">
+						<p>En el <a href="http://funge.uva.es/palacio" class="lechazo-link">Palacio de Congresos Conde Ansúrez</a>. Un edificio del siglo XVII a
+							10 minutos andando desde la Plaza Mayor de Valladolid.</p>
+					</div>
+					<div id="wrapper-map">
+						<div id="contact-map">
+							<span class="lechazo-bold">Palacio de Congresos Conde Ansúrez</span>
+							<ul id="features-map">
+								<li>
+									<span id="feature-marker" class="feature-icon"></span>
+									<span>C/ Real de Burgos,</span>
+									<span>s/n 47011 Valladolid</span>
+								</li>
+								<li>
+									<span id="feature-bus" class="feature-icon"></span>
+									<span>Líneas de bus: 1, 2, 8 y C2</span>
+								</li>
+								<li>
+									<span id="feature-link" class="feature-icon"></span>
+									<a class="lechazo-link" href="http://funge.uva.es/palacio">funge.uva.es/palacio</a>
+								</li>
+							</ul>
+							<a href="https://www.google.es/maps/place/Palacio+de+Congresos+Conde+Ans%C3%BArez/@41.6564752,-4.7216427,17z/data=!3m1!4b1!4m5!3m4!1s0xd4712af083befc7:0x8df2f746d39e773c!8m2!3d41.6564752!4d-4.719454?shorturl=1"
+							   class="lechazo-register-link lechazo-register-link-small">
+								Como llegar
+							</a>
+						</div>
+						<div id="map"></div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</section>
 
+		<div class="vc_empty_space"></div>
+	</section>
 
 	<!-- Speaker client start -->
 	<section id="speaker_client" class="background-gray">
@@ -779,6 +792,65 @@
     ga('create', 'UA-93173115-1', 'auto');
     ga('send', 'pageview');
 
+</script>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQZrLmUbFWJMd4sH3rdEcnqkIqhMOWHlc"></script>
+
+<script type="text/javascript">
+    // When the window has finished loading create our google map below
+    google.maps.event.addDomListener(window, 'load', init);
+
+    function init() {
+        // Basic options for a simple Google Map
+        // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+        const mapOptions = {
+            // How zoomed in you want the map to start at (always required)
+            zoom: 17,
+            mapTypeControl: false,
+            navigationControl: false,
+            disableDoubleClickZoom: true,
+            scrollwheel: false,
+            disableDefaultUI: true,
+
+            // The latitude and longitude to center the map (always required)
+            center: new google.maps.LatLng(41.6564633, -4.7198477), // Valladolid
+
+            // How you would like to style the map.
+            // This is where you would paste any style found on Snazzy Maps.
+            styles: [
+                {"featureType": "landscape.man_made", "elementType": "geometry", "stylers": [{"color": "#f7f1df"}]},
+                {"featureType": "landscape.natural", "elementType": "geometry", "stylers": [{"color": "#d0e3b4"}]},
+                {"featureType": "landscape.natural.terrain", "elementType": "geometry", "stylers": [{"visibility": "off"}]},
+                {"featureType": "poi", "elementType": "labels", "stylers": [{"visibility": "off"}]},
+                {"featureType": "poi.business", "elementType": "all", "stylers": [{"visibility": "off"}]},
+                {"featureType": "poi.medical", "elementType": "geometry", "stylers": [{"color": "#fbd3da"}]},
+                {"featureType": "poi.park", "elementType": "geometry", "stylers": [{"color": "#bde6ab"}]},
+                {"featureType": "road", "elementType": "geometry.stroke", "stylers": [{"visibility": "off"}]},
+                {"featureType": "road.highway", "elementType": "geometry.fill", "stylers": [{"color": "#ffe15f"}]},
+                {"featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [{"color": "#efd151"}]},
+                {"featureType": "road.arterial", "elementType": "geometry.fill", "stylers": [{"color": "#ffffff"}]},
+                {"featureType": "road.local", "elementType": "geometry.fill", "stylers": [{"color": "black"}]},
+                {"featureType": "transit.station.airport", "elementType": "geometry.fill", "stylers": [{"color": "#cfb2db"}]},
+                {"featureType": "water", "elementType": "geometry", "stylers": [{"color": "#a2daf2"}]}
+            ]
+        };
+
+        // Get the HTML DOM element that will contain your map 
+        // We are using a div with id="map" seen below in the <body>
+        const mapElement = document.getElementById('map');
+
+        // Create the Google Map using our element and options defined above
+        const map = new google.maps.Map(mapElement, mapOptions);
+
+        const image = "img/marker.svg";
+
+        // Let's also add a marker while we're at it
+        const marker = new google.maps.Marker({
+            position: new google.maps.LatLng(41.6564633, -4.7198477),
+            map: map,
+            icon: image
+        });
+    }
 </script>
 </body>
 </html>
