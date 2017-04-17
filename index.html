@@ -465,7 +465,7 @@
 	<!-- Location  start -->
 
 	<section id="location" class="background-white lechazo-center">
-	<div class="vc_empty_space vc_empty_space_custom"></div>
+		<div class="vc_empty_space vc_empty_space_custom"></div>
 
 		<div class="container">
 			<div class="row lechazo-flex">
@@ -474,7 +474,8 @@
 					<div class="tz-title-line lechazo-center"></div>
 					<div class="vc_empty_space"></div>
 					<div class="lechazo-text-content lechazo-center">
-						<p>En el <a href="http://funge.uva.es/palacio" class="lechazo-link">Palacio de Congresos Conde Ansúrez</a>. Un edificio del siglo XVII a 10 minutos andando desde la Plaza Mayor de Valladolid.</p>
+						<p>En el <a href="http://funge.uva.es/palacio" class="lechazo-link">Palacio de Congresos Conde Ansúrez</a>. Un edificio del siglo XVII a
+							10 minutos andando desde la Plaza Mayor de Valladolid.</p>
 					</div>
 					<div id="wrapper-map">
 						<div id="contact-map">
@@ -494,9 +495,10 @@
 									<a class="lechazo-link" href="http://funge.uva.es/palacio">funge.uva.es/palacio</a>
 								</li>
 							</ul>
-							<a href="https://www.google.es/maps/place/Palacio+de+Congresos+Conde+Ans%C3%BArez/@41.6564752,-4.7216427,17z/data=!3m1!4b1!4m5!3m4!1s0xd4712af083befc7:0x8df2f746d39e773c!8m2!3d41.6564752!4d-4.719454?shorturl=1" class="lechazo-register-link lechazo-register-link-small">
-						Como llegar
-					</a>
+							<a href="https://www.google.es/maps/place/Palacio+de+Congresos+Conde+Ans%C3%BArez/@41.6564752,-4.7216427,17z/data=!3m1!4b1!4m5!3m4!1s0xd4712af083befc7:0x8df2f746d39e773c!8m2!3d41.6564752!4d-4.719454?shorturl=1"
+							   class="lechazo-register-link lechazo-register-link-small">
+								Como llegar
+							</a>
 						</div>
 						<div id="map"></div>
 					</div>
@@ -809,11 +811,26 @@
             disableDefaultUI: true,
 
             // The latitude and longitude to center the map (always required)
-            center: new google.maps.LatLng(41.6564633,-4.7198477), // Valladolid
+            center: new google.maps.LatLng(41.6564633, -4.7198477), // Valladolid
 
             // How you would like to style the map. 
             // This is where you would paste any style found on Snazzy Maps.
-            styles: [{"featureType":"landscape.man_made","elementType":"geometry","stylers":[{"color":"#f7f1df"}]},{"featureType":"landscape.natural","elementType":"geometry","stylers":[{"color":"#d0e3b4"}]},{"featureType":"landscape.natural.terrain","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi.medical","elementType":"geometry","stylers":[{"color":"#fbd3da"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#bde6ab"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffe15f"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#efd151"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"color":"black"}]},{"featureType":"transit.station.airport","elementType":"geometry.fill","stylers":[{"color":"#cfb2db"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#a2daf2"}]}]
+            styles: [
+                {"featureType": "landscape.man_made", "elementType": "geometry", "stylers": [{"color": "#f7f1df"}]},
+                {"featureType": "landscape.natural", "elementType": "geometry", "stylers": [{"color": "#d0e3b4"}]},
+                {"featureType": "landscape.natural.terrain", "elementType": "geometry", "stylers": [{"visibility": "off"}]},
+                {"featureType": "poi", "elementType": "labels", "stylers": [{"visibility": "off"}]},
+                {"featureType": "poi.business", "elementType": "all", "stylers": [{"visibility": "off"}]},
+                {"featureType": "poi.medical", "elementType": "geometry", "stylers": [{"color": "#fbd3da"}]},
+                {"featureType": "poi.park", "elementType": "geometry", "stylers": [{"color": "#bde6ab"}]},
+                {"featureType": "road", "elementType": "geometry.stroke", "stylers": [{"visibility": "off"}]},
+                {"featureType": "road.highway", "elementType": "geometry.fill", "stylers": [{"color": "#ffe15f"}]},
+                {"featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [{"color": "#efd151"}]},
+                {"featureType": "road.arterial", "elementType": "geometry.fill", "stylers": [{"color": "#ffffff"}]},
+                {"featureType": "road.local", "elementType": "geometry.fill", "stylers": [{"color": "black"}]},
+                {"featureType": "transit.station.airport", "elementType": "geometry.fill", "stylers": [{"color": "#cfb2db"}]},
+                {"featureType": "water", "elementType": "geometry", "stylers": [{"color": "#a2daf2"}]}
+            ]
         };
 
         // Get the HTML DOM element that will contain your map 
@@ -827,7 +844,7 @@
 
         // Let's also add a marker while we're at it
         var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(41.6564633,-4.7198477),
+            position: new google.maps.LatLng(41.6564633, -4.7198477),
             map: map,
             icon: image
         });
