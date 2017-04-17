@@ -505,6 +505,8 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="vc_empty_space"></div>
 	</section>
 
 	<!-- Speaker client start -->
@@ -801,7 +803,7 @@
     function init() {
         // Basic options for a simple Google Map
         // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-        var mapOptions = {
+        const mapOptions = {
             // How zoomed in you want the map to start at (always required)
             zoom: 17,
             mapTypeControl: false,
@@ -813,7 +815,7 @@
             // The latitude and longitude to center the map (always required)
             center: new google.maps.LatLng(41.6564633, -4.7198477), // Valladolid
 
-            // How you would like to style the map. 
+            // How you would like to style the map.
             // This is where you would paste any style found on Snazzy Maps.
             styles: [
                 {"featureType": "landscape.man_made", "elementType": "geometry", "stylers": [{"color": "#f7f1df"}]},
@@ -835,15 +837,15 @@
 
         // Get the HTML DOM element that will contain your map 
         // We are using a div with id="map" seen below in the <body>
-        var mapElement = document.getElementById('map');
+        const mapElement = document.getElementById('map');
 
         // Create the Google Map using our element and options defined above
-        var map = new google.maps.Map(mapElement, mapOptions);
+        const map = new google.maps.Map(mapElement, mapOptions);
 
-        var image = "img/marker.svg"
+        const image = "img/marker.svg";
 
         // Let's also add a marker while we're at it
-        var marker = new google.maps.Marker({
+        const marker = new google.maps.Marker({
             position: new google.maps.LatLng(41.6564633, -4.7198477),
             map: map,
             icon: image
