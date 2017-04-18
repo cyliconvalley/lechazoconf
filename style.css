@@ -866,7 +866,7 @@ aside.widget h3.module-title span {
 
 /* MAILCHIMP */
 #mc_embed_signup {
-    padding: 15px;
+    padding: 15px 0 15px 0;
     clear: left;
     font: 14px Helvetica, Arial, sans-serif;
     width: 100%;
