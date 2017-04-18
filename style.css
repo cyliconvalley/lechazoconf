@@ -213,12 +213,18 @@ video {
     color: #843a51;
 }
 
-.tzHeaderContainer:after {
-    display: table;
-    clear: both;
-
-    content: '';
+.tzHeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+/*.tzHeaderContainer:after {*/
+/*display: table;*/
+/*clear: both;*/
+
+/*content: '';*/
+/*}*/
 
 .tzHeaderContainer h3 {
     font-size: inherit;
