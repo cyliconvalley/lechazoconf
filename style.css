@@ -821,15 +821,11 @@ aside.widget h3.module-title span {
 }
 
 .tz-partner-left {
-    padding-right: 10px;
-    padding-left: 0;
-    padding-bottom: 10px;
+    padding: 0 10px 10px 0;
 }
 
 .tz-partner-right {
-    padding-left: 10px;
-    padding-right: 0;
-    padding-bottom: 10px;
+    padding: 0 0 10px 10px;
 }
 
 .tz-partner {
@@ -1246,6 +1242,14 @@ aside.widget h3.module-title span {
 
     .lechazo-location .tz-partner {
         padding: 20px;
+    }
+
+    .tz-partner-left {
+        padding: 0 0 10px 0;
+    }
+
+    .tz-partner-right {
+        padding: 0 0 10px 0;
     }
 }
 
