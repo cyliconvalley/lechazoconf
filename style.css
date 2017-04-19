@@ -1,53 +1,3 @@
-/*------------------------------------------------------------------
-[Master Stylesheet]
-Theme Name: Maniva Meetup HTML5 Template
-Theme URI: http://www.templaza.com/
-Author: templaza
-Author URI: http://themeforest.net/user/templaza
-Version: 1.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: animation, blog, bootstrap, business, corporate, css3, html5, portfolio, responsive
-------------------------------------------------------------------*/
-/**
-
-/**
-* Table of Contents:
-* 1.0 - General
-* 2.0 - Header Style
-* 3.0 - Slider Home
-* 4.0 - Content
-*   4.1 - About
-*   4.2 - Video Meetup
-*   4.3 - Counter
-*   4.4 - Text Box Button
-*   4.5 - Slider Meetup
-*   4.6 - List
-*   4.7 - Box text title line
-*   4.8 - Our Team meetup
-*   4.9 - Tab Event
-*   4.10 - Twitter
-*   4.11 - Gallery
-*   4.12 - Box text title_2
-*   4.13 - Speaker client
-*   4.14 - FAQ
-*   4.15 - Register
-*   4.16 - Recent posts
-*   4.17 - Contact
-*   4.18 - Breadcrumb
-* 5.0 - Blog
-* 6.0 - Sidebar
-* 7.0 - Contact
-* 8.0 - typography
-* 9.0 - Footer
-* 10.0 - Responsive
-* -----------------------------------------------------------------------------
-*/
-
-/**
- * 1.0 - General
- * -----------------------------------------------------------------------------
- */
 body {
     font-family: 'Lato', 'Open Sans', Arial, sans-serif;
     font-size: 18px;
@@ -100,14 +50,14 @@ blockquote {
     padding: 0 20px;
 }
 
-.ds-table {
+.table {
     display: table;
 
     width: 100%;
     height: 100%;
 }
 
-.ds-table-cell {
+.table-cell {
     display: table-cell;
 
     text-align: center;
@@ -152,47 +102,50 @@ video {
 
 }
 
-/* eq height */
-.vc_row-flex {
-    display: flex;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-
-    flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-}
-
 .vc_empty_space {
     height: 32px;
 }
 
-.vc_empty_space_custom {
-    height: 100px;
-}
-
-.vc_empty_space_custom_3 {
+.vc_empty_space_2 {
     height: 60px;
 }
 
-.vc_empty_space_5 {
+.vc_empty_space_3 {
+    height: 100px;
+}
+
+.vc_empty_space_4 {
     height: 400px;
 }
 
-/**
- * 2.0 - Header Style
- * -----------------------------------------------------------------------------
- */
-.tz-headerHome {
+/*Header*/
+
+.header-home {
     z-index: 52;
+    background-color: white;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    width: auto;
+
+    -webkit-transition: all .3s linear 0s;
+    -moz-transition: all .3s linear 0s;
+    -o-transition: all .3s linear 0s;
+    transition: all .3s linear 0s;
+
+    border-bottom: 0 solid rgba(255, 255, 255, .1);
 }
 
-.tz-headerHome ul li {
+.header-home ul li {
     position: relative;
 
     padding: 0 10px;
 }
 
-.tz-headerHome ul li a {
+.header-home ul li a {
     font-family: 'Raleway', sans-serif;
     font-size: 12px;
     font-weight: 600;
@@ -205,7 +158,6 @@ video {
 
     -webkit-transition: all .2s linear 0s;
     -moz-transition: all .2s linear 0s;
-    -ms-transition: all .2s linear 0s;
     -o-transition: all .2s linear 0s;
     transition: all .2s linear 0s;
     text-transform: uppercase;
@@ -213,56 +165,7 @@ video {
     color: #843a51;
 }
 
-.tzHeaderContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/*.tzHeaderContainer:after {*/
-/*display: table;*/
-/*clear: both;*/
-
-/*content: '';*/
-/*}*/
-
-.tzHeaderContainer h3 {
-    font-size: inherit;
-    line-height: normal;
-
-    margin: 0;
-    padding: 20px 20px 20px 0;
-
-    -webkit-transition: all .2s linear 0s;
-    -moz-transition: all .2s linear 0s;
-    -ms-transition: all .2s linear 0s;
-    -o-transition: all .2s linear 0s;
-    transition: all .2s linear 0s;
-}
-
-.tzHeaderContainer ul {
-    padding: 0;
-}
-
-.tz-headerHome {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-
-    width: auto;
-
-    -webkit-transition: all .3s linear 0s;
-    -moz-transition: all .3s linear 0s;
-    -ms-transition: all .3s linear 0s;
-    -o-transition: all .3s linear 0s;
-    transition: all .3s linear 0s;
-
-    border-bottom: 0 solid rgba(255, 255, 255, .1);
-    background: rgba(0, 0, 0, 0);
-}
-
-.tz-headerHome ul li a:before {
+.header-home ul li a:before {
     position: absolute;
     bottom: 35%;
     left: 0;
@@ -273,317 +176,448 @@ video {
     content: '';
     -webkit-transition: all .3s linear 0s;
     -moz-transition: all .3s linear 0s;
-    -ms-transition: all .3s linear 0s;
     -o-transition: all .3s linear 0s;
     transition: all .3s linear 0s;
 
     background: #843a51;
 }
 
-.tz-headerHome ul li a:hover:before {
+.header-home ul li a:hover:before {
     width: 100%;
-}
-
-.tz-headerHome button.tz-search i.fa {
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg);
-
-    color: #242732;
-}
-
-.tz-headerHome .tz-form-search .container {
-    height: 100%;
-}
-
-.tz-headerHome .tz-form-search form {
-    position: relative;
-
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-
-    border: none;
 }
 
 /* Sub Menu */
-.tz-headerHome nav > ul > li {
+.header-home nav > ul > li {
     position: relative;
 
     padding: 0 10px;
 }
 
-.tz-headerHome nav > ul > li > ul.non_mega_menu > li:first-child {
-    border-top: 1px solid #843a51;
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.tz-headerHome nav > ul > li > ul.non_mega_menu > li {
-    position: relative;
-
-    padding: 0 29px;
-
-    list-style: outside none none;
-}
-
-.tz-headerHome nav > ul > li > ul.non_mega_menu > li > a {
-    font-size: 11px;
-    font-weight: 400;
-    line-height: 11px;
-
-    padding: 15px 0;
-
-    -webkit-transition: all .3s ease-in-out 0s;
-    -moz-transition: all .3s ease-in-out 0s;
-    -ms-transition: all .3s ease-in-out 0s;
-    -o-transition: all .3s ease-in-out 0s;
-    transition: all .3s ease-in-out 0s;
-
-    border: none;
-}
-
-.tz-headerHome nav ul li ul.non_mega_menu li a:hover {
-    text-decoration: none;
-
-    color: #843a51;
-}
-
-.tz-headerHome nav > ul > li > ul.non_mega_menu > li > a:before {
-    content: normal;
-}
-
-.tz-homeEff {
-    background: rgba(255, 255, 255, .9);
-}
-
-/**
- * 4.0 - Content
- * -----------------------------------------------------------------------------
- */
-
-/* 4.1 - About */
-#about {
-    padding: 95px 0 85px;
-}
-
-.tz_maniva_meetup_title h3 {
-    font-size: 26px;
-    font-weight: 400;
-
-    margin: 0 0 12px;
-
-    text-transform: uppercase;
-}
-
-.tz_meetup_title_content p {
-    font-size: 18px;
+.header-container h3 {
+    font-size: inherit;
+    line-height: normal;
 
     margin: 0;
-}
-
-.tz_meetup_thumbnail img {
-    width: 100%;
-
-    border-radius: 5px;
-}
-
-.tz_maniva_about_meetup h4 {
-    font-size: 15px;
-    font-weight: 600;
-
-    margin: 25px 0 18px;
-
-    letter-spacing: 2px;
-}
-
-.tz_maniva_about_meetup h4 a {
-    text-decoration: none;
-
-    color: #242732;
-}
-
-.tz_meetup_thumbnail img {
-    width: 100%;
-
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
-
-h3.tz_meetup_general_title em {
-    font-weight: 400;
-    font-style: normal;
-}
-
-.tz_btn_play_video a.tz_btn_easy i.fa {
-    font-size: 30px;
-    line-height: 90px;
-
-    margin-left: 9px;
-
-    color: #843a51;
-}
-
-.tz_meetup_btn a {
-    font-size: 12px;
-    font-weight: 500;
-
-    display: inline-block;
-
-    padding: 13px 35px;
+    padding: 20px 20px 20px 0;
 
     -webkit-transition: all .2s linear 0s;
     -moz-transition: all .2s linear 0s;
-    -ms-transition: all .2s linear 0s;
     -o-transition: all .2s linear 0s;
     transition: all .2s linear 0s;
-    text-decoration: none;
-    letter-spacing: 3px;
-
-    color: #242732;
-    border: 2px solid #000;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    border-radius: 25px;
-
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
 }
 
-.tz_meetup_btn a:hover {
-    color: #fff;
-    background: #000;
+.header-container ul {
+    padding: 0;
 }
 
-/* 4.7 - Box text title line */
+/*General styles*/
 
-.tz_maniva_meetup_title h3 em {
-    font-weight: 400;
-    font-style: normal;
-}
-
-.tz_maniva_meetup_title.tz_maniva_meetup_title_type3 h3 {
-    font-size: 24px;
-    font-weight: 700;
-
-    position: relative;
-
-    display: inline-block;
-
-    margin: 0;
-    padding: 0 45px;
-
-    text-align: center;
-    letter-spacing: 3px;
-
-    color: #f8f8f8;
-}
-
-.tz-speakers-title {
+.title {
     font-size: 30px;
     color: #753C51;
 }
 
-.tz-title-line {
+.title-line {
     border-top: 3px solid #EFBF7C;
     width: 80px;
 }
 
-.lechazo-text-content {
+.text-content {
     font-size: 18px;
     padding-top: 20px;
     padding-bottom: 20px;
     max-width: 700px;
 }
 
-.tz-position-box {
+.lechazo-center {
+    margin: auto;
+
+    text-align: center;
+}
+
+.lechazo-link {
+    font-weight: 700;
+
+    text-decoration: underline;
+}
+
+.lechazo-link:hover {
+    color: #d3a36e;
+}
+
+.background-new {
+    background-color: #FAF4E6;
+}
+
+.background-new .container {
+    width: 90%;
+    background-size: 100% auto;
+    background: url('img/background-city.svg') no-repeat center bottom;
+}
+
+.background-white {
+    background-color: white;
+}
+
+.background-gray {
+    background-color: #F9F9F9;
+}
+
+.background-light-blue {
+    background-color: #F4F7FA;
+}
+
+/*About*/
+
+#about {
+    padding: 95px 0 85px;
+}
+
+.lechazo-logo {
+    display: flex;
+    max-width: 550px;
+    padding: 20px;
+    margin: 100px auto auto;
+}
+
+.header-logo img {
+    margin-top: -6px;
+}
+
+.lechazo-organizers {
+    display: block;
+
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    vertical-align: middle;
+}
+
+.lechazo-organizers a {
+    display: inline-block;
+
+    margin: auto;
+
+    text-align: center;;
+}
+
+.lechazo-logo-cylicon {
+    width: 200px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.lechazo-logo-solidgear {
+    width: 200px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.tz_meetup_slider_home_text {
+    font-size: 20px;
+    display: flex;
+    justify-content: center
+}
+
+.lechazo-big {
+    font-size: 25px;
+    font-weight: bold !important;
+
+    margin-bottom: 20px !important;
+    margin-top: 20px !important;
+}
+
+.lechazo-bold {
+    font-weight: bold;
+}
+
+.lechazo-subtitle {
+    color: #5A6779
+}
+
+.fa {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.fa-twitter {
+    color: #1da1f2;
+}
+
+.fa-facebook {
+    color: #3b5998;
+}
+
+.main-table .tz_meetup_social {
+    position: relative;
+
+    display: inline-block;
+
+    margin-bottom: 9px;
+}
+
+.main-table .tz_meetup_social .meetup_line_left {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+
+    width: 25px;
+    height: 1px;
+
+    background: #9d5763;
+}
+
+.main-table .tz_meetup_social .meetup_line_right {
+    position: absolute;
+    top: 50%;
+    right: 100%;
+
+    width: 25px;
+    height: 1px;
+
+    background: #9d5763;
+}
+
+.main-table a {
+    /*padding-right: 10px;*/
+    font-size: 30px;
+
+    text-decoration: none;
+}
+
+.main-table .tz_meetup_slider_home_text p {
+    font-weight: 400;
+
+    margin-bottom: 0;
+
+    letter-spacing: 1px;
+
+    color: #9d5763;
+}
+
+/*Speakers*/
+
+#our_speakers {
+    padding: 110px 0 70px;
+}
+
+.speaker-box {
+    padding: 0 50px
+}
+
+.speaker-box a {
+    text-decoration: none;
+}
+
+.speaker-job {
     background: #A0D468;
     color: white;
     font-size: 12px;
     padding: 5px;
 }
 
-.tz-speaker-box {
-    padding: 0 50px
-}
-
-#our_speakers {
-    padding: 110px 0 70px;
-}
-
-.tz_our_speakers_img img {
+.speaker-image img {
     width: 80%;
     padding: 10px;
 }
 
-.social-links {
+.speaker-social-links {
     padding: 10px;
 }
 
-.tz-speaker-box a {
-    text-decoration: none;
+.lechazo-flex {
+    display: flex;
+
+    justify-content: center;
+    flex-flow: row wrap;
 }
 
-/* 4.12 - Box text title_2 */
-#box_text_title_2 {
-    position: relative;
+/* Sponsors */
 
-    padding: 50px 0 50px;
-
-    background-color: #4a2f2e;
-}
-
-.tz_meetup_btn h4.tz_meetup_title_btn {
-    font-size: 32px;
-    /*margin-bottom: 35px;*/
-    font-weight: 600;
-
-    text-transform: uppercase;
-
-    color: #fff;
-}
-
-.tzRow_ArrowType4 {
-    position: absolute;
-    z-index: 1;
-    top: 100%;
-    left: 50%;
-
-    margin-left: -62px;
-
-    border-top: 30px solid #4a2f2e;
-    border-right: 60px solid rgba(0, 0, 0, 0);
-    border-left: 60px solid rgba(0, 0, 0, 0);
-}
-
-/* 4.13 - Speaker client */
-.tz-partner {
-    position: relative;
-}
-
-#speaker_client {
+#sponsors {
     padding: 110px 0 120px;
 }
 
-.partner-slider li {
+.sponsor-title {
+    padding: 20px 0;
+}
+
+.sponsor-box {
+    padding: 10px;
+    border: 1px solid #E5E5E5;
+    display: flex;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sponsor-silver {
+    height: 200px;
+}
+
+.sponsor-bronze {
+    height: 180px;
+    padding: 20px;
+}
+
+.sponsor-special {
+    height: 150px;
+    padding: 10px;
+}
+
+.sponsor-box-left {
+    padding: 0 10px 10px 0;
+}
+
+.sponsor-box-right {
+    padding: 0 0 10px 10px;
+}
+
+/* MAILCHIMP */
+
+#mc_embed_signup {
+    padding: 15px 0 15px 0;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+    width: 100%;
+}
+
+#mc_embed_signup label {
+    font-family: 'Lato', 'Open Sans', Arial, sans-serif;
+    font-weight: 400 !important;
+
+    color: #9d5763;
+}
+
+#mc_embed_signup .button {
+    padding: 10px;
+
+    background-color: #d3a36e !important;
+}
+
+#mc_embed_signup input.email {
+    padding: 10px;
+
+    border-color: #d3a36e !important;
+}
+
+/* LOCATION */
+
+#location {
+    overflow: hidden;
+    position: relative;
+}
+
+#wrapper-map {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+#contact-map {
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    display: block;
+    left: 20px;
+    position: absolute;
+    top: 20px;
+    z-index: 1;
+    padding: 14px 20px 20px;
+    text-align: left;
+}
+
+#features-map {
+    font-size: 16px;
     padding: 0;
+}
 
+#features-map > li {
     list-style: none;
+}
 
+#feature-marker {
+    background: url('img/feature-marker.svg') no-repeat center center;
+    width: 14px;
+    height: 20px;
+}
+
+#feature-bus {
+    background: url('img/feature-bus.svg') no-repeat center center;
+    width: 14px;
+    height: 17px;
+}
+
+#feature-link {
+    background: url('img/feature-link.svg') no-repeat center center;
+    width: 14px;
+    height: 14px;
+}
+
+.feature-icon {
+    display: inline-block;
+    margin-right: 12px;
+    position: relative;
+    top: 3px;
+}
+
+#map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* Ticketea */
+
+.lechazo-cta {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.lechazo-register-link {
+    font-size: 22px !important;
+    font-weight: 400;
+    min-width: 300px;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 6px;
+    background-color: #86b817;
+    display: inline-block;
+    margin: auto;
     text-align: center;
 }
 
-.partner-slider.owl-carousel .owl-item img {
-    width: auto;
-    margin: 0 auto;
+.lechazo-register-link-small {
+    font-size: 20px !important;
+    min-width: 200px;
+    padding: 5px;
 }
 
-/* 9.0 - Footer */
+.lechazo-register-link:hover {
+    text-decoration: none;
+    background-color: #6a8e1a;
+    color: white;
+}
+
+.lechazo-ticket-claim {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*Code of conduct*/
+
+.lechazo-coc {
+    max-width: 800px;
+}
+
+/* Footer */
 .tz-footer.tz-footer-type1 {
     position: relative;
 
@@ -698,409 +732,22 @@ aside.widget h3.module-title span {
     color: #787e92;
 }
 
-/* LECHAZO LANDING --------------------------------------------------------------- */
-
-/* HELPERS */
-.lechazo-center {
-    margin: auto;
-
-    text-align: center;
-}
-
-.lechazo-link {
-    font-weight: 700;
-
-    text-decoration: underline;
-}
-
-.lechazo-link:hover {
-    color: #d3a36e;
-}
-
-.lechazo-logo {
-    display: flex;
-    max-width: 550px;
-    padding: 20px;
-    margin: 100px auto auto;
-}
-
-.tz_logo img {
-    margin-top: -6px;
-}
-
-.lechazo-organizers {
-    display: block;
-
-    margin-top: 0;
-    margin-bottom: 50px;
-
-    vertical-align: middle;
-}
-
-.lechazo-organizers a {
-    display: inline-block;
-
-    margin: auto;
-
-    text-align: center;;
-}
-
-.lechazo-logo-cylicon {
-    width: 200px;
-    margin-right: 20px;
-    margin-left: 20px;
-}
-
-.lechazo-logo-solidgear {
-    width: 200px;
-    margin-right: 20px;
-    margin-left: 20px;
-}
-
-.bx-wrapper .bx-pager.bx-default-pager a {
-    display: none;
-}
-
-.ds-table-cell {
-    vertical-align: middle;
-}
-
-.tz_meetup_slider_home_text {
-    font-size: 20px;
-    display: flex;
-    justify-content: center
-}
-
-.lechazo-big {
-    font-size: 25px;
-    font-weight: bold !important;
-
-    margin-bottom: 20px !important;
-    margin-top: 20px !important;
-}
-
-.lechazo-bold {
-    font-weight: bold;
-}
-
-.lechazo-subtitle {
-    color: #5A6779
-}
-
-.fa {
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-.fa-twitter {
-    color: #1da1f2;
-}
-
-.fa-facebook {
-    color: #3b5998;
-}
-
-.sponsor-title {
-    padding: 20px 0;
-}
-
-.lechazo-sponsor {
-    padding: 10px;
-    border: 1px solid #E5E5E5;
-    display: flex;
-    height: 250px;
-    align-items: center;
-    justify-content: center;
-}
-
-.lechazo-sponsor-silver {
-    height: 200px;
-}
-
-.lechazo-sponsor-bronze {
-    height: 180px;
-    padding: 20px;
-}
-
-.lechazo-sponsor-special {
-    height: 150px;
-    padding: 10px;
-}
-
-.tz-partner-left {
-    padding: 0 10px 10px 0;
-}
-
-.tz-partner-right {
-    padding: 0 0 10px 10px;
-}
-
-.tz-partner {
-    padding: 20px 0;
-}
-
-#box_text_title_2.lechazo-location-reversed {
-    background-color: #d3a36e;
-}
-
-#box_text_title_2.lechazo-box-reversed .tzRow_ArrowType4 {
-    border-top: 30px solid #9d5763;
-}
-
-#box_text_title_2.lechazo-sponsor-reversed .tzRow_ArrowType4 {
-    border-top: 30px solid #a0a873;
-}
-
-#box_text_title_2.lechazo-location-reversed .tzRow_ArrowType4 {
-    border-top: 30px solid #d3a36e;
-}
-
-/* SPEAKERS */
-.lechazo-flex {
-    display: flex;
-
-    justify-content: center;
-    flex-flow: row wrap;
-}
-
-.lechazo-speaker-bio p {
-    font-size: 16px;
-
-    padding: 15px 15px 0;
-
-    text-align: left;
-}
-
-/* MAILCHIMP */
-#mc_embed_signup {
-    padding: 15px 0 15px 0;
-    clear: left;
-    font: 14px Helvetica, Arial, sans-serif;
-    width: 100%;
-}
-
-#mc_embed_signup label {
-    font-family: 'Lato', 'Open Sans', Arial, sans-serif;
-    font-weight: 400 !important;
-
-    color: #9d5763;
-}
-
-#mc_embed_signup .button {
-    padding: 10px;
-
-    background-color: #d3a36e !important;
-}
-
-#mc_embed_signup input.email {
-    padding: 10px;
-
-    border-color: #d3a36e !important;
-}
-
-/* LOCATION */
-
-#location {
-    overflow: hidden;
-    position: relative;
-}
-
-#wrapper-map {
-    position: relative;
-    width: 100%;
-    height: 400px;
-}
-
-#contact-map {
-    background: white;
-    border-radius: 4px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-    display: block;
-    left: 20px;
-    position: absolute;
-    top: 20px;
-    z-index: 1;
-    padding: 14px 20px 20px;
-    text-align: left;
-}
-
-#features-map {
-    font-size: 16px;
-    padding: 0;
-}
-
-#features-map > li {
-    list-style: none;
-}
-
-#feature-marker {
-    background: url('img/feature-marker.svg') no-repeat center center;
-    width: 14px;
-    height: 20px;
-}
-
-#feature-bus {
-    background: url('img/feature-bus.svg') no-repeat center center;
-    width: 14px;
-    height: 17px;
-}
-
-#feature-link {
-    background: url('img/feature-link.svg') no-repeat center center;
-    width: 14px;
-    height: 14px;
-}
-
-.feature-icon {
-    display: inline-block;
-    margin-right: 12px;
-    position: relative;
-    top: 3px;
-}
-
-#map {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-/* REGISTRATION */
-
-.lechazo-cta {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.lechazo-register-link {
-    font-size: 22px !important;
-    font-weight: 400;
-    min-width: 300px;
-    padding: 10px;
-    text-decoration: none;
-    color: #fff;
-    border-radius: 6px;
-    background-color: #86b817;
-    display: inline-block;
-    margin: auto;
-    text-align: center;
-}
-
-.lechazo-register-link-small {
-    font-size: 20px !important;
-    min-width: 200px;
-    padding: 5px;
-}
-
-.lechazo-register-link:hover {
-    text-decoration: none;
-    background-color: #6a8e1a;
-    color: white;
-}
-
-.lechazo-text {
-    max-width: 700px;
-    margin: auto;
-    padding: 20px;
-}
-
-.lechazo-text p {
-    margin-bottom: 20px;
-}
-
-.lechazo-ticket-claim {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-/* PORTADA */
-
-.main-table .tz_meetup_social {
-    position: relative;
-
-    display: inline-block;
-
-    margin-bottom: 9px;
-}
-
-.main-table .tz_meetup_social .meetup_line_left {
-    position: absolute;
-    top: 50%;
-    left: 100%;
-
-    width: 25px;
-    height: 1px;
-
-    background: #9d5763;
-}
-
-.main-table .tz_meetup_social .meetup_line_right {
-    position: absolute;
-    top: 50%;
-    right: 100%;
-
-    width: 25px;
-    height: 1px;
-
-    background: #9d5763;
-}
-
-.main-table a {
-    /*padding-right: 10px;*/
-    font-size: 30px;
-
-    text-decoration: none;
-}
-
-.main-table .tz_meetup_slider_home_text p {
-    font-weight: 400;
-
-    margin-bottom: 0;
-
-    letter-spacing: 1px;
-
-    color: #9d5763;
-}
-
-.background-new {
-    background-color: #FAF4E6;
-}
-
-.background-new .container {
-    width: 90%;
-    background-size: 100% auto;
-    background: url('img/background-city.svg') no-repeat center bottom;
-}
-
-.background-white {
-    background-color: white;
-}
-
-.background-gray {
-    background-color: #F9F9F9;
-}
-
-.background-light-blue {
-    background-color: #F4F7FA;
-}
-
-.lechazo-coc {
-    max-width: 800px;
-}
+/*Media Queries*/
 
 @media (max-width: 1199px) and (min-width: 992px) {
-    .tz-headerHome nav.tz-menu ul li a {
+    .header-home nav.tz-menu ul li a {
         font-size: 12px;
 
         padding: 30px 0;
     }
 
-    .tzHeaderContainer h3 {
+    .header-container h3 {
         padding: 25px 0 35px;
     }
 }
 
 @media (max-width: 991px) {
-    .vc_empty_space_custom {
+    .vc_empty_space_3 {
         margin-top: 35px;
     }
 
@@ -1108,7 +755,7 @@ aside.widget h3.module-title span {
         margin-top: 0 !important;
     }
 
-    .tz-headerHome {
+    .header-home {
         position: relative;
 
         padding: 25px 0;
@@ -1120,15 +767,15 @@ aside.widget h3.module-title span {
         width: 100%;
     }
 
-    .tzHeaderContainer h3 {
+    .header-container h3 {
         padding: 0;
     }
 
-    .tz-headerHome ul li a:before {
+    .header-home ul li a:before {
         display: none;
     }
 
-    .tz-headerHome .navbar-toggle {
+    .header-home .navbar-toggle {
         font-size: 21px;
 
         display: block;
@@ -1160,7 +807,7 @@ aside.widget h3.module-title span {
         width: auto;
     }
 
-    .tz-headerHome nav.tz-menu {
+    .header-home nav.tz-menu {
         position: absolute;
         top: 100%;
         right: 0;
@@ -1172,15 +819,15 @@ aside.widget h3.module-title span {
         background: #eee;
     }
 
-    .tz-headerHome nav.tz-menu .tz-nav {
+    .header-home nav.tz-menu .tz-nav {
         width: 100%;
     }
 
-    .tzHeaderContainer ul {
+    .header-container ul {
         margin: 0;
     }
 
-    .tz-headerHome nav > ul > li {
+    .header-home nav > ul > li {
         position: relative;
 
         padding: 0;
@@ -1188,7 +835,7 @@ aside.widget h3.module-title span {
         border-bottom: 1px solid #fff;
     }
 
-    .tz-headerHome nav.tz-menu ul li a {
+    .header-home nav.tz-menu ul li a {
         margin: 0;
         padding: 15px 20px;
 
@@ -1198,12 +845,11 @@ aside.widget h3.module-title span {
         border-left: 3px solid #eee;
     }
 
-    .tz-headerHome nav.tz-menu li a:hover,
-    .tz-headerHome nav > ul > li:hover,
-    .tz-homeType1.tz-homeTypeFixed nav ul.tz-nav > li:hover > a {
+    .header-home nav.tz-menu li a:hover,
+    .header-home nav > ul > li:hover,
+    .header-home nav ul.tz-nav > li:hover > a {
         -webkit-transition: all .3s ease;
         -moz-transition: all .3s ease;
-        -ms-transition: all .3s ease;
         -o-transition: all .3s ease;
         transition: all .3s ease;
 
@@ -1211,75 +857,27 @@ aside.widget h3.module-title span {
         background: #fff;
     }
 
-    .tz-homeType1.tz-homeTypeFixed nav ul.tz-nav > li:hover > a {
+    .header-home nav ul.tz-nav > li:hover > a {
         border-color: #843a51;
     }
 
-    .tz-headerHome nav > ul > li > ul.non_mega_menu > li:first-child {
-        border-bottom: none;
-    }
-
-    .tz-headerHome nav > ul > li > ul.non_mega_menu li {
-        padding: 0;
-    }
-
-    .tz-headerHome nav > ul > li > ul.non_mega_menu li a {
-        padding: 15px 20px;
-
-        color: #777;
-        background: #dad9d9;
-    }
-
-    .tz-headerHome nav > ul > li > ul.non_mega_menu li a:hover {
-        color: #000;
-        background: #fafafa;
-    }
-
-    .tz_maniva_meetup_title {
-        padding-right: 20px;
-    }
-
-    .lechazo-text {
-        width: 90% !important;
-        margin: auto;
-        padding: 5px;
-    }
-
-    .lechazo-location .tz-partner {
-        padding: 20px;
-    }
-
-    .tz-partner-left {
+    .sponsor-box-left {
         padding: 0 0 10px 0;
     }
 
-    .tz-partner-right {
+    .sponsor-box-right {
         padding: 0 0 10px 0;
     }
 }
 
 @media (max-width: 768px) {
 
-    .tz_maniva_meetup_title.tz_maniva_meetup_title_type3 h3 {
-        font-size: 15px;
-
-        padding: 0 20px;
-    }
-
     .vc_empty_space_4 {
         height: 10px;
     }
 
-    .vc_empty_space_5 {
+    .vc_empty_space_4 {
         height: 150px;
-    }
-
-    .tz-footer.tz-footer-type1 aside.widget.MultiColorSubscribeWidget h3 span {
-        font-size: 30px;
-    }
-
-    .tz-footer.tz-footer-type1 aside.widget.MultiColorSubscribeWidget .multicolor-subscribe form.multicolor-subscribe-form input.email {
-        margin: 0;
     }
 
     .row {
@@ -1291,23 +889,11 @@ aside.widget h3.module-title span {
         width: 90%;
     }
 
-    .tz_logo img {
+    .header-logo img {
         margin-top: 0;
     }
 }
 
 @media (max-width: 480px) {
-
-    .tz_maniva_meetup_title h3 {
-        font-size: 20px;
-    }
-
-    .tz_maniva_meetup_title {
-        padding-right: 0;
-    }
-
-    .tz_meetup_btn h4.tz_meetup_title_btn {
-        font-size: 18px;
-    }
 
 }

@@ -7,8 +7,8 @@ jQuery(window).scroll(function () {
     const $_scrollTop = jQuery(window).scrollTop();
 
     const $_height_menu = 97;
-    const $type_position = jQuery('.tz-headerHome.tz-homeTypeFixed').length;
-    const headerType = jQuery('.tz-headerHome').attr('data-option');
+    const $type_position = jQuery('.header-home.tz-homeTypeFixed').length;
+    const headerType = jQuery('.header-home').attr('data-option');
 
     if (headerType === '2' || headerType === '3' && $type_position > 0) {
         console.log(headerType);
