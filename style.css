@@ -270,7 +270,7 @@ video {
 }
 
 .background-light-blue {
-    background-color: #F4F7FA;
+    background: linear-gradient(to bottom, #A0D468 200px, #F4F7FA 200px, #F4F7FA 100%);
 }
 
 /*About*/
@@ -615,6 +615,49 @@ video {
 
 .lechazo-coc {
     max-width: 800px;
+}
+
+/*Agenda*/
+
+.agenda-row {
+    display: flex;
+    align-items: center;
+    height: 100px
+}
+
+.agenda-time {
+    margin-right: 20px
+}
+
+.agenda-marker {
+    background: url(img/line.png) center center no-repeat;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.agenda-icon {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px
+}
+
+.agenda-icon-fill {
+    position: absolute;
+    top: 15px;
+    left: 21px;
+}
+
+.agenda-burguer {
+    position: absolute;
+    top: 15px;
+    left: 17px;
+}
+
+.agenda-micro {
+    position: absolute;
+    top: 19px;
+    left: 23px;
 }
 
 /* Footer */
