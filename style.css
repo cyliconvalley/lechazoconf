@@ -444,11 +444,11 @@ video {
     padding: 110px 0 120px;
 }
 
-.sponsor-title {
+.partner-title {
     padding: 20px 0;
 }
 
-.sponsor-box {
+.partner-box {
     padding: 10px;
     border: 1px solid #E5E5E5;
     display: flex;
@@ -457,25 +457,25 @@ video {
     justify-content: center;
 }
 
-.sponsor-silver {
+.partner-silver {
     height: 200px;
 }
 
-.sponsor-bronze {
+.partner-bronze {
     height: 180px;
     padding: 20px;
 }
 
-.sponsor-special {
+.partner-special {
     height: 150px;
     padding: 10px;
 }
 
-.sponsor-box-left {
+.partner-box-left {
     padding: 0 10px 10px 0;
 }
 
-.sponsor-box-right {
+.partner-box-right {
     padding: 0 0 10px 10px;
 }
 
@@ -861,11 +861,11 @@ aside.widget h3.module-title span {
         border-color: #843a51;
     }
 
-    .sponsor-box-left {
+    .partner-box-left {
         padding: 0 0 10px 0;
     }
 
-    .sponsor-box-right {
+    .partner-box-right {
         padding: 0 0 10px 0;
     }
 }
