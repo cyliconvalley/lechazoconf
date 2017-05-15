@@ -636,6 +636,10 @@ video {
     align-items: center;
 }
 
+.agenda-speaker {
+    width: 62px;
+}
+
 .agenda-icon {
     position: relative;
     margin-left: 20px;
