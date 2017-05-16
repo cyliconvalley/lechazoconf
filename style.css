@@ -65,7 +65,6 @@ blockquote {
 }
 
 img {
-    max-width: 100%;
     height: auto;
 }
 
@@ -457,6 +456,10 @@ video {
     justify-content: center;
 }
 
+.partner-box img {
+    max-width: 100%;
+}
+
 .partner-silver {
     height: 200px;
 }
@@ -636,14 +639,15 @@ video {
     align-items: center;
 }
 
-.agenda-speaker {
-    width: 62px;
-}
-
 .agenda-icon {
     position: relative;
     margin-left: 20px;
     margin-right: 20px
+}
+
+.agenda-icon :first-child {
+    width: 62px;
+    max-width: none;
 }
 
 .agenda-icon-fill {
@@ -915,6 +919,7 @@ aside.widget h3.module-title span {
     .partner-box-right {
         padding: 0 0 10px 0;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -939,6 +944,7 @@ aside.widget h3.module-title span {
     .header-logo img {
         margin-top: 0;
     }
+
 }
 
 @media (max-width: 480px) {
