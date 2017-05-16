@@ -255,7 +255,7 @@ video {
 }
 
 .background-new .container {
-    width: 90%;
+    width: 100%;
     background-size: 100% auto;
     background: url('img/background-city.svg') no-repeat center bottom;
 }
@@ -943,6 +943,10 @@ aside.widget h3.module-title span {
 
     .header-logo img {
         margin-top: 0;
+    }
+
+    .background-new .container {
+        width: 90%
     }
 
 }
