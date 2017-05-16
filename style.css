@@ -622,10 +622,14 @@ video {
 
 /*Agenda*/
 
+.agenda-list {
+    background: white;
+    padding: 50px
+}
+
 .agenda-row {
     display: flex;
     align-items: center;
-    height: 100px
 }
 
 .agenda-time {
@@ -633,16 +637,15 @@ video {
 }
 
 .agenda-marker {
-    background: url(img/line.png) center center no-repeat;
-    height: 100%;
+    background: url(img/line.png) center center no-repeat repeat;
     display: flex;
+    align-self: stretch;
     align-items: center;
 }
 
 .agenda-icon {
     position: relative;
-    margin-left: 20px;
-    margin-right: 20px
+    margin: 20px;
 }
 
 .agenda-icon :first-child {
@@ -666,6 +669,54 @@ video {
     position: absolute;
     top: 19px;
     left: 23px;
+}
+
+.agenda-row a {
+    font-weight: bold;
+}
+
+.agenda-accordion-input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.agenda-accordion-content {
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.agenda-accordion-content p {
+    margin: 0;
+}
+
+.agenda-accordion-hidden {
+    height: 0;
+    overflow: hidden;
+    /*-webkit-transition: height 0.5s;*/
+    /*-o-transition: height 0.5s;*/
+    /*transition: height 0.5s;*/
+}
+
+/*.agenda-accordion-input:checked ~ .agenda-accordion-content {*/
+/*align-self: flex-start;*/
+/*}*/
+
+.agenda-accordion-input:checked ~ .agenda-accordion-content .agenda-accordion-hidden {
+    height: 100%;
+}
+
+.agenda-details-link {
+    font-weight: normal;
+    color: #64B7DD;
+}
+
+.agenda-accordion-input ~ .agenda-accordion-content .agenda-details-link:before {
+    content: 'Ver más detalles'
+}
+
+.agenda-accordion-input:checked ~ .agenda-accordion-content .agenda-details-link:before {
+    content: 'Cerrar detalles'
 }
 
 /* Footer */
@@ -947,6 +998,11 @@ aside.widget h3.module-title span {
 
     .background-new .container {
         width: 90%
+    }
+
+    .agenda-list {
+        background: white;
+        padding: 20px
     }
 
 }
