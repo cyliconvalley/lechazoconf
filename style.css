@@ -643,6 +643,14 @@ video {
     align-items: center;
 }
 
+.agenda-marker-first {
+    background: url(img/line.png) center 50px no-repeat;
+}
+
+.agenda-marker-last {
+    background: url(img/line.png) center -1300px no-repeat;
+}
+
 .agenda-icon {
     position: relative;
     margin: 20px;
@@ -1009,4 +1017,28 @@ aside.widget h3.module-title span {
 
 @media (max-width: 480px) {
 
+    .agenda-icon img {
+        display: none;
+    }
+
+    #agenda .container {
+        padding: 0;
+    }
+
+    .agenda-time {
+        margin-right: 10px;
+    }
+
+    .agenda-icon {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .agenda-marker-first {
+        background: url(img/line.png) center 20px no-repeat;
+    }
+
+    .agenda-marker-last {
+        background: url(img/line.png) center -1320px no-repeat;
+    }
 }
