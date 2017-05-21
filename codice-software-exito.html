@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LechazoConf 2017</title>
+	<meta name="description" content="LechazoConf 2017 - Conferencia tecnológica - Valladolid - 27 de mayo de 2017 "/>
+	<link rel="icon" href="img/lechacito-2.png" type="image/x-icon">
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,500,700' rel='stylesheet' type='text/css'>
+
+	<!-- Style css -->
+	<link href="style.min.css" rel="stylesheet"/>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="js/library/html5shiv.min.js"></script>
+	<script src="js/library/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body id="bd">
+<div id="tzwrapper">    <!-- Header start -->
+	<header class="header-home" data-option="1">
+		<div class="container">
+			<div class="header-container">
+				<h3 class="pull-left header-logo">
+					<a title="Lechazo Conf Logo" href="/">
+						<img src="img/lechazoconf-text.png" alt="Lechazo Conf 2017">
+					</a>
+				</h3>
+			</div>
+		</div>
+	</header>
+
+	<div class="vc_empty_space_3"></div>
+
+	<section class="vc_row background-white blog">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-xs-12">
+					<div class="title">Un fracaso y un éxito en Plastic SCM</div>
+					<span class="title">+1 liberando artistas, -1 el duro negocio import/export</span>
+					<div class="title-line"></div>
+					<div class="vc_empty_space"></div>
+
+					<p>El objetivo es compartir <b>un fracaso y un éxito</b>. Uno de esos que te ponen rojo al acordarte, y otro que deje buen sabor de
+						boca.
+					</p>
+
+					<p>
+						¿Qué vas a sacar en claro si te lees esto? Conocer un poco a qué nos enfrentamos
+						desarrollando un control de versiones, pero sacando lecciones aprendidas que se pueden
+						aplicar en cualquier otro proyecto.
+					</p>
+					<p>
+						Lo resumiría en: no juegues partidos que no puedes ganar y escucha a tus clientes.
+					</p>
+
+					<h2>Un éxito: escucha y aprovecha la oportunidad – la liberación de
+						los artistas</h2>
+
+					<h2>Los principios esenciales de Plastic SCM</h2>
+
+					<p>Cuando diseñamos Plastic, la primera versión, queríamos que fuera muy, muy bueno con
+						ramas, y buenísimo haciendo merges. Ese ha sido nuestro foco durante años. Ramas cortas y
+						frecuentes, muchísimas, y muchos merges. Con esto podías sacar versiones muy a menudo.
+					</p>
+
+					<p>
+						Nosotros mismos nos aplicábamos el cuento, y sacábamos varias versiones al mes. En 2007
+						esto no era lo habitual, y algunas empresas nos decían que por qué anunciábamos tantas
+						versiones, que daba mala sensación, como que el producto estaba roto o algo. Incluso tuvimos
+						vendedores con los que quedábamos en que nuestra versión era anual, y punto (luego
+						seguíamos publicando versiones en la web… pero eso es otra historia).
+					</p>
+
+					<p>También daba miedo el tema de las ramas. Una generación se educó con SVN, así que las
+						ramas eran el infierno. Podemos gestionar miles de ramas, pero no las uses si no quieres,
+						llegamos a decir :-)
+					</p>
+
+					<p>Todo esto cambió, gran parte gracias a Git, y ahora no tenemos que ocultar ni nuestras
+						múltiples versiones semanales ni que hacemos muy bien ramas y merges. Parece que
+						acertamos adivinando hacia dónde iría el mercado.
+					</p>
+
+					<p>
+						Y también hicimos que Plastic fuera muy bueno con ficheros enormes, algo que nos abrió
+						oportunidades en el sector de los videojuegos, donde Git se rompía con frecuencia.
+					</p>
+
+					<h2>Un cambio radical</h2>
+
+					<p> Y entonces, cuando estábamos seguros de que lo teníamos todo, aprendimos una cosa
+						curiosa:
+					</p>
+
+					<p>
+						¿Sabías que en los estudios de videojuegos el 95% de la gente vive sometida por las
+						decisiones de un 5%?
+					</p>
+
+					<p>
+						Nosotros tampoco hasta que descubrimos que los artistas odian los controles de versiones que
+						eligen los programadores. Son mayoría, pero viven sometidos.
+					</p>
+
+					<p>
+						No les importan ni las ramas, ni los merges, ni nada de eso. Pero sí que necesitaban lo de los
+						grandes ficheros. Y nuestra interfaz gráfica, con nuestro Branch Explorer que es como nuestro
+						ADN, tampoco les gustaba.
+					</p>
+
+					<p>¿Qué podíamos hacer?</p>
+
+					<h2>Bienvenido Gluon</h2>
+
+					<p>Esto pasó sobre 2013 y nos lo contaba gente de Telltale games. El 90% de su plantilla de más
+						de 300 son artistas. Usan Maya, SolidWorks, y su entorno interno para crear episodios,
+						animaciones, vídeos, etc. Tienen teras de historia, y una copia de trabajo suponía tantos gigas
+						que ni cabía en sus máquinas (que son maquinones, por cierto, en videojuegos siempre tienen
+						pantallas súper grandes por 2, y maquinones).
+					</p>
+
+					<p>
+						¿Qué hacíamos?</p>
+
+					<p>
+						Pues creamos Plastic Gluon (https://www.plasticscm.com/gluon.html), una nueva interfaz de
+						usuario más una forma diferente de trabajar, basada en el mismo núcleo que Plastic pero
+						construida en torno a:
+					</p>
+
+					<ul>
+						<li>Como artista quiero decidir en qué ficheros quiero trabajar, hacer cambios y poder subirlos
+							de forma fácil. No quiero ver jamás un merge. Es más, es muy posible que no quiera ver ni
+							ramas jamás.
+						</li>
+
+						<li>Como artista quiero poder bloquear ficheros para que nadie los pueda tocar mientras
+							trabajo.
+						</li>
+
+						<li>Como artista no puedo bajar el repositorio entero porque son miles y miles de ficheros
+							enormes.
+						</li>
+					</ul>
+
+					<p>
+						Esto iba en contra de algunos de nuestros principios, pero si evitábamos la guerra ideológica y
+						nos centrábamos en hacerlo… era posible. Ya teníamos locking y grandes ficheros, era sólo
+						cuestión de hacer una interfaz diferente y de permitir trabajar con “trozos sueltos”… Era
+						posible.
+					</p>
+
+					<p>
+						Escuchamos al cliente, encontramos una nueva oportunidad y conseguimos que Telltale usase
+						Plastic. Ahora un 40-50% de las descargas de Plastic son de la industria de videojuegos y de
+						ellas la mayoría de equipos que usan Unity. Podemos decir que ha sido un éxito.
+					</p>
+
+					<h2>Finalizando</h2>
+
+					<p>Hay muchos más, pero estos son dos casos curiosos… uno que escuece, y otro que ha salido
+
+						muy bien.</p>
+
+					<p>Si quieres conocer más sobre cómo trabajamos, hemos escrito hace poco una serie de posts
+						contándolo: http://blog.plasticscm.com/2017/04/how-we- do-trunk- based-development- with.html</p>
+
+					<p>Y si quieres conocer al equipo que hace posible Plastic SCM y SemanticMerge, puedes echar
+						un vistazo aquí: https://www.plasticscm.com/company/team.html</p>
+
+					<p>Finalmente, siempre estamos buscando gente nueva para el equipo así que si te interesa
+						trabajar con nosotros: https://www.plasticscm.com/company/careers.html</p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="vc_empty_space_3"></div>
+
+	<!-- Speaker client start -->
+	<section id="sponsors" class="background-gray">
+
+		<div class="container">
+			<span class="title">Patrocinador Oro - Plastic SCM</span>
+			<div class="title-line"></div>
+
+			<div class="vc_empty_space"></div>
+
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 partner-title">
+				<div class="partner-box">
+					<a href="https://www.plasticscm.com/" target="_blank" title="Plastic SCM">
+						<img src="img/sponsors/gold.png" alt="Patrocinador oro"/>
+					</a>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<!-- Speaker client end -->
+
+	<!-- footer start -->
+	<footer class="tz-footer tz-footer-type1">
+		<aside class="widget tzsocial">
+			<div class="tzSocial_bg">
+				<div class="tzSocial_bg_meetup">
+					<img src="img/logo-lechazo-footer.png" width="150" title="LechazoConf"/>
+				</div>
+			</div>
+		</aside>
+		<div class="tzcopyright">
+			<p>
+				Copyright &copy; 2017 &bull; LechazoConf
+			</p>
+		</div>
+	</footer>
+	<!-- footer end -->
+
+</div>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-93173115-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

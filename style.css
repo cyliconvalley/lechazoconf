@@ -842,6 +842,24 @@ aside.widget h3.module-title span {
     color: #787e92;
 }
 
+.blog p {
+    font-size: 22px;
+}
+
+.blog h1, .blog h2, .blog h3, .blog h4, .blog b, .blog strong {
+    color: #753C51;
+}
+
+.blog h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.blog h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 /*Media Queries*/
 
 @media (max-width: 1199px) and (min-width: 992px) {
