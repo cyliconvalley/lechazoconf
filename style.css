@@ -842,6 +842,11 @@ aside.widget h3.module-title span {
     color: #787e92;
 }
 
+.blog-row {
+    display: flex;
+    align-items: center
+}
+
 .blog p {
     font-size: 22px;
 }
