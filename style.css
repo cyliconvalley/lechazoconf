@@ -855,6 +855,11 @@ aside.widget h3.module-title span {
     font-size: 22px;
 }
 
+.blog img {
+    margin: 20px 0 20px 0;
+    max-width: 100%;
+}
+
 .blog h1, .blog h2, .blog h3, .blog h4, .blog b, .blog strong, .blog-row h2, .blog-row h3 {
     color: #753C51;
 }
