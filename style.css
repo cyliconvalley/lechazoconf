@@ -110,7 +110,7 @@ video {
 }
 
 .vc_empty_space_3 {
-    height: 100px;
+    margin-top: 100px;
 }
 
 .vc_empty_space_4 {
@@ -720,11 +720,11 @@ video {
 }
 
 .agenda-accordion-input ~ .agenda-accordion-content .agenda-details-link:before {
-    content: 'Ver más detalles'
+    content: 'Ver más detalles ->'
 }
 
 .agenda-accordion-input:checked ~ .agenda-accordion-content .agenda-details-link:before {
-    content: 'Cerrar detalles'
+    content: '<- Cerrar detalles'
 }
 
 /* Footer */
@@ -847,11 +847,15 @@ aside.widget h3.module-title span {
     align-items: center
 }
 
+.blog-row .lechazo-header-link {
+    text-decoration: none;
+}
+
 .blog p {
     font-size: 22px;
 }
 
-.blog h1, .blog h2, .blog h3, .blog h4, .blog b, .blog strong {
+.blog h1, .blog h2, .blog h3, .blog h4, .blog b, .blog strong, .blog-row h2, .blog-row h3 {
     color: #753C51;
 }
 
