@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LechazoConf 2017</title>
+	<meta name="description" content="LechazoConf 2017 - Conferencia tecnológica - Valladolid - 27 de mayo de 2017 "/>
+	<link rel="icon" href="img/lechacito-2.png" type="image/x-icon">
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,500,700' rel='stylesheet' type='text/css'>
+
+	<!-- Style css -->
+	<link href="style.min.css" rel="stylesheet"/>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="js/library/html5shiv.min.js"></script>
+	<script src="js/library/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body id="bd">
+
+<header class="header-home" data-option="1">
+	<div class="container">
+		<div class="header-container">
+			<h3 class="pull-left header-logo">
+				<a title="Lechazo Conf Logo" href="/">
+					<img src="img/lechazoconf-text.png" alt="Lechazo Conf 2017">
+				</a>
+			</h3>
+		</div>
+	</div>
+</header>
+
+<div class="vc_empty_space_3"></div>
+
+<section class="vc_row background-white blog">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+
+				<a href="index.html#blog"><p><- Volver al listado</p></a>
+
+				<span class="title">Un fracaso y un éxito en Ticketea: Escalando Amazon Aurora en Ticketea</span>
+				<div class="title-line"></div>
+				<div class="vc_empty_space"></div>
+
+				<p>El Ticketing es un negocio donde los picos de tráfico extremos son la norma en lugar de la excepción. Para <strong>Ticketea</strong> esto
+					significa que <strong>nuestro tráfico puede incrementarse en un factor de 60x</strong> en cuestión de segundos. Normalmente sucede
+					cuando grandes eventos (que tienen una <em>‘fecha de inicio de venta’</em> fija y anunciada con anterioridad) salen a la venta.</p>
+
+				<p><img alt="AWS Diagram" src="img/posts/grafana.png" style="max-width: 100%"></p>
+
+				<p>La elasticidad del Cloud tiene límites, particularmente reaccionando a
+					cambios súbitos y extremos en el ratio de peticiones entrantes. Este es
+					el motivo por el cual, para determinadas situaciones, preferimos
+					realizar un escalado planificado de la plataforma, seguido de un warm-up
+					o calentamiento.
+				</p>
+				<p>
+					Por aportar contexto, nosotros alojamos nuestra infraestructura en AWS y somos “heavy users” de Amazon Aurora.</p>
+
+				<p>Para Ticketea, un evento grande normalmente se convierte en una oleada de tráfico, la cual afecta a los siguientes componentes:<br>
+					- Frontales de aplicación sirviendo <a href="http://ticketea.com" target="_blank">ticketea.com</a><br>
+					- Servidores de API<br>
+					- Tareas en segundo plano<br>
+					- Bases de datos relacionales</p>
+				<p>Los primeros tres recursos son fáciles de escalar horizontalmente
+					(añadir / quitar instancias de EC2). Simplemente tenemos que modificar <a
+							href="http://docs.aws.amazon.com/autoscaling/latest/userguide/AutoScalingGroup.html" target="_blank">sus grupos de
+						autoescalado</a> y AWS realizará la parte dura del trabajo por nosotros.</p>
+				<p><strong>Las bases de datos relacionales son normalmente mucho mas difíciles
+					de escalar</strong>. Pese que estamos usando un clúster de AWS Aurora con varias
+					réplicas de lectura, escalar verticalmente el nodo de escritura es
+					normalmente la parte difícil. Antes de detallarlo, hablemos un poco
+					sobre AWS Aurora y cómo lo estamos usando.</p>
+				<p>Un cluster de Aurora es accesible a través de dos registros DNS:<br>
+					- Un endpoint de escritura (registro DNS apuntando al nodo actualmente elegido como de escritura)<br>
+					- Un endpoint de lectura (registro DNS que balancea las peticiones entre las instancias de lectura)</p>
+				<p><img alt="AWS Diagram" src="img/posts/rds_diagram.png"></p>
+				<h2><a name="0.1_user-content-entendiendo-el-proceso-de-failover" href="#0.1_entendiendo-el-proceso-de-failover"><span></span></a>Entendiendo
+					el proceso de failover</h2>
+				<p>AWS Aurora sólo permite tener un nodo de escritura, y mediante el
+					proceso de failover se promociona otro nodo a este rol. La elección del <em>futuro nodo escritor</em> se realiza empleando
+					<strong>niveles</strong>
+					(tiers en inglés). Un nivel es un valor de configuración que se
+					establece en el momento de crear la instancia (y se puede cambiar a
+					posteriori).</p>
+				<p>Cuando sucede un failover (bien de forma manual o tras un fallo del
+					clúster) Aurora promocionará el nodo de lectura del nivel mas bajo al
+					rol de escritor.</p>
+				<p>Como comentamos previamente, a veces necesitamos escalar el nodo de
+					escritura verticalmente. Para lograr este resultado, forzamos un
+					failover a una instancia más potente. Tradicionalmente realizábamos este
+					cambio cuando el tráfico estaba en el punto mas tranquilo del día, ya
+					que nos preocupaba el impacto que la operación pudiera tener en nuestros
+					usuarios.<br>
+					Esta solución no funcionaba bien respecto al equipo técnico (suponía que
+					alguien tenía que levantarse pronto o quedarse despierto hasta tarde),
+					así que decidimos hacer pruebas para comprender cómo mejorar el failover
+					y los tiempos de recuperación del mismo.</p>
+				<p>El primer paso consistió en preparar un simple script que enviaba
+					ráfagas de consultas al nodo de escritura. Durante su ejecución,
+					realizaríamos un failover manual, punto en el cual comenzamos a ver que
+					algunas de las consultas estaban bien, pero otras fallaban <em>aleatoriamente</em>.
+					Los errores se mantuvieron durante una ventana de tiempo de 10-15
+					segundos. Repetimos la prueba varias veces, y los resultados fueron
+					similares.</p>
+				<p>Decidimos investigar cómo estaban implementados los endpoints de Aurora tanto de escritura como de lectura. Ejecutando
+					<strong><i>host</i></strong>
+					en el registro DNS del endpoint de escritura (asumamos
+					<a href="http://tkt-aurora-cluster.cluster-abcdefg.eu-west-1.rds.amazonaws.com" target="_blank">tkt-aurora-cluster.cluster-abcdefg.eu-west-1.rds.amazonaws.com</a>)
+					reveló que el endpoint es realmente un <strong>CNAME</strong> apuntando a la instancia de Aurora elegida como
+					de escritura en ese momento.
+				</p>
+				<pre><code>$ host <a href="http://tkt-aurora-cluster.cluster-abcdefg.eu-west-1.rds.amazonaws.com" target="_blank">tkt-aurora-cluster.cluster-<wbr>abcdefg.eu-west-1.rds.<wbr>amazonaws.com</a>
+<a href="http://tkt-aurora-cluster.cluster-abcdefg.eu-west-1.rds.amazonaws.com" target="_blank">tkt-aurora-cluster.cluster-<wbr>abcdefg.eu-west-1.rds.<wbr>amazonaws.com</a> is an alias for
+<a href="http://tkt-aurora-1.abcdefg.eu-west-1.rds.amazonaws.com" target="_blank">tkt-aurora-1.abcdefg.eu-west-<wbr>1.rds.amazonaws.com</a>
+<a href="http://tkt-aurora-1.abcdefg.eu-west-1.rds.amazonaws.com" target="_blank">tkt-aurora-1.abcdefg.eu-west-<wbr>1.rds.amazonaws.com</a> is an alias for <a
+							href="http://ec2-12-123-12-12.eu-west-1.compute.amazonaws.com" target="_blank">ec2-12-123-12-12.eu-west-1.<wbr>compute.amazonaws.com</a>.
+<a href="http://ec2-12-123-12-12.eu-west-1.compute.amazonaws.com" target="_blank">ec2-12-123-12-12.eu-west-1.<wbr>compute.amazonaws.com</a> has address 12.123.12.12
+</code></pre>
+
+				<p>El endpoint de lectura funciona de forma similar, con la excepción de que está respaldado por un registro DNS <em>Round-Robin</em>
+					apuntando por debajo a las diferentes instancias de base de datos.</p>
+				<p>Esto explica por qué nos encontrábamos errores durante la operación
+					de failover: hay una ventana de tiempo relativamente larga (10-15
+					segundos) durante la cual el clúster está ajustándose a la nueva
+					topología y los registros cambian para reflejarla. Como se puede intuir,
+					la manipulación de registros DNS y su propagación no es una operación
+					atómica, por tanto los errores.</p>
+				<h1><a name="0.1_user-content-procedimientos-de-escalado" href="#0.1_procedimientos-de-escalado"><span></span></a>Procedimientos de escalado
+				</h1>
+				<p>Una vez recopilamos mas información con esta pequeña investigación,
+					definimos cuatro procesos diferentes para escalar nuestra plataforma a
+					la vez que minimizamos el impacto sobre nuestros usuarios. Veámoslos a
+					continuación.</p>
+				<h2><a name="0.1_user-content-escalado-horizontal-del-cluster-de-lectura-horizontal-scaling"
+				       href="#0.1_escalado-horizontal-del-cluster-de-lectura-horizontal-scaling"><span></span></a>Escalado horizontal del clúster de lectura
+					(Horizontal Scaling)</h2>
+				<p>Añadir o quitar nodos de nuestro clúster de lectura para incrementar o decrementar acordemente la capacidad de lectura.</p>
+				<h2><a name="0.1_user-content-escalado-hacia-fuera-scaling-out" href="#0.1_escalado-hacia-fuera-scaling-out"><span></span></a>Escalado
+					“hacia fuera” (Scaling out)</h2>
+				<p>Escalar hacia fuera es realmente sencillo: Si usamos la Consola de AWS, podemos seleccionar el clúster y elegir la opción <em>Create New
+					Aurora Replica</em>. En nuestro caso, <strong>una réplica nueva de lectura tarda alrededor de 7 minutos en estar lista</strong>,
+					y esta operación no causa caida de servicio de ningún tipo. El nuevo
+					nodo no se añadirá al endpoint DNS de lectura hasta estar totalmente
+					listo.</p>
+				<h2><a name="0.1_user-content-escalado-hacia-dentro-scaling-in" href="#0.1_escalado-hacia-dentro-scaling-in"><span></span></a>Escalado
+					“hacia dentro” (Scaling in)</h2>
+				<p>Este escalado es un poco complejo. Si tenemos tres instancias de
+					lectura, y decidimos apagar una de ellas, el round-robin DNS se
+					propagará con un cierto retardo, resultando en parte del tráfico
+					entregada a una instancia de base de datos muerta durante un periodo de
+					tiempo determinado.</p>
+				<p>Debido a esto, decidimos usar un registro DNS adicional en <strong>Route53</strong>.
+					Este registro DNS es el hostname al que las aplicaciones normalmente se
+					conectan. Usualmente apunta al endpoint del cluster de lectura, excepto
+					durante una operación de scale-in. En ese caso, temporalmente lo
+					apuntamos a una instancia de base de datos de lectura específica,
+					mientras el resto son eliminadas.</p>
+				<p><img alt="AWS Diagram" src="img/posts/scale_in.png"></p>
+				<p>De esta forma tenemos control preciso sobre a qué nodo se enruta el
+					tráfico de lectura, en lugar de depender de la propagación de DNS.</p>
+				<h2><a name="0.1_user-content-escalado-vertical-del-nodo-de-escritura" href="#0.1_escalado-vertical-del-nodo-de-escritura"><span></span></a>Escalado
+					vertical del nodo de escritura</h2>
+				<p>Como AWS Aurora no es de tipo multi-master, si necesitamos más
+					capacidad de escritura tenemos que cambiar el tipo de instancia del nodo
+					escritor. Esto significa que tenemos que cerar una nueva instancia de
+					Aurora con mayor capacidad y promocionarla al rol de escritor.</p>
+				<h2><a name="0.1_user-content-escalado-vertical-scaling-up" href="#0.1_escalado-vertical-scaling-up"><span></span></a>Escalado vertical
+					(Scaling up)</h2>
+				<p>Para tener mayor control sobre el proceso de escalado hacia arriba,
+					normalmente creamos un nuevo nodo con mas capacidad (llamémosle <em>new_master</em>). Se le asignará el <strong>nivel 0</strong>,
+					lo que significa que será el primer candidato para promocionar al rol
+					de escritor. Como explicamos en la sección de escalado hacia fuera, este
+					proceso toma alrededor de 7 minutos en nuestra base de datos principal.</p>
+				<p>Después de este paso, realizamos un failover manual en el clúster, que promocionará <em>new_master</em>
+					a nodo escritor. A causa del retraso de propagación de DNS, es posible
+					que se vean errores durante una ventana de tiempo de 10-15 segundos
+					(pero nuestras aplicaciones son resilientes a estos errores, verdad?
+					:p).</p>
+				<p><img alt="Sentry" src="img/posts/sentry.png"></p>
+				<h2><a name="0.1_user-content-desescalado-scaling-down" href="#0.1_desescalado-scaling-down"><span></span></a>Desescalado (Scaling down)
+				</h2>
+				<p>Este proceso es el inverso de escalar hacia arriba. Solamente modificamos nuestra instancia <em>old_master</em>
+					para que tenga de nivel 0 y realizamos el failover del clúster. De
+					nuevo, es posible ver algunos errores durante unos 10-15 segundos.</p>
+				<h2><a name="0.1_user-content-conclusiones-finales" href="#0.1_conclusiones-finales"><span></span></a>Conclusiones finales</h2>
+				<p>Los clusters de AWS Aurora se gestionan con registros CNAME que
+					apuntan a instancias de bases de datos. Es importante entender cómo
+					funcionan para ser capaces de minimizar el impacto de las operaciones de
+					failover.</p>
+				<p>Disponer de un registro adicional de Route53 nos proporciona mayor
+					control durante una operación de escalado hacia dentro, y no añade
+					complejidad a la arquitectura.</p>
+				<p>Actualmente estamos realizando estos procesos manualmente, por lo que
+					no estamos satisfechos al 100%. Tenemos algunas ideas, pero si teneis
+					cualquier sugerencia, sentíos libres de dejar un comentario! Y, si por
+					un casual resulta que estais interesados en temas de escalabilidad y
+					alta disponibilidad, tened en cuenta que <a href="mailto:engineering@ticketea.com" target="_blank">estamos contratando</a> :-)</p>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="vc_empty_space_3"></div>
+
+<!-- Speaker client start -->
+<section id="partners" class="background-gray">
+
+	<div class="container">
+
+		<div class="vc_empty_space_3"></div>
+
+		<span class="title">Patrocinador Especial - Ticketea</span>
+		<div class="title-line"></div>
+
+		<div class="vc_empty_space"></div>
+
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 partner-title">
+			<div class="partner-box">
+				<a href="https://www.ticketea.com/" target="_blank" title="Ticketea">
+					<img src="img/partners/ticketea.png" alt="Patrocinador Especial (entradas)"/>
+				</a>
+			</div>
+		</div>
+
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 vc_empty_space_3">
+		</div>
+
+	</div>
+
+</section>
+<!-- Speaker client end -->
+
+<!-- footer start -->
+<footer class="footer">
+	<div>
+		<img src="img/logo-lechazo-footer.png" width="150" title="LechazoConf"/>
+	</div>
+	<div class="copyright">
+		<p>
+			Copyright &copy; 2017 &bull; LechazoConf
+		</p>
+	</div>
+</footer>
+<!-- footer end -->
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-93173115-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
