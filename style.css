@@ -274,10 +274,6 @@ video {
 
 /*About*/
 
-#about {
-    padding: 95px 0 85px;
-}
-
 .lechazo-logo {
     display: flex;
     max-width: 550px;
@@ -318,7 +314,7 @@ video {
     margin-left: 20px;
 }
 
-.tz_meetup_slider_home_text {
+.home-text {
     font-size: 20px;
     display: flex;
     justify-content: center
@@ -330,6 +326,14 @@ video {
 
     margin-bottom: 20px !important;
     margin-top: 20px !important;
+}
+
+.resources li {
+    list-style: none;
+}
+
+.resources li a {
+    font-size: 25px;
 }
 
 .lechazo-bold {
@@ -353,36 +357,6 @@ video {
     color: #3b5998;
 }
 
-.main-table .tz_meetup_social {
-    position: relative;
-
-    display: inline-block;
-
-    margin-bottom: 9px;
-}
-
-.main-table .tz_meetup_social .meetup_line_left {
-    position: absolute;
-    top: 50%;
-    left: 100%;
-
-    width: 25px;
-    height: 1px;
-
-    background: #9d5763;
-}
-
-.main-table .tz_meetup_social .meetup_line_right {
-    position: absolute;
-    top: 50%;
-    right: 100%;
-
-    width: 25px;
-    height: 1px;
-
-    background: #9d5763;
-}
-
 .main-table a {
     /*padding-right: 10px;*/
     font-size: 30px;
@@ -390,7 +364,7 @@ video {
     text-decoration: none;
 }
 
-.main-table .tz_meetup_slider_home_text p {
+.main-table .home-text p {
     font-weight: 400;
 
     margin-bottom: 0;
@@ -398,12 +372,6 @@ video {
     letter-spacing: 1px;
 
     color: #9d5763;
-}
-
-/*Speakers*/
-
-#our_speakers {
-    padding: 110px 0 70px;
 }
 
 .speaker-box {
@@ -438,10 +406,6 @@ video {
 }
 
 /* Partners */
-
-#partners {
-    padding: 110px 0 120px;
-}
 
 .partner-title {
     padding: 20px 0;
@@ -727,119 +691,20 @@ video {
     content: '<- Cerrar detalles'
 }
 
-/* Footer */
-.tz-footer.tz-footer-type1 {
+.footer {
     position: relative;
-
     padding: 30px 0 5px;
-
     text-align: center;
-
     background-color: #242732;
 }
 
-.tz-footer.tz-footer-type1 .tz-backtotop img {
-    width: 100%;
-    height: auto;
-}
-
-aside.widget h3.module-title span {
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.tz-footer.tz-footer-type1 aside.widget.MultiColorSubscribeWidget h3 span {
-    font-size: 36px;
-    font-weight: 300;
-    line-height: 1.2em;
-
-    padding: 0 0 37px;
-
-    text-transform: none;
-
-    color: #44495c;
-}
-
-.tz-footer.tz-footer-type1 aside {
-    margin: 0 auto 15px;
-    padding: 0 0 23px;
-
-    box-shadow: 0 1px 0 0 #282828;
-}
-
-.tz-footer.tz-footer-type1 aside.widget.MultiColorSubscribeWidget .multicolor-subscribe form.multicolor-subscribe-form input.email {
-    font-size: 15px;
-    font-style: inherit;
-
-    padding: 20px 25px;
-
-    color: #5e6479;
-    border: 2px solid #1e212a !important;
-    border-radius: 30px;
-    background: #313543;
-}
-
-.tz-footer.tz-footer-type1 aside.tzsocial {
-    padding: 0;
-}
-
-.tz-footer.tz-footer-type1 aside.tzsocial a.tzSocial-no i {
-    font-size: 20px;
-
-    color: #495266;
-}
-
-.tz-footer.tz-footer-type1 aside.tzsocial a i:hover {
-    color: #843a51;
-}
-
-.tz-footer.tz-footer-type1 aside.tzsocial a.tzSocial-yes i {
-    color: #843a51;
-}
-
-.tz-footer.tz-footer-type1 aside.tzsocial .tzSocial_bg_meetup {
-    position: relative;
-
-    display: inline-block;
-}
-
-.tz-footer.tz-footer-type1 aside.tzsocial .tzSocial_bg_meetup .meetup_line_left {
-    position: absolute;
-    top: 50%;
-    left: 100%;
-
-    width: 25px;
-    height: 1px;
-
-    background: #4c5266;
-}
-
-.tz-footer.tz-footer-type1 aside.tzsocial .tzSocial_bg_meetup .meetup_line_right {
-    position: absolute;
-    top: 50%;
-    right: 100%;
-
-    width: 25px;
-    height: 1px;
-
-    background: #4c5266;
-}
-
-.tz-footer.tz-footer-type1 .tzcopyright p {
+.footer .copyright p {
     font-family: 'Lato', sans-serif;
     font-size: 12px;
     font-weight: 400;
-
     margin: 0 0 3px;
-
     text-transform: uppercase;
-
     color: #656a7e;
-}
-
-.tz-footer.tz-footer-type1 .tzcopyright p a {
-    color: #787e92;
 }
 
 .blog-row {
@@ -877,7 +742,7 @@ aside.widget h3.module-title span {
 /*Media Queries*/
 
 @media (max-width: 1199px) and (min-width: 992px) {
-    .header-home nav.tz-menu ul li a {
+    .header-home nav.menu ul li a {
         font-size: 12px;
 
         padding: 30px 0;
@@ -942,14 +807,14 @@ aside.widget h3.module-title span {
         display: block !important;
     }
 
-    ul.tz-nav li {
+    ul.nav li {
         display: block;
         float: none;
 
         width: auto;
     }
 
-    .header-home nav.tz-menu {
+    .header-home nav.menu {
         position: absolute;
         top: 100%;
         right: 0;
@@ -961,7 +826,7 @@ aside.widget h3.module-title span {
         background: #eee;
     }
 
-    .header-home nav.tz-menu .tz-nav {
+    .header-home nav.menu .nav {
         width: 100%;
     }
 
@@ -977,7 +842,7 @@ aside.widget h3.module-title span {
         border-bottom: 1px solid #fff;
     }
 
-    .header-home nav.tz-menu ul li a {
+    .header-home nav.menu ul li a {
         margin: 0;
         padding: 15px 20px;
 
@@ -987,9 +852,9 @@ aside.widget h3.module-title span {
         border-left: 3px solid #eee;
     }
 
-    .header-home nav.tz-menu li a:hover,
+    .header-home nav.menu li a:hover,
     .header-home nav > ul > li:hover,
-    .header-home nav ul.tz-nav > li:hover > a {
+    .header-home nav ul.nav > li:hover > a {
         -webkit-transition: all .3s ease;
         -moz-transition: all .3s ease;
         -o-transition: all .3s ease;
@@ -999,7 +864,7 @@ aside.widget h3.module-title span {
         background: #fff;
     }
 
-    .header-home nav ul.tz-nav > li:hover > a {
+    .header-home nav ul.nav > li:hover > a {
         border-color: #843a51;
     }
 
