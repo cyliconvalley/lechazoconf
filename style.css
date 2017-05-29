@@ -328,12 +328,8 @@ video {
     margin-top: 20px !important;
 }
 
-.resources li {
-    list-style: none;
-}
-
-.resources li a {
-    font-size: 25px;
+.resources a {
+    font-size: 25px !important;
 }
 
 .lechazo-bold {
