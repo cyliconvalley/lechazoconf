@@ -6,23 +6,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>LechazoConf 2017</title>
 	<meta name="description" content="LechazoConf 2017 - Conferencia tecnológica - Valladolid - 27 de mayo de 2017 "/>
-	<link rel="icon" href="img/lechacito-2.png" type="image/x-icon">
+	<link rel="icon" href="../img/lechacito-2.png" type="image/x-icon">
 
 	<!-- Bootstrap -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/font-awesome.min.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,500,700' rel='stylesheet' type='text/css'>
 
 	<!-- Style css -->
-	<link href="style.min.css" rel="stylesheet"/>
+	<link href="../style.min.css" rel="stylesheet"/>
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
-	<script src="js/library/html5shiv.min.js"></script>
-	<script src="js/library/respond.min.js"></script>
-	<![endif]-->
+    <script src="../js/library/html5shiv.min.js"></script>
+    <script src="../js/library/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body id="bd">
 
@@ -31,7 +31,7 @@
 		<div class="header-container">
 			<h3 class="pull-left header-logo">
 				<a title="Lechazo Conf Logo" href="/">
-					<img src="img/lechazoconf-text.png" alt="Lechazo Conf 2017">
+					<img src="../img/lechazoconf-text.png" alt="Lechazo Conf 2017">
 				</a>
 			</h3>
 		</div>
@@ -46,7 +46,7 @@
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
 
-				<a href="index.html#blog"><p><- Volver al listado</p></a>
+				<a href="../index.html#blog"><p><- Volver al listado</p></a>
 
 				<span class="title">Un fracaso y un éxito en Ticketea: Escalando Amazon Aurora en Ticketea</span>
 				<div class="title-line"></div>
@@ -56,7 +56,7 @@
 					significa que <strong>nuestro tráfico puede incrementarse en un factor de 60x</strong> en cuestión de segundos. Normalmente sucede
 					cuando grandes eventos (que tienen una <em>‘fecha de inicio de venta’</em> fija y anunciada con anterioridad) salen a la venta.</p>
 
-				<p><img alt="AWS Diagram" src="img/posts/grafana.png" style="max-width: 100%"></p>
+				<p><img alt="AWS Diagram" src="posts/grafana.png" style="max-width: 100%"></p>
 
 				<p>La elasticidad del Cloud tiene límites, particularmente reaccionando a
 					cambios súbitos y extremos en el ratio de peticiones entrantes. Este es
@@ -84,7 +84,7 @@
 				<p>Un cluster de Aurora es accesible a través de dos registros DNS:<br>
 					- Un endpoint de escritura (registro DNS apuntando al nodo actualmente elegido como de escritura)<br>
 					- Un endpoint de lectura (registro DNS que balancea las peticiones entre las instancias de lectura)</p>
-				<p><img alt="AWS Diagram" src="img/posts/rds_diagram.png"></p>
+				<p><img alt="AWS Diagram" src="posts/rds_diagram.png"></p>
 				<h2><a name="0.1_user-content-entendiendo-el-proceso-de-failover" href="#0.1_entendiendo-el-proceso-de-failover"><span></span></a>Entendiendo
 					el proceso de failover</h2>
 				<p>AWS Aurora sólo permite tener un nodo de escritura, y mediante el
@@ -166,7 +166,7 @@
 					durante una operación de scale-in. En ese caso, temporalmente lo
 					apuntamos a una instancia de base de datos de lectura específica,
 					mientras el resto son eliminadas.</p>
-				<p><img alt="AWS Diagram" src="img/posts/scale_in.png"></p>
+				<p><img alt="AWS Diagram" src="posts/scale_in.png"></p>
 				<p>De esta forma tenemos control preciso sobre a qué nodo se enruta el
 					tráfico de lectura, en lugar de depender de la propagación de DNS.</p>
 				<h2><a name="0.1_user-content-escalado-vertical-del-nodo-de-escritura" href="#0.1_escalado-vertical-del-nodo-de-escritura"><span></span></a>Escalado
@@ -187,7 +187,7 @@
 					que se vean errores durante una ventana de tiempo de 10-15 segundos
 					(pero nuestras aplicaciones son resilientes a estos errores, verdad?
 					:p).</p>
-				<p><img alt="Sentry" src="img/posts/sentry.png"></p>
+				<p><img alt="Sentry" src="posts/sentry.png"></p>
 				<h2><a name="0.1_user-content-desescalado-scaling-down" href="#0.1_desescalado-scaling-down"><span></span></a>Desescalado (Scaling down)
 				</h2>
 				<p>Este proceso es el inverso de escalar hacia arriba. Solamente modificamos nuestra instancia <em>old_master</em>
@@ -229,7 +229,7 @@
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 partner-title">
 			<div class="partner-box">
 				<a href="https://www.ticketea.com/" target="_blank" title="Ticketea">
-					<img src="img/partners/ticketea.png" alt="Patrocinador Especial (entradas)"/>
+					<img src="partners/ticketea.png" alt="Patrocinador Especial (entradas)"/>
 				</a>
 			</div>
 		</div>
@@ -245,7 +245,7 @@
 <!-- footer start -->
 <footer class="footer">
 	<div>
-		<img src="img/logo-lechazo-footer.png" width="150" title="LechazoConf"/>
+		<img src="../img/logo-lechazo-footer.png" width="150" title="LechazoConf"/>
 	</div>
 	<div class="copyright">
 		<p>
