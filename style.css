@@ -401,6 +401,10 @@ video {
     flex-flow: row wrap;
 }
 
+.lechazo-flex-size {
+    flex: 1;
+}
+
 /* Partners */
 
 .partner-title {
