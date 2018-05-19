@@ -55,50 +55,495 @@
 	</div>
 </header>
 
-<section id="home" class="background-new">
+<section id="agenda" class="background-light-blue">
 
 	<div class="container">
-		<div class="row">
-			<div class="table main-table">
-				<div class="table-cell">
-					<img class="lechazo-logo" src="img/logo-lechazo-color-rev.svg" title="LechazoConf 2018"/>
-					<p class="lechazo-subtitle">Valladolid, 19 mayo 2018</p>
-					<div>
-						<span class="meetup_line_left"></span>
-						<a href="https://twitter.com/lechazoconf" target="_blank"><i class="fa fa-twitter"></i></a>
-						<a href="https://www.facebook.com/lechazoconf/" target="_blank"><i class="fa fa-facebook"></i></a>
-						<span class="meetup_line_right"></span>
+		<div class="row lechazo-flex">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+				<div class="vc_empty_space_2"></div>
+				<div class="vc_empty_space_2"></div>
+
+				<div class="lechazo-center"><span class="title" style="color:white">Agenda</span></div>
+				<div class="title-line lechazo-center" style="border-top-color:white"></div>
+				<div class="vc_empty_space"></div>
+			</div>
+			<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 agenda-list">
+				<span class="title">Sábado 19 de Mayo</span>
+				<hr>
+
+				<div class="agenda-row">
+					<span class="agenda-time">09:00</span>
+					<span class="agenda-marker agenda-marker-first">
+						<img src="img/circle.png">
+					</span>
+					<span class="agenda-icon">
+						<img src="img/circle_activity.png">
+						<img src="img/id-card.png" class="agenda-icon-fill">
+					</span>
+					Registro y acreditaciones (no hace falta imprimir la entrada)
+				</div>
+
+				<div class="agenda-row">
+					<span class="agenda-time">09:30</span>
+					<span class="agenda-marker">
+						<img src="img/circle.png">
+					</span>
+					<span class="agenda-icon">
+						<img src="img/circle_activity.png">
+						<img src="img/microphone.png" class="agenda-micro">
+					</span>
+					Presentación
+				</div>
+
+				<div class="agenda-row">
+
+					<input id="input-saleiva" type="checkbox"
+						   class="agenda-accordion-input">
+
+					<span class="agenda-time">09:35</span>
+					<span class="agenda-marker">
+						<img src="img/circle.png">
+					</span>
+					<span class="agenda-icon">
+						<img src="img/speakers/saleiva.svg">
+					</span>
+					<div class="agenda-accordion-content">
+						<a href="#saleiva">Sergio Álvarez</a>
+						<p>f(x)</p>
+						<p>
+							<!--<label for="input-saleiva"-->
+							<!--class="lechazo-link agenda-details-link"></label>-->
+						</p>
+						<p class="agenda-accordion-hidden">
+						</p>
+					</div>
+				</div>
+
+				<div class="agenda-row">
+
+					<span class="agenda-time">10:20</span>
+					<span class="agenda-marker">
+						<img src="img/circle.png">
+					</span>
+					<span class="agenda-icon">
+						<img src="img/speakers/carlos.svg">
+					</span>
+
+					<input id="input-karliky" type="checkbox"
+						   class="agenda-accordion-input">
+
+					<div class="agenda-accordion-content">
+						<a href="#karliky">Carlos Hernández</a>
+						<p>Consejo: No hagas trampas en videojuegos</p>
+						<p>
+							<label for="input-karliky"
+								   class="lechazo-link agenda-details-link"></label>
+						</p>
+						<p class="agenda-accordion-hidden">
+							Una charla sobre lo efímero y complicado del éxito hackeando videojuegos.
+							Cómo las empresas que desarrollan videojuegos intentan prevenir la proliferación de las aplicaciones de este tipo y cómo los hackers, a pesar de todo, intentan publicar sus aplicaciones cada vez de forma más underground.
+						</p>
 					</div>
 
-					<div class="home-text">
-						<p class="lechazo-big" style="max-width: 700px">Encuentro de profesionales del emprendimiento,
-							tecnología, negocio y startups</p>
+				</div>
+
+				<div class="agenda-row">
+
+					<span class="agenda-time">10:45</span>
+					<span class="agenda-marker">
+						<img src="img/circle.png">
+					</span>
+					<span class="agenda-icon">
+						<img src="img/speakers/paola.svg">
+					</span>
+
+					<input id="input-paola-garcia" type="checkbox"
+						   class="agenda-accordion-input">
+
+					<div class="agenda-accordion-content">
+						<a href="#paola-garcia">Paola Garcia</a>
+						<p>Salir de la rueda de hamster una tarea complicada... Inception</p>
+						<p>
+							<label for="input-paola-garcia"
+								   class="lechazo-link agenda-details-link"></label>
+						</p>
+						<p class="agenda-accordion-hidden">
+							¿Cuantas veces has sentido que hacemos las cosas por inercia aunque parezcan NO tener sentido al menos para ti? Yo he sentido esto varias veces a lo largo de mi carrera y he salido "fuera de la rueda de hamster de aquello que me atrapaba"... ¿o no? Salí del mundo de trabajador por cuenta ajena en corporate al mundo del emprendimiento y ¿sabes que? Aquí también he encontrado una rueda de hamster! Salir del sistema establecido no es tan facil como parece... pero sigo intuyendo que merece la pena :) Te cuento mi experiencia por el camino en este charla.
+						</p>
 					</div>
 
-					<link href="https://cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-					<div id="mc_embed_signup">
-						<form action="https://lechazoconf.us15.list-manage.com/subscribe/post?u=5b69efa2634a497bd72d2eae8&amp;id=2d5db32c98" method="post"
-							  id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-							<div id="mc_embed_signup_scroll">
-								<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Suscríbete a nuestra lista de correo"
-									   required>
-								<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-								<div style="position: absolute; left: -5000px;" aria-hidden="true">
-									<input type="text" name="b_5b69efa2634a497bd72d2eae8_2d5db32c98" tabindex="-1" value="">
-								</div>
-								<div class="clear">
-									<input type="submit" value="Añádeme a la lista" name="subscribe" id="mc-embedded-subscribe" class="button">
-								</div>
-							</div>
-						</form>
+				</div>
+
+				<div class="agenda-row">
+					<span class="agenda-time">11:30</span>
+					<span class="agenda-marker">
+						<img src="img/circle.png">
+					</span>
+					<span class="agenda-icon">
+						<img src="img/circle_activity.png">
+						<img src="img/coffee.png" class="agenda-icon-fill">
+					</span>
+					Café
+				</div>
+
+				<div class="agenda-row">
+
+					<span class="agenda-time">12:00</span>
+					<span class="agenda-marker">
+						<img src="img/circle.png">
+					</span>
+
+					<span class="agenda-icon">
+						<img src="img/speakers/luisico.svg">
+					</span>
+
+					<input id="input-luisico" type="checkbox"
+						   class="agenda-accordion-input">
+
+					<div class="agenda-accordion-content">
+						<a href="#luisico">Luis Bosque</a>
+						<p>Las prisas se han comido a mi equipo</p>
+						<p>
+							<label for="input-luisico"
+								   class="lechazo-link agenda-details-link"></label>
+						</p>
+						<p class="agenda-accordion-hidden">
+							Una de las partes más bonitas de trabajar en una startup es que si te
+							implicas y aguantas el tiempo suficiente tienes la oportunidad de
+							participar en muchas y diferentes fases de la empresa. Creas lazos muy
+							fuertes con otras personas y en general vives sensaciones de euforia,
+							cansancio pero también de éxito y fracaso.
+
+							Mi experiencia personal al frente del equipo de infraestructura
+							refleja un poco eso. La velocidad de la empresa puede afectar a la
+							calidad de tu trabajo y especialmente a tu equipo y a ti como manager.
+							Quiero hablar de cómo llega un punto en que me doy cuenta de que no he
+							cambiado bien el chip y no me he enfocado lo suficiente en el equipo.
+							Hablaré de la factura que eso acaba pasando al equipo, a la empresa y
+							a mi personalmente. Y lo más importante compartiré lo que he aprendido
+							estando en el momento más bajo y de cómo eres capaz de darle una
+							vuelta de 180 grados y crear un equipo altamente funcional, alineado y
+							feliz.
+						</p>
 					</div>
 
-					<div class="vc_empty_space_4"></div>
+				</div>
+
+				<div class="agenda-row">
+
+					<span class="agenda-time">12:30</span>
+					<span class="agenda-marker">
+						<img src="img/circle.png">
+					</span>
+
+					<input id="input-nacho" type="checkbox"
+						   class="agenda-accordion-input">
+
+					<span class="agenda-icon">
+						<img src="img/speakers/nacho.svg">
+					</span>
+					<div class="agenda-accordion-content">
+						<a href="#nacho">Nacho Coloma</a>
+						<p>Cosas que aprendes diseñando aplicaciones</p>
+						<p>
+							<label for="input-nacho"
+								   class="lechazo-link agenda-details-link">
+							</label>
+						</p>
+						<p class="agenda-accordion-hidden">
+							Veinte años en informática da para ver de todo. Durante esta sesión revisaremos una selección de buenas prácticas de diseño de aplicaciones, de resolución de problemas y de gestión de equipos.
+							Hablaremos de la última milla, de construir el producto correcto, de lo que significa ser full stack. Habrá un poco de todo. Será divertido.
+						</p>
+					</div>
+
+				</div>
+
+				<div class="agenda-row">
+
+					<input id="input-antonio" type="checkbox"
+						   class="agenda-accordion-input">
+
+					<span class="agenda-time">13:15</span>
+					<span class="agenda-marker">
+						<img src="img/circle.png">
+					</span>
+					<span class="agenda-icon">
+						<img src="img/speakers/antonio.svg">
+					</span>
+					<div class="agenda-accordion-content">
+						<a href="#antonio">Antonio Carlón</a>
+						<p>The cake is a lie</p>
+						<p>
+							<label for="input-antonio" class="lechazo-link agenda-details-link"></label>
+						</p>
+						<p class="agenda-accordion-hidden">
+							Después de más de 6 años desarrollando juegos independientes para diversas plataformas como side-projects en mi tiempo libre y como freelance para otras empresas, con varios fracasos y algún éxito a mis espaldas me gustaría contar lo que he aprendido y cómo voy a aplicarlo para intentar aumentar las posibilidades de que mi próximo juego sea un éxito (o al menos fracasar un poco menos).
+						</p>
+					</div>
+				</div>
+
+				<div class="agenda-row">
+					<span class="agenda-time">13:45</span>
+					<span class="agenda-marker">
+						<img src="img/circle.png">
+					</span>
+					<span class="agenda-icon">
+						<img src="img/circle_activity.png">
+						<img src="img/fast-food.png" class="agenda-burguer">
+					</span>
+					Comida
+				</div>
+
+				<div class="agenda-row">
+					<input id="input-soygema" type="checkbox"
+						   class="agenda-accordion-input">
+
+					<span class="agenda-time">14:45</span>
+					<span class="agenda-marker">
+						<img src="img/circle.png">
+					</span>
+					<span class="agenda-icon">
+						<img src="img/speakers/gema_nueva.svg">
+					</span>
+					<div class="agenda-accordion-content">
+						<a href="#soygema">Gema Parreño</a>
+						<p>¿Cómo funciona una Startup alrededor de un videojuego?</p>
+						<p>
+							<label for="input-soygema"
+								   class="lechazo-link agenda-details-link"></label>
+						</p>
+						<p class="agenda-accordion-hidden">
+							¿Qué experimentos medibles se pueden realizar para avanzar en producción y en diseño? ¿Cómo se pasa de tener un canal de Youtube a ganar un concurso para PlayStation ? ¿Qué fracasos implica el éxito y qué éxitos implica el fracaso?
+						</p>
+					</div>
+				</div>
+
+				<div class="agenda-row">
+
+					<span class="agenda-time">15:30</span>
+					<span class="agenda-marker">
+						<img src="img/circle.png">
+					</span>
+
+					<span class="agenda-icon">
+						<img src="img/speakers/daniel.svg">
+					</span>
+
+					<input id="input-daniel-hompanera" type="checkbox"
+						   class="agenda-accordion-input">
+
+					<div class="agenda-accordion-content">
+						<a href="#daniel-hompanera">Daniel Hompanera</a>
+						<p>El Viaje del Héroe</p>
+						<p>
+							<label for="input-daniel-hompanera"
+								   class="lechazo-link agenda-details-link"></label>
+						</p>
+						<p class="agenda-accordion-hidden">
+							Abordaré la historia de Solid GEAR desde mi propia historia personal de transformación basada en el viaje del héroe y presentaré situaciones, herramientas y recursos que me ayudan en este viaje y que intento que ayuden a otros en el suyo propio. Todo esto sin obviar fracasos y decepciones que he ido superando en el proceso.
+						</p>
+					</div>
+
+				</div>
+
+				<div class="agenda-row">
+
+					<span class="agenda-time">16:00</span>
+					<span class="agenda-marker">
+						<img src="img/circle.png">
+					</span>
+					<span class="agenda-icon">
+						<img src="img/speakers/fesja.svg">
+					</span>
+
+					<input id="input-fesja" type="checkbox"
+						   class="agenda-accordion-input">
+
+					<div class="agenda-accordion-content">
+						<a href="#fesja">Javier Escribano</a>
+						<p>Aplicando en OnTruck los aprendizajes de una start-up vendida y otra cerrada</p>
+						<p>
+							<label for="input-fesja"
+								   class="lechazo-link agenda-details-link"></label>
+						</p>
+						<p class="agenda-accordion-hidden">
+							En solo dos años de vida, hemos fundado y crecido OnTruck de 3 a más de 100 empleados, levantado más de 12M€ y conseguido la confianza de las principales empresas manufactureras y logísticas de España. Esta ejecución, casi de libro, se debe a las experiencias pasadas de los fundadores y del equipo. En esta charla compartiré con historias reales mías los aprendizajes que nos han permitido crecer a este altísimo ritmo. ¿Qué hemos aprendido del equipo, de los procesos y de la ejecución?
+						</p>
+					</div>
+
+				</div>
+
+				<div class="agenda-row">
+					<span class="agenda-time">16:45</span>
+					<span class="agenda-marker">
+						<img src="img/circle.png">
+					</span>
+					<span class="agenda-icon">
+						<img src="img/circle_activity.png">
+						<img src="img/coffee.png" class="agenda-icon-fill">
+					</span>
+					Café
+				</div>
+
+				<div class="agenda-row">
+
+					<span class="agenda-time">17:15</span>
+					<span class="agenda-marker">
+						<img src="img/circle.png">
+					</span>
+
+					<span class="agenda-icon">
+						<img src="img/speakers/jesus.svg">
+					</span>
+
+					<input id="input-jesus" type="checkbox"
+						   class="agenda-accordion-input">
+
+					<div class="agenda-accordion-content">
+						<a href="#jesus">Jesús Rodríguez-Aragón</a>
+						<p>MEGA: como las antípodas llegaron a Salamanca</p>
+						<p>
+							<label for="input-jesus"
+								   class="lechazo-link agenda-details-link"></label>
+						</p>
+						<p class="agenda-accordion-hidden">
+							Tras 5 años, creo que puede ser interesante contar nuestra historia: emprendimiento, orígenes, evolución y crecimiento, metodología de trabajo, gestión de comunicación con las antípodas (no sólo en horarios, sino en diferencia de caracteres, cultura, etc), product management, experiencia de evolución e inserción en una industria existente con competidores muy potentes (Dropbox, Google Drive, OneDrive, Box, etc) donde MEGA se encuentra ahora mismo en el Top 3 de almacenamiento en nube, peculiaridades y factor de diferenciación de nuestro producto, estrategias de marketing, etc.
+						</p>
+					</div>
+
+				</div>
+
+				<div class="agenda-row">
+
+					<input id="input-kikobeats" type="checkbox"
+						   class="agenda-accordion-input">
+
+					<span class="agenda-time">17:45</span>
+					<span class="agenda-marker">
+						<img src="img/circle.png">
+					</span>
+
+					<span class="agenda-icon">
+						<img src="img/speakers/jose.svg">
+					</span>
+
+					<div class="agenda-accordion-content">
+						<a href="#kikobeats">Kikobeats</a>
+						<p>Estrategias de Producto desde el Open Source</p>
+						<p>
+							<label for="input-kikobeats" class="lechazo-link agenda-details-link"></label>
+						</p>
+						<p class="agenda-accordion-hidden">
+							Desde hace un tiempo hasta ahora, quería cambiar el chip. Quería construir proyecto alrededor de la tecnología que hacía. Quería que esas piezas fueran la base para hacer algo mayor, y no quedarme sólo en la superficie. Y eso, implica un montón de cosas.
+
+							Esto no va de startups! Va de estilo de vida. De poder hacer Open Source y poder vivir de ello. De dejar tu trabajo porque te puedes dedicar a tus proyectos, que además te dan de comer.
+
+							Bueno, a ver, no nos flipemos que yo todavía no he llegado a eso. Pero work in progress 🙂
+						</p>
+					</div>
+
+				</div>
+
+				<div class="agenda-row">
+
+					<span class="agenda-time">18:15</span>
+					<span class="agenda-marker">
+						<img src="img/circle.png">
+					</span>
+					<span class="agenda-icon">
+						<img src="img/speakers/lalalalia.svg">
+					</span>
+
+					<input id="input-lalalalia" type="checkbox"
+						   class="agenda-accordion-input">
+
+					<div class="agenda-accordion-content">
+						<a href="#lalalalia">Analía Plaza</a>
+						<p>La crisis de los 28</p>
+						<p>
+							<!--<label for="input-lalalalia"-->
+							<!--class="lechazo-link agenda-details-link"></label>-->
+						</p>
+						<p class="agenda-accordion-hidden">
+						</p>
+					</div>
+
+				</div>
+
+				<div class="agenda-row">
+					<span class="agenda-time">19:00</span>
+					<span class="agenda-marker agenda-marker-last">
+						<img src="img/circle.png">
+					</span>
+					<span class="agenda-icon">
+						<img src="img/circle_activity.png">
+						<img src="img/fast-food.png" class="agenda-burguer">
+					</span>
+					Cierre
+				</div>
+
+				<div class="agenda-row">
+					<span class="agenda-time">21:30</span>
+					<span>
+						<img src="img/circle.png">
+					</span>
+					<span class="agenda-icon">
+						<img src="img/circle_activity.png">
+						<img src="img/fast-food.png" class="agenda-burguer">
+					</span>
+					<a href="https://goo.gl/maps/fBjgf4sH6dT2">Fiesta/cena en la Sala Privee</a>
 				</div>
 			</div>
 		</div>
+		<div class="vc_empty_space_3"></div>
 	</div>
 </section>
+
+<!--<section id="home" class="background-new">-->
+
+	<!--<div class="container">-->
+		<!--<div class="row">-->
+			<!--<div class="table main-table">-->
+				<!--<div class="table-cell">-->
+					<!--<img class="lechazo-logo" src="img/logo-lechazo-color-rev.svg" title="LechazoConf 2018"/>-->
+					<!--<p class="lechazo-subtitle">Valladolid, 19 mayo 2018</p>-->
+					<!--<div>-->
+						<!--<span class="meetup_line_left"></span>-->
+						<!--<a href="https://twitter.com/lechazoconf" target="_blank"><i class="fa fa-twitter"></i></a>-->
+						<!--<a href="https://www.facebook.com/lechazoconf/" target="_blank"><i class="fa fa-facebook"></i></a>-->
+						<!--<span class="meetup_line_right"></span>-->
+					<!--</div>-->
+
+					<!--<div class="home-text">-->
+						<!--<p class="lechazo-big" style="max-width: 700px">Encuentro de profesionales del emprendimiento,-->
+							<!--tecnología, negocio y startups</p>-->
+					<!--</div>-->
+
+					<!--<link href="https://cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">-->
+					<!--<div id="mc_embed_signup">-->
+						<!--<form action="https://lechazoconf.us15.list-manage.com/subscribe/post?u=5b69efa2634a497bd72d2eae8&amp;id=2d5db32c98" method="post"-->
+							  <!--id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>-->
+							<!--<div id="mc_embed_signup_scroll">-->
+								<!--<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Suscríbete a nuestra lista de correo"-->
+									   <!--required>-->
+								<!--&lt;!&ndash; real people should not fill this in and expect good things - do not remove this or risk form bot signups&ndash;&gt;-->
+								<!--<div style="position: absolute; left: -5000px;" aria-hidden="true">-->
+									<!--<input type="text" name="b_5b69efa2634a497bd72d2eae8_2d5db32c98" tabindex="-1" value="">-->
+								<!--</div>-->
+								<!--<div class="clear">-->
+									<!--<input type="submit" value="Añádeme a la lista" name="subscribe" id="mc-embedded-subscribe" class="button">-->
+								<!--</div>-->
+							<!--</div>-->
+						<!--</form>-->
+					<!--</div>-->
+
+					<!--<div class="vc_empty_space_4"></div>-->
+				<!--</div>-->
+			<!--</div>-->
+		<!--</div>-->
+	<!--</div>-->
+<!--</section>-->
 
 <section id="about" class="background-white">
 
@@ -654,451 +1099,6 @@
 	</div>
 
 </section>
-
-<section id="agenda" class="background-light-blue">
-
-	<div class="container">
-		<div class="row lechazo-flex">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-				<div class="vc_empty_space_2"></div>
-
-				<div class="lechazo-center"><span class="title" style="color:white">Agenda</span></div>
-				<div class="title-line lechazo-center" style="border-top-color:white"></div>
-				<div class="vc_empty_space"></div>
-			</div>
-			<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 agenda-list">
-				<span class="title">Sábado 19 de Mayo</span>
-				<hr>
-
-				<div class="agenda-row">
-					<span class="agenda-time">09:00</span>
-					<span class="agenda-marker agenda-marker-first">
-						<img src="img/circle.png">
-					</span>
-					<span class="agenda-icon">
-						<img src="img/circle_activity.png">
-						<img src="img/id-card.png" class="agenda-icon-fill">
-					</span>
-					Registro y acreditaciones (no hace falta imprimir la entrada)
-				</div>
-
-				<div class="agenda-row">
-					<span class="agenda-time">09:30</span>
-					<span class="agenda-marker">
-						<img src="img/circle.png">
-					</span>
-					<span class="agenda-icon">
-						<img src="img/circle_activity.png">
-						<img src="img/microphone.png" class="agenda-micro">
-					</span>
-					Presentación
-				</div>
-
-				<div class="agenda-row">
-
-					<input id="input-saleiva" type="checkbox"
-						   class="agenda-accordion-input">
-
-					<span class="agenda-time">09:35</span>
-					<span class="agenda-marker">
-						<img src="img/circle.png">
-					</span>
-					<span class="agenda-icon">
-						<img src="img/speakers/saleiva.svg">
-					</span>
-					<div class="agenda-accordion-content">
-						<a href="#saleiva">Sergio Álvarez</a>
-						<!--<p></p>-->
-						<p>
-							<!--<label for="input-saleiva"-->
-							<!--class="lechazo-link agenda-details-link"></label>-->
-						</p>
-						<p class="agenda-accordion-hidden">
-						</p>
-					</div>
-				</div>
-
-				<div class="agenda-row">
-
-					<span class="agenda-time">10:20</span>
-					<span class="agenda-marker">
-						<img src="img/circle.png">
-					</span>
-					<span class="agenda-icon">
-						<img src="img/speakers/carlos.svg">
-					</span>
-
-					<input id="input-karliky" type="checkbox"
-						   class="agenda-accordion-input">
-
-					<div class="agenda-accordion-content">
-						<a href="#karliky">Carlos Hernández</a>
-						<p>Consejo: No hagas trampas en videojuegos</p>
-						<p>
-							<label for="input-karliky"
-								   class="lechazo-link agenda-details-link"></label>
-						</p>
-						<p class="agenda-accordion-hidden">
-							Una charla sobre lo efímero y complicado del éxito hackeando videojuegos.
-							Cómo las empresas que desarrollan videojuegos intentan prevenir la proliferación de las aplicaciones de este tipo y cómo los hackers, a pesar de todo, intentan publicar sus aplicaciones cada vez de forma más underground.
-						</p>
-					</div>
-
-				</div>
-
-				<div class="agenda-row">
-
-					<span class="agenda-time">10:45</span>
-					<span class="agenda-marker">
-						<img src="img/circle.png">
-					</span>
-					<span class="agenda-icon">
-						<img src="img/speakers/paola.svg">
-					</span>
-
-					<input id="input-paola-garcia" type="checkbox"
-						   class="agenda-accordion-input">
-
-					<div class="agenda-accordion-content">
-						<a href="#paola-garcia">Paola Garcia</a>
-						<p>Salir de la rueda de hamster una tarea complicada... Inception</p>
-						<p>
-							<label for="input-paola-garcia"
-								   class="lechazo-link agenda-details-link"></label>
-						</p>
-						<p class="agenda-accordion-hidden">
-							¿Cuantas veces has sentido que hacemos las cosas por inercia aunque parezcan NO tener sentido al menos para ti? Yo he sentido esto varias veces a lo largo de mi carrera y he salido "fuera de la rueda de hamster de aquello que me atrapaba"... ¿o no? Salí del mundo de trabajador por cuenta ajena en corporate al mundo del emprendimiento y ¿sabes que? Aquí también he encontrado una rueda de hamster! Salir del sistema establecido no es tan facil como parece... pero sigo intuyendo que merece la pena :) Te cuento mi experiencia por el camino en este charla.
-						</p>
-					</div>
-
-				</div>
-
-				<div class="agenda-row">
-					<span class="agenda-time">11:30</span>
-					<span class="agenda-marker">
-						<img src="img/circle.png">
-					</span>
-					<span class="agenda-icon">
-						<img src="img/circle_activity.png">
-						<img src="img/coffee.png" class="agenda-icon-fill">
-					</span>
-					Café
-				</div>
-
-				<div class="agenda-row">
-
-					<span class="agenda-time">12:00</span>
-					<span class="agenda-marker">
-						<img src="img/circle.png">
-					</span>
-
-					<span class="agenda-icon">
-						<img src="img/speakers/luisico.svg">
-					</span>
-
-					<input id="input-luisico" type="checkbox"
-						   class="agenda-accordion-input">
-
-					<div class="agenda-accordion-content">
-						<a href="#luisico">Luis Bosque</a>
-						<p>Las prisas se han comido a mi equipo</p>
-						<p>
-							<label for="input-luisico"
-								   class="lechazo-link agenda-details-link"></label>
-						</p>
-						<p class="agenda-accordion-hidden">
-							Una de las partes más bonitas de trabajar en una startup es que si te
-							implicas y aguantas el tiempo suficiente tienes la oportunidad de
-							participar en muchas y diferentes fases de la empresa. Creas lazos muy
-							fuertes con otras personas y en general vives sensaciones de euforia,
-							cansancio pero también de éxito y fracaso.
-
-							Mi experiencia personal al frente del equipo de infraestructura
-							refleja un poco eso. La velocidad de la empresa puede afectar a la
-							calidad de tu trabajo y especialmente a tu equipo y a ti como manager.
-							Quiero hablar de cómo llega un punto en que me doy cuenta de que no he
-							cambiado bien el chip y no me he enfocado lo suficiente en el equipo.
-							Hablaré de la factura que eso acaba pasando al equipo, a la empresa y
-							a mi personalmente. Y lo más importante compartiré lo que he aprendido
-							estando en el momento más bajo y de cómo eres capaz de darle una
-							vuelta de 180 grados y crear un equipo altamente funcional, alineado y
-							feliz.
-						</p>
-					</div>
-
-				</div>
-
-				<div class="agenda-row">
-
-					<span class="agenda-time">12:30</span>
-					<span class="agenda-marker">
-						<img src="img/circle.png">
-					</span>
-
-					<input id="input-nacho" type="checkbox"
-						   class="agenda-accordion-input">
-
-					<span class="agenda-icon">
-						<img src="img/speakers/nacho.svg">
-					</span>
-					<div class="agenda-accordion-content">
-						<a href="#nacho">Nacho Coloma</a>
-						<p>Cosas que aprendes diseñando aplicaciones</p>
-						<p>
-							<label for="input-nacho"
-								   class="lechazo-link agenda-details-link">
-							</label>
-						</p>
-						<p class="agenda-accordion-hidden">
-							Veinte años en informática da para ver de todo. Durante esta sesión revisaremos una selección de buenas prácticas de diseño de aplicaciones, de resolución de problemas y de gestión de equipos.
-							Hablaremos de la última milla, de construir el producto correcto, de lo que significa ser full stack. Habrá un poco de todo. Será divertido.
-						</p>
-					</div>
-
-				</div>
-
-				<div class="agenda-row">
-
-					<input id="input-antonio" type="checkbox"
-						   class="agenda-accordion-input">
-
-					<span class="agenda-time">13:15</span>
-					<span class="agenda-marker">
-						<img src="img/circle.png">
-					</span>
-					<span class="agenda-icon">
-						<img src="img/speakers/antonio.svg">
-					</span>
-					<div class="agenda-accordion-content">
-						<a href="#antonio">Antonio Carlón</a>
-						<p>The cake is a lie</p>
-						<p>
-							<label for="input-antonio" class="lechazo-link agenda-details-link"></label>
-						</p>
-						<p class="agenda-accordion-hidden">
-							Después de más de 6 años desarrollando juegos independientes para diversas plataformas como side-projects en mi tiempo libre y como freelance para otras empresas, con varios fracasos y algún éxito a mis espaldas me gustaría contar lo que he aprendido y cómo voy a aplicarlo para intentar aumentar las posibilidades de que mi próximo juego sea un éxito (o al menos fracasar un poco menos).
-						</p>
-					</div>
-				</div>
-
-				<div class="agenda-row">
-					<span class="agenda-time">13:45</span>
-					<span class="agenda-marker">
-						<img src="img/circle.png">
-					</span>
-					<span class="agenda-icon">
-						<img src="img/circle_activity.png">
-						<img src="img/fast-food.png" class="agenda-burguer">
-					</span>
-					Comida
-				</div>
-
-				<div class="agenda-row">
-					<input id="input-soygema" type="checkbox"
-						   class="agenda-accordion-input">
-
-					<span class="agenda-time">14:45</span>
-					<span class="agenda-marker">
-						<img src="img/circle.png">
-					</span>
-					<span class="agenda-icon">
-						<img src="img/speakers/gema_nueva.svg">
-					</span>
-					<div class="agenda-accordion-content">
-						<a href="#soygema">Gema Parreño</a>
-						<p>¿Cómo funciona una Startup alrededor de un videojuego?</p>
-						<p>
-							<label for="input-soygema"
-								   class="lechazo-link agenda-details-link"></label>
-						</p>
-						<p class="agenda-accordion-hidden">
-							¿Qué experimentos medibles se pueden realizar para avanzar en producción y en diseño? ¿Cómo se pasa de tener un canal de Youtube a ganar un concurso para PlayStation ? ¿Qué fracasos implica el éxito y qué éxitos implica el fracaso?
-						</p>
-					</div>
-				</div>
-
-				<div class="agenda-row">
-
-					<span class="agenda-time">15:30</span>
-					<span class="agenda-marker">
-						<img src="img/circle.png">
-					</span>
-
-					<span class="agenda-icon">
-						<img src="img/speakers/daniel.svg">
-					</span>
-
-					<input id="input-daniel-hompanera" type="checkbox"
-						   class="agenda-accordion-input">
-
-					<div class="agenda-accordion-content">
-						<a href="#daniel-hompanera">Daniel Hompanera</a>
-						<p>El Viaje del Héroe</p>
-						<p>
-							<label for="input-daniel-hompanera"
-								   class="lechazo-link agenda-details-link"></label>
-						</p>
-						<p class="agenda-accordion-hidden">
-							Abordaré la historia de Solid GEAR desde mi propia historia personal de transformación basada en el viaje del héroe y presentaré situaciones, herramientas y recursos que me ayudan en este viaje y que intento que ayuden a otros en el suyo propio. Todo esto sin obviar fracasos y decepciones que he ido superando en el proceso.
-						</p>
-					</div>
-
-				</div>
-
-				<div class="agenda-row">
-
-					<span class="agenda-time">16:00</span>
-					<span class="agenda-marker">
-						<img src="img/circle.png">
-					</span>
-					<span class="agenda-icon">
-						<img src="img/speakers/fesja.svg">
-					</span>
-
-					<input id="input-fesja" type="checkbox"
-						   class="agenda-accordion-input">
-
-					<div class="agenda-accordion-content">
-						<a href="#fesja">Javier Escribano</a>
-						<p>Aplicando en OnTruck los aprendizajes de una start-up vendida y otra cerrada</p>
-						<p>
-							<label for="input-fesja"
-							class="lechazo-link agenda-details-link"></label>
-						</p>
-						<p class="agenda-accordion-hidden">
-							En solo dos años de vida, hemos fundado y crecido OnTruck de 3 a más de 100 empleados, levantado más de 12M€ y conseguido la confianza de las principales empresas manufactureras y logísticas de España. Esta ejecución, casi de libro, se debe a las experiencias pasadas de los fundadores y del equipo. En esta charla compartiré con historias reales mías los aprendizajes que nos han permitido crecer a este altísimo ritmo. ¿Qué hemos aprendido del equipo, de los procesos y de la ejecución?
-						</p>
-					</div>
-
-				</div>
-
-				<div class="agenda-row">
-					<span class="agenda-time">16:45</span>
-					<span class="agenda-marker">
-						<img src="img/circle.png">
-					</span>
-					<span class="agenda-icon">
-						<img src="img/circle_activity.png">
-						<img src="img/coffee.png" class="agenda-icon-fill">
-					</span>
-					Café
-				</div>
-
-				<div class="agenda-row">
-
-					<span class="agenda-time">17:15</span>
-					<span class="agenda-marker">
-						<img src="img/circle.png">
-					</span>
-
-					<span class="agenda-icon">
-						<img src="img/speakers/jesus.svg">
-					</span>
-
-					<input id="input-jesus" type="checkbox"
-						   class="agenda-accordion-input">
-
-					<div class="agenda-accordion-content">
-						<a href="#jesus">Jesús Rodríguez-Aragón</a>
-						<p>MEGA: como las antípodas llegaron a Salamanca</p>
-						<p>
-							<label for="input-jesus"
-								   class="lechazo-link agenda-details-link"></label>
-						</p>
-						<p class="agenda-accordion-hidden">
-							Tras 5 años, creo que puede ser interesante contar nuestra historia: emprendimiento, orígenes, evolución y crecimiento, metodología de trabajo, gestión de comunicación con las antípodas (no sólo en horarios, sino en diferencia de caracteres, cultura, etc), product management, experiencia de evolución e inserción en una industria existente con competidores muy potentes (Dropbox, Google Drive, OneDrive, Box, etc) donde MEGA se encuentra ahora mismo en el Top 3 de almacenamiento en nube, peculiaridades y factor de diferenciación de nuestro producto, estrategias de marketing, etc.
-						</p>
-					</div>
-
-				</div>
-
-				<div class="agenda-row">
-
-					<input id="input-kikobeats" type="checkbox"
-						   class="agenda-accordion-input">
-
-					<span class="agenda-time">17:45</span>
-					<span class="agenda-marker">
-						<img src="img/circle.png">
-					</span>
-
-					<span class="agenda-icon">
-						<img src="img/speakers/jose.svg">
-					</span>
-
-					<div class="agenda-accordion-content">
-						<a href="#kikobeats">Kikobeats</a>
-						<p>Estrategias de Producto desde el Open Source</p>
-						<p>
-							<label for="input-kikobeats" class="lechazo-link agenda-details-link"></label>
-						</p>
-						<p class="agenda-accordion-hidden">
-							Desde hace un tiempo hasta ahora, quería cambiar el chip. Quería construir proyecto alrededor de la tecnología que hacía. Quería que esas piezas fueran la base para hacer algo mayor, y no quedarme sólo en la superficie. Y eso, implica un montón de cosas.
-
-							Esto no va de startups! Va de estilo de vida. De poder hacer Open Source y poder vivir de ello. De dejar tu trabajo porque te puedes dedicar a tus proyectos, que además te dan de comer.
-
-							Bueno, a ver, no nos flipemos que yo todavía no he llegado a eso. Pero work in progress 🙂
-						</p>
-					</div>
-
-				</div>
-
-				<div class="agenda-row">
-
-					<span class="agenda-time">18:15</span>
-					<span class="agenda-marker">
-						<img src="img/circle.png">
-					</span>
-					<span class="agenda-icon">
-						<img src="img/speakers/lalalalia.svg">
-					</span>
-
-					<input id="input-lalalalia" type="checkbox"
-						   class="agenda-accordion-input">
-
-					<div class="agenda-accordion-content">
-						<a href="#lalalalia">Analía Plaza</a>
-						<p>La crisis de los 28</p>
-						<p>
-							<!--<label for="input-lalalalia"-->
-							<!--class="lechazo-link agenda-details-link"></label>-->
-						</p>
-						<p class="agenda-accordion-hidden">
-						</p>
-					</div>
-
-				</div>
-
-				<div class="agenda-row">
-					<span class="agenda-time">19:00</span>
-					<span class="agenda-marker agenda-marker-last">
-						<img src="img/circle.png">
-					</span>
-					<span class="agenda-icon">
-						<img src="img/circle_activity.png">
-						<img src="img/fast-food.png" class="agenda-burguer">
-					</span>
-					Cierre
-				</div>
-
-				<div class="agenda-row">
-					<span class="agenda-time">21:30</span>
-					<span>
-						<img src="img/circle.png">
-					</span>
-					<span class="agenda-icon">
-						<img src="img/circle_activity.png">
-						<img src="img/fast-food.png" class="agenda-burguer">
-					</span>
-					<a href="https://goo.gl/maps/fBjgf4sH6dT2">Fiesta/cena en la Sala Privee</a>
-				</div>
-			</div>
-		</div>
-		<div class="vc_empty_space_3"></div>
-	</div>
-</section>
-
 
 <section id="asistente" class="background-gray">
 
