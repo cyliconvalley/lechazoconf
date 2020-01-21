@@ -381,8 +381,9 @@ video {
 .speaker-job {
 	background: #A0D468;
 	color: white;
-	font-size: 12px;
+	font-size: 14px;
 	padding: 5px;
+    text-transform: uppercase;
 }
 
 .speaker-image img {
