@@ -78,9 +78,26 @@
 					</div>
 
 					<div class="lechazo-cta">
-						<a href="http://lechazoconf-2020.eventbrite.com" title="Tickets para LechazoConf 2020" class="lechazo-register-link">
-							COMPRA TU ENTRADA
-						</a>
+						<div id="eventbrite-widget-container-87525000633"></div>
+
+						<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+						<script type="text/javascript">
+						var exampleCallback = function() {
+							console.log('Order complete!');
+						};
+
+						window.EBWidgets.createWidget({
+							// Required
+							widgetType: 'checkout',
+							eventId: '87525000633',
+							iframeContainerId: 'eventbrite-widget-container-87525000633',
+
+							// Optional
+							iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+							onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+						});
+						</script>
 					</div>
 
 					<link href="https://cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
