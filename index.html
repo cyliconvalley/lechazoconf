@@ -77,11 +77,28 @@
 							tecnología, negocio y startups</p>
 					</div>
 
-					<!--					<div class="lechazo-cta">-->
-					<!--						<a href="http://lechazoconf.eventbrite.com" title="Tickets para LechazoConf 2020" class="lechazo-register-link">-->
-					<!--							COMPRA TU ENTRADA-->
-					<!--						</a>-->
-					<!--					</div>-->
+					<div class="lechazo-cta">
+						<div id="eventbrite-widget-container-87525000633"></div>
+
+						<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+						<script type="text/javascript">
+						var exampleCallback = function() {
+							console.log('Order complete!');
+						};
+
+						window.EBWidgets.createWidget({
+							// Required
+							widgetType: 'checkout',
+							eventId: '87525000633',
+							iframeContainerId: 'eventbrite-widget-container-87525000633',
+
+							// Optional
+							iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+							onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+						});
+						</script>
+					</div>
 
 					<link href="https://cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
 					<div id="mc_embed_signup">
@@ -1018,14 +1035,7 @@
 				</div>
 				<div id="wrapper-map">
 					<div id="contact-map">
-						<span class="lechazo-bold">Palacio de Congresos Conde Ansúrez</span>
 						<ul id="features-map">
-							<li>
-								<span id="feature-marker" class="feature-icon"></span>
-								<span>C/ Real de Burgos,</span>
-								<span>s/n 47011 Valladolid</span>
-								<span>Segunda planta</span>
-							</li>
 							<li>
 								<span id="feature-bus" class="feature-icon"></span>
 								<span>Líneas de bus: 1, 2, 8 y C2</span>
@@ -1036,12 +1046,9 @@
 								<a class="lechazo-link" href="http://funge.uva.es/palacio">funge.uva.es/palacio</a>
 							</li>
 						</ul>
-						<a href="https://www.google.es/maps/place/Palacio+de+Congresos+Conde+Ans%C3%BArez/@41.6564752,-4.7216427,17z/data=!3m1!4b1!4m5!3m4!1s0xd4712af083befc7:0x8df2f746d39e773c!8m2!3d41.6564752!4d-4.719454?shorturl=1"
-						   class="lechazo-register-link lechazo-register-link-small">
-							Como llegar
-						</a>
 					</div>
-					<iframe width="850" height="700" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-4.722222089767457%2C41.654725639496405%2C-4.717587232589723%2C41.658292747859264&amp;layer=mapnik&amp;marker=41.65650921837334%2C-4.719904661178589" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=41.65651&amp;mlon=-4.71990#map=18/41.65651/-4.71990">View Larger Map</a></small>
+
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11923.86426071133!2d-4.719454!3d41.6564752!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8df2f746d39e773c!2sPalacio%20de%20Congresos%20Conde%20Ans%C3%BArez!5e0!3m2!1ses!2ses!4v1579590865854!5m2!1ses!2ses" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 				</div>
 
 				<div class="vc_empty_space_3"></div>
@@ -1255,6 +1262,7 @@
     ga('send', 'pageview');
 
 </script>
+
 
 </body>
 </html>
