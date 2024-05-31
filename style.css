@@ -624,6 +624,7 @@ video {
 .agenda-icon :first-child {
 	width: 62px;
 	max-width: none;
+	border-radius: 50%;
 }
 
 .agenda-icon-fill {
