@@ -693,6 +693,10 @@ video {
 	content: '<- Cerrar detalles'
 }
 
+.notes{
+	font-size: 14px;
+}
+
 .footer {
 	position: relative;
 	padding: 30px 0 5px;
