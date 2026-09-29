@@ -1,0 +1,29 @@
+<header class="header-home" data-option="1">
+    <div class="container">
+        <div class="header-container">
+            <h3 class="pull-left header-logo">
+                <a title="Lechazo Conf Logo" href="/">
+                    <img src="./img/lechazoconf-text.png" alt="Lechazo Conf {{ site.year }}">
+                </a>
+            </h3>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <nav class="nav-collapse pull-right menu">
+                <ul id="navbar-collapse" class="nav navbar-nav collapse navbar-collapse nav">
+                    <li><a href="{{ include.base }}#home">Inicio</a></li>
+                    <!--                    <li><a href="{{ include.base }}#tickets">Entradas</a></li>-->
+                    <!--                    <li><a href="{{ include.base }}#c4p">Call for papers</a></li>-->
+                    <li><a href="{{ include.base }}#our_speakers">Ponentes</a></li>
+                    <li><a href="{{ include.base }}#agenda">Agenda</a></li>
+                    <li><a href="{{ include.base }}#partners">Patrocinios</a></li>
+                    <li><a href="{{ include.base }}#location">Localización</a></li>
+                    <li><a href="{{ include.base }}#coc">Código de conducta</a></li>
+{% for edition in site.editions %}                    <li><a href="{{ edition }}/index.html">{{ edition }}</a></li>
+{% endfor %}                    <!--					<li><a href="#register">Entradas</a></li>-->
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>

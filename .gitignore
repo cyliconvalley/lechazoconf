@@ -1,4 +1,14 @@
 .idea/
+
+### Jekyll ###
+# Salida y caché del build local. El sitio se construye en CI
+# (.github/workflows/pages.yml), nunca se commitea _site/.
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+vendor/bundle/
+
 ### macOS ###
 *.DS_Store
 .AppleDouble

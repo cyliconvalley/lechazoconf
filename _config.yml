@@ -1,0 +1,24 @@
+# LechazoConf — configuración del sitio.
+#
+# Para pasar a una nueva edición basta con cambiar `year` y `date_text` aquí,
+# y añadir la edición que acaba de terminar a la lista `editions`. El título,
+# los meta tags, el pie y los enlaces del menú se generan a partir de estos
+# valores, así que no hay que tocarlos página por página.
+
+title: LechazoConf
+tagline: Conferencia tecnológica
+city: Valladolid
+url: https://lechazoconf.com
+
+year: 2027
+date_text: fecha por confirmar
+
+# Ediciones archivadas (carpetas YYYY/), en orden cronológico. Sus páginas no
+# llevan front matter, así que Jekyll las copia tal cual, sin procesarlas.
+editions:
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2024
+  - 2026

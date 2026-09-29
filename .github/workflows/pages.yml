@@ -22,8 +22,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      # La raíz (index/c4p/coc) usa _layouts y _includes, así que hay que
+      # construir con Jekyll. Las ediciones archivadas (2017/ … 2026/) no
+      # llevan front matter, por lo que Jekyll las copia sin tocarlas.
+      - uses: actions/jekyll-build-pages@v1
+        with:
+          source: .
+          destination: ./_site
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: ./_site
       - id: deployment
         uses: actions/deploy-pages@v4
