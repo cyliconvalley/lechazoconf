@@ -11,7 +11,7 @@ city: Valladolid
 url: https://lechazoconf.com
 
 year: 2027
-date_text: fecha por confirmar
+date_text: 29 de Mayo 2027
 
 # Ediciones archivadas (carpetas YYYY/), en orden cronológico. Sus páginas no
 # llevan front matter, así que Jekyll las copia tal cual, sin procesarlas.
